@@ -4,7 +4,7 @@ title: First post - Planning the next project
 subtitle: Building a Self-Driving RC Car (Donkey Car)
 gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
-tags: [donkeycar, robotics, ros1]
+tags: [donkeycar, robotics]
 comments: true
 ---
 
