@@ -4,6 +4,8 @@ title: Assembling the (Donkey) Car
 subtitle: Building the first prototype
 gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
+thumbnail-img: /assets/img/donkeycar_assembly1.png
+share-img: /assets/img/donkeycar_assembly1.png
 tags: [donkeycar, robotics, hardware, chassis, build]
 comments: true
 ---
