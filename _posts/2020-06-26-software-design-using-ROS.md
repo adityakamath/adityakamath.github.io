@@ -9,11 +9,7 @@ share-img: /assets/img/ros_melodic_thumb.png
 tags: [roscar, data-acquisition, software, design]
 comments: true
 ---
-
-### The Robot Operating System (ROS)
-According to the [ROS Wiki](http://wiki.ros.org/Documentation), the Robot Operating System is 
-
-> *an open-source, meta-operating system for your robot. It provides the services you would expect from an operating system, including hardware abstraction, low-level device control, implementation of commonly-used functionality, message-passing between processes, and package management.* 
+According to the [ROS Wiki](http://wiki.ros.org/Documentation), the Robot Operating System is _an open-source, meta-operating system for your robot. It provides the services you would expect from an operating system, including hardware abstraction, low-level device control, implementation of commonly-used functionality, message-passing between processes, and package management._
 
 However, ROS is not really an operating system, but can be instead classified as *middleware*. This means that ROS essentially acts as a middle-man or an interface between multiple computational processes. ROS also hosts a *HUGE* library of community-developed open-source packages. This is a great advantage for roboticists as many standard robotics algorithms/processes/strategies are avaialble as open source packages and you no longer need to re-invent the wheel for common applications. ROS also provides a great deal of other tools and utilities such as simulation environments, debugging tools, logging sensor measurements and data analysis. 
 	
