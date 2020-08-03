@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First post - Planning the next project
-subtitle: Building a Self-Driving RC Car (Donkey Car)
+subtitle: Building a self-driving RC car (Donkey Car)
 gh-repo: adityakamath/ros1bot
 thumbnail-img: /assets/img/donkeycar_baserc.png
 share-img: /assets/img/donkeycar_baserc.png
