@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Car upgrades during lockdown
-subtitle: Making the best of WFH
+subtitle: Building version 1 of the ROScar
 gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
 tags: [donkeycar, robotics, hardware, chassis, build]
