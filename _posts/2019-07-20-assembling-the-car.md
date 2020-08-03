@@ -1,25 +1,10 @@
 ---
 layout: post
-date: 2019-07-20 00:00
-title:  "Assembling the (Donkey) Car"
-description: Building the Donkey Car, partly
-mood: happy
-comments: false
-category: 
-- builds
-- roscar
-tags:
-- assembly
-- donkey car
----
-
----
-layout: post
 title: Assembling the (Donkey) Car
 subtitle: Building the first prototype
 gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
-tags: [donkeycar, robotics, hardware, build]
+tags: [donkeycar, robotics, hardware, chassis, build]
 comments: true
 ---
 
