@@ -1,19 +1,11 @@
 ---
 layout: post
-date: 2019-08-22 00:00
-title:  "Configuring a Sixaxis controller & First drive!"
-description: Configuring a 3rd party USB Sixaxis joystick controller
-mood: happy
-comments: false
-category: 
-- builds
-- roscar
-tags:
-- joystick
-- teleop
-- first drive
-- sixaxis controller
-- donkey car
+title: Configuring a Sixaxis controller
+subtitle: ...and first drive in teleop mode!
+gh-repo: adityakamath/ros1bot
+gh-badge: [star, fork, follow]
+tags: [donkeycar, robotics, hardware, software, teleop, test]
+comments: true
 ---
 
 After all the hardware changes from last time, this is how the car looks:
