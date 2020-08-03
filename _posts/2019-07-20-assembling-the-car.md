@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Assembling the (Donkey) Car
+title: Assembling the (Donkey) car
 subtitle: Building the first prototype
 gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
