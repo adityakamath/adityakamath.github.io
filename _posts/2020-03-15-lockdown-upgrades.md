@@ -4,8 +4,8 @@ title: Car upgrades during lockdown
 subtitle: Building version 1 of the ROScar
 gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
-thumbnail-img: /assets/img/roscar_assembly.jpg
-share-img: /assets/img/roscar_assembly.jpg
+thumbnail-img: /assets/img/roscar_thumb.png
+share-img: /assets/img/roscar_thumb.png
 tags: [roscar, robotics, hardware, chassis, build]
 comments: true
 ---
