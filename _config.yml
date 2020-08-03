@@ -37,30 +37,12 @@ round-avatar: true
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   email: "adityakamath@live.com"
+  linkedin: adityakamath
   github: adityakamath
   twitter: kamathsblog
-  reddit: kma7h
   instagram: kamathsblog
+  reddit: kma7h
   rss: true
-#  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-
-# --- General options --- #
 
 # Select which social network share links to show in posts
 #share-links-active:
