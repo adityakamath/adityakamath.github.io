@@ -63,10 +63,10 @@ social-network-links:
 # --- General options --- #
 
 # Select which social network share links to show in posts
-share-links-active:
-  twitter: true
-  linkedin: true
-  vk: false
+#share-links-active:
+  #twitter: true
+  #linkedin: true
+  #vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
@@ -184,7 +184,7 @@ defaults:
     values:
       layout: "post"
       comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
+      #social-share: true # add social media sharing buttons to all blog posts
       readtime: false # add estimated reading time on all blog posts
   -
     scope:
