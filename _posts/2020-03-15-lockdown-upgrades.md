@@ -1,23 +1,5 @@
 ---
 layout: post
-date: 2020-03-15 00:00
-title:  "Car Upgrades during Lockdown"
-description: Lockdown upgrades - Moving to NVidia Jetson Nano and ROS
-mood: happy
-comments: false
-category: 
-- builds
-- roscar
-tags:
-- jetson nano
-- ros
-- assembly
-- donkey car
-- jetracer
----
-
----
-layout: post
 title: Car upgrades during lockdown
 subtitle: Making the best of WFH
 gh-repo: adityakamath/ros1bot
