@@ -1,21 +1,5 @@
 ---
 layout: post
-date: 2019-06-16 00:00
-title: "FirstPlanning a new build - A self-driving robot car"
-description: First post! Planning on building a Donkey Car
-mood: happy
-comments: false
-category: 
-- builds
-- roscar
-tags:
-- first post
-- newb build
-- donkey car
----
-
----
-layout: post
 title: First post - Planning the next project
 subtitle: Building a Self-Driving RC Car (Donkey Car)
 gh-repo: adityakamath/ros1bot
