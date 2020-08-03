@@ -16,6 +16,16 @@ tags:
 - jetracer
 ---
 
+---
+layout: post
+title: Car upgrades during lockdown
+subtitle: Making the best of WFH
+gh-repo: adityakamath/ros1bot
+gh-badge: [star, fork, follow]
+tags: [donkeycar, robotics, hardware, chassis, build]
+comments: true
+---
+
 After pausing this project for almost half a year (I was busy graduating and finding a job), the pandemic has me stuck at home with so much extra time on my hands. Since March, at least 10 days before the Netherlands went into Lockdown, I decided to restart this project, upgrade the electronics and laser cut and 3D print some new parts. Fortunately I was able to use the 3D printer and laser cutter at my workplace before we went into lockdown. 
 
 Here are some of the hardware upgrades I made:
