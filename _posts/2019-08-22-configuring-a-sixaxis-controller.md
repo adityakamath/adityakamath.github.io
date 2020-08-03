@@ -4,6 +4,8 @@ title: Configuring a Sixaxis controller
 subtitle: ...and first drive in teleop mode!
 gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
+thumbnail-img: /assets/img/sixaxis_controller.png
+share-img: /assets/img/sixaxis_controller.png
 tags: [donkeycar, robotics, hardware, software, teleop, test]
 comments: true
 ---
