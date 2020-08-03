@@ -13,6 +13,16 @@ tags:
 - donkey car
 ---
 
+---
+layout: post
+title: Assembling the (Donkey) Car
+subtitle: Building the first prototype
+gh-repo: adityakamath/ros1bot
+gh-badge: [star, fork, follow]
+tags: [donkeycar, robotics, hardware, build]
+comments: true
+---
+
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/img/donkeycar_assembly1.png" />
 	<figcaption>Partially assembled Donkey Car</figcaption>
