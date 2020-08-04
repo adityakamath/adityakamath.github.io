@@ -6,7 +6,7 @@ gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
 thumbnail-img: /assets/img/ros_melodic_thumb.png
 share-img: /assets/img/ros_melodic_thumb.png
-tags: [roscar, data-acquisition, software, design]
+tags: [roscar, ros, data-acquisition, electronics, software, design]
 comments: true
 ---
 
@@ -29,9 +29,9 @@ For motor control, I use the PCA9685 I2C servo control board, which communicates
 
 On top of this, I wrote a low_level_controller node in Python that subscribes to standard velocity commands from other nodes and converts that to PWM data which is then published. For this computation, I needed to calibrate the throttle and steering to measure the center values, which was then stored in a YAML file. The low level control node reads this configuration file and uses the calibrated values stored in it. 
 
-I mean to automate this calibration step so that I can use it as a utility for other cars I might build in the future. But I'll leave to later.  
-
 <motor control image>
+
+I mean to automate this calibration step so that I can use it as a utility for other cars I might build in the future. But I'll leave to later.  
 
 #### Joystick/Keyboard Teleop Controller
 Now that the motor control is done, I need to provide a way to give it some velocity commands. For starters, I used the [teleop_twist_keyboard](http://wiki.ros.org/teleop_twist_keyboard) package, which is a standard ROS package to provide velocity commands from your keyboard. I used this to test the motor controller and once that was working fine, I moved on to configuring the Sixaxis joystick. 
@@ -41,12 +41,16 @@ For the joystick, I used the (joy)[http://wiki.ros.org/joy/Tutorials/Configuring
 <joystick control image>
 
 #### IMU Calibration + Data Acquisition
+Once again I found a handy library for the IMU calibration and data acquisition. However, this one is not based on ROS. The package is called the [RTIMULib](https://github.com/jetsonhacks/RTIMULib) and it is very efficient C++/Python library for off-the-shelf IMUs. RTIMULib works with the IMU I'm using - MPU6050, so I could directly use this library. To calibrate the IMU measurements, I first used the library and its included Qt based GUI to automatically calibrate and store the calibration results in a .ini file. The RTIMULib was then included in a C++ program, and the calibrated sensor values were used to measure angular velocities and accelerations. A ROS publisher was then implemented to publish these IMU measurements to the rest of the ROS system. 
 
 <imu daq image>
+	
+I have to be honest, I've never implemented or configured an IMU this quickly in my previous projects. The RTIMULib library is _that_ amazing. 
 
 #### Odometry
+For the Odometry, I have a ring with seven magnets on the main shaft of the vehicle. These sensors are detected by a hall-effect sensor attached to the base of the car. The hall-effect sensor works on a 5V logic level while the Jetson Nano GPIO only provides 3.3V. I did not have a logic level cconverter lying around, so I decided to use an Arduino Nano for this purpose. I was meant to use an Arduino Nano anyway, to implement start/stop buttons and notification lights, so I did not have to make many changes to the hardware setup. The sensor measurements are read by the Arduino Nano, which then computes the number of rotations of the shaft and sends its via serial protocol over USB. I use the [rosserial](http://wiki.ros.org/rosserial) package to package and communicate the data between Arduino and ROS over serial. 
 
-<odom image>
+I haven't gotten around to implement/test this node completely, so I will be updating about this in a future blog. 
 
 #### Remote POV
 
