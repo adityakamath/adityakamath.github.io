@@ -41,7 +41,7 @@ For the joystick, I used the (joy)[http://wiki.ros.org/joy/Tutorials/Configuring
 
 [![Static steering test: Sixaxis Controller](https://adityakamath.github.com/assets/img/roscar_steeringtest_ss.png)](https://www.youtube.com/watch?v=jIY-cny0djM "Static steering test: Sixaxis Controller - Click to Watch!")
 
-[![Static steering + throttle test: Sixaxis Controller](https://adityakamath.github.com/assets/img/roscar_steeringthrottletest_ss.png)]https://www.youtube.com/watch?v=NJRmjyDKF2c "Static steering + throttle test: Sixaxis Controller - Click to Watch!")
+[![Static steering + throttle test: Sixaxis Controller](https://adityakamath.github.com/assets/img/roscar_steeringthrottletest_ss.png)](https://www.youtube.com/watch?v=NJRmjyDKF2c "Static steering + throttle test: Sixaxis Controller - Click to Watch!")
 
 #### IMU Calibration + Data Acquisition
 Once again I found a handy library for the IMU calibration and data acquisition. However, this one is not based on ROS. The package is called the [RTIMULib](https://github.com/jetsonhacks/RTIMULib) and it is very efficient C++/Python library for off-the-shelf IMUs. RTIMULib works with the IMU I'm using - MPU6050, so I could directly use this library. To calibrate the IMU measurements, I first used the library and its included Qt based GUI to automatically calibrate and store the calibration results in a .ini file. The RTIMULib was then included in a C++ program, and the calibrated sensor values were used to measure angular velocities and accelerations. A ROS publisher was then implemented to publish these IMU measurements to the rest of the ROS system. 
