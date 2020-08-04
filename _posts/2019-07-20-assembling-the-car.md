@@ -6,7 +6,7 @@ gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
 thumbnail-img: /assets/img/donkeycar_thumb.png
 share-img: /assets/img/donkeycar_thumb.png
-tags: [donkeycar, robotics, hardware, chassis, build]
+tags: [donkeycar, robotics, electronics, chassis, build]
 comments: true
 ---
 
