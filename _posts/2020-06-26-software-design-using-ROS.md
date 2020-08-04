@@ -19,7 +19,10 @@ ROS its not only extensively used in research but also in the [industry](https:/
 ### Design and Implementation
 The ROS communication infrstructure uses a pub/sub architecure, which allows computational processes (called Nodes) to publish or subscribe to pre-defined data types (called Messages) from pre-defined communication channels (called Topics). Nodes can be publishers (like an odometry node that publishes odometry sensor measurements), or subscribers (like a motor controller node that subscribes to control inputs) or both (like a sensor fusion node that subscribes to multiple sensors and publishes a filtered sensor measurement)
 
-<pub/sub image>
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.com/assets/img/ros_master_node_topic.png" />
+	<figcaption>ROS publish/subscribe architecture</figcaption>
+</figure>
 
 Since the last blog, I have built and tested the following nodes:
 
@@ -29,8 +32,6 @@ For motor control, I use the PCA9685 I2C servo control board, which communicates
 
 On top of this, I wrote a low_level_controller node in Python that subscribes to standard velocity commands from other nodes and converts that to PWM data which is then published. For this computation, I needed to calibrate the throttle and steering to measure the center values, which was then stored in a YAML file. The low level control node reads this configuration file and uses the calibrated values stored in it. 
 
-<motor control image>
-
 I mean to automate this calibration step so that I can use it as a utility for other cars I might build in the future. But I'll leave to later.  
 
 #### Joystick/Keyboard Teleop Controller
@@ -38,12 +39,16 @@ Now that the motor control is done, I need to provide a way to give it some velo
 
 For the joystick, I used the (joy)[http://wiki.ros.org/joy/Tutorials/ConfiguringALinuxJoystick] package and its tutorials based on C++. Since I have a 3rd party controller, I had to map the buttons to the package. This mapping was again stored in a YAML file and the implemented node was modified to read the config file and use its values. 
 
-<joystick control image>
+[![Static steering test: Sixaxis Controller](https://adityakamath.github.com/assets/img/roscar_steeringtest_ss.png)](https://www.youtube.com/watch?v=jIY-cny0djM "Static steering test: Sixaxis Controller - Click to Watch!")
+
+[![Static steering + throttle test: Sixaxis Controller](https://adityakamath.github.com/assets/img/roscar_steeringthrottletest_ss.png)]https://www.youtube.com/watch?v=NJRmjyDKF2c "Static steering + throttle test: Sixaxis Controller - Click to Watch!")
 
 #### IMU Calibration + Data Acquisition
 Once again I found a handy library for the IMU calibration and data acquisition. However, this one is not based on ROS. The package is called the [RTIMULib](https://github.com/jetsonhacks/RTIMULib) and it is very efficient C++/Python library for off-the-shelf IMUs. RTIMULib works with the IMU I'm using - MPU6050, so I could directly use this library. To calibrate the IMU measurements, I first used the library and its included Qt based GUI to automatically calibrate and store the calibration results in a .ini file. The RTIMULib was then included in a C++ program, and the calibrated sensor values were used to measure angular velocities and accelerations. A ROS publisher was then implemented to publish these IMU measurements to the rest of the ROS system. 
 
-<imu daq image>
+[![Static IMU calibration/test: MPU6050 with RTIMULib GUI](https://adityakamath.github.com/assets/img/roscar_rtimulibtest_ss.png)](https://www.youtube.com/watch?v=KpxzKg_X8yU "Static IMU calibration/test: MPU6050 with RTIMULib GUI - Click to Watch!")
+
+[![Static IMU test: MPU6050 with RTIMULib and ROS RViz](https://adityakamath.github.com/assets/img/roscar_rtimulibrostest_ss.png)](https://www.youtube.com/watch?v=M_ugv8qPqes "Static IMU test: MPU6050 with RTIMULib and ROS RViz - Click to Watch!")
 	
 I have to be honest, I've never implemented or configured an IMU this quickly in my previous projects. The RTIMULib library is _that_ amazing. 
 
@@ -58,7 +63,7 @@ The camera node is slightly different since I am not using a USB camera but inst
 #### Remote POV
 For remote teleop and POV, I used a Raspberry Pi with a GameHat. Using this, I want to publish velocity commands to the vehicle and subscribe to the compressed camera image. For this, I connected the Raspberry Pi to the same wireless network as the Jetson Nano and used [rosbridge_suite](http://wiki.ros.org/rosbridge_suite) to read topics from the Jetson Nano on a web browser on the Raspberry Pi. I am yet to design the velocity command publisher, but that's for a later stage since I don't quite need the remote Wifi teleop at the moment, the Joystick works just fine. 
 
-<remote pov image>
+[![Remote POV test: Jetson Nano (Camera source) and Raspberry Pi (Display)](https://adityakamath.github.com/assets/img/roscar_remotepov_ss.png)](https://www.youtube.com/watch?v=CgJnAFJOMnc "Remote POV test: Jetson Nano (Camera source) and Raspberry Pi (Display) - Click to Watch!")
 
 ### Tools and Utilities
 As explained earlier, ROS also provides a lot of tools and utilities to make testing/debugging easier. These are some of the tools I have currently been using:
@@ -74,6 +79,8 @@ ROS Bags ([rosbag](http://wiki.ros.org/rosbag)) are storage files where sensor i
 
 #### Launch Files / Launching at startup
 Once everything was all set and ready, I used the [roslaunch](http://wiki.ros.org/roslaunch) package to run these several nodes together. The launch configuration is written in .launch files and this includes all information for the system to start the ROS application - including nodes to run, topic names, initial parameter values, among other things. Once a launch file was defined for the system, I used the wrote a service that runs this launch file at startup. This means that I just need to turn on the Jetson Nano and once I also turn on the joystick, I am ready to go without having the need to physically run the launch file from the Jetson Nano terminal. 
+
+[![ROSCar is Alive!](https://adityakamath.github.com/assets/img/roscar_drivetest_ss.png)](https://www.youtube.com/watch?v=mlp4ccpxlD4 "ROSCar is Alive! - Click to Watch!")
 
 ### Next Steps
 I have a few next steps in mind. For the month of July and August, I plan on learning CAD and designing some new parts for the robot (the cardboard baseplate is already bending because of the battery pack). I plan on getting new parts either 3D printed or cut in acrylic. I also expect to finish the little things that I need to get the car finished - like finishing the odometry functionality, writing a start/stop recording function for the joystick node, fusing the IMU and Odometry data using an extended Kalman filter, and cleaning up all my debug comments. 
