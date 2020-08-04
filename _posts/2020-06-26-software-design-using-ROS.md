@@ -52,14 +52,30 @@ For the Odometry, I have a ring with seven magnets on the main shaft of the vehi
 
 I haven't gotten around to implement/test this node completely, so I will be updating about this in a future blog. 
 
+#### Camera
+The camera node is slightly different since I am not using a USB camera but instead the Raspberry Pi camera using the CSI interface. For this, I picked up a ready-to-use [jetson_camera](https://github.com/sfalexrog/jetson_camera) node from Github. I used this as-is, without any modifications. 
+
 #### Remote POV
+For remote teleop and POV, I used a Raspberry Pi with a GameHat. Using this, I want to publish velocity commands to the vehicle and subscribe to the compressed camera image. For this, I connected the Raspberry Pi to the same wireless network as the Jetson Nano and used [rosbridge_suite](http://wiki.ros.org/rosbridge_suite) to read topics from the Jetson Nano on a web browser on the Raspberry Pi. I am yet to design the velocity command publisher, but that's for a later stage since I don't quite need the remote Wifi teleop at the moment, the Joystick works just fine. 
 
 <remote pov image>
 
 ### Tools and Utilities
+As explained earlier, ROS also provides a lot of tools and utilities to make testing/debugging easier. These are some of the tools I have currently been using:
 
 #### RViz/WebViz
+[RViz](http://wiki.ros.org/rviz) is a visualization environment, where a user can visualize topics and messages in a world-model-like visualization. I have been using this tool to see the camera data, IMU information as well as the odometry estimates. [WebViz](https://webviz.io/app/) is a web-version of RViz that I recently read about. I have yet to integrate that with the rest of the vehicle, but I've used it with pretty neat results. More updates about this in later blogs. 
+
+#### PlotJuggler
+[PlotJuggler](https://github.com/facontidavide/PlotJuggler) by Davide Faconti is one of my favourite tools to use. It allows for easy plotting and analysis of topics and its messages. I've used it extensively for plotting IMU and odometry measurements while testing these individual subsystems. 
+
+#### ROSBag
+ROS Bags ([rosbag](http://wiki.ros.org/rosbag)) are storage files where sensor information can be logged and replayed for later use. When these ROS bags are played, they provide the stored sensor information in the same format (topics/messages) as they were recorded in. This makes the ROS Bag tool extremely useful for recording certain information like IMU measurements and then using it to simulate the IMU while testing some other subsystem. 
 
 #### Launch Files / Launching at startup
+Once everything was all set and ready, I used the [roslaunch](http://wiki.ros.org/roslaunch) package to run these several nodes together. The launch configuration is written in .launch files and this includes all information for the system to start the ROS application - including nodes to run, topic names, initial parameter values, among other things. Once a launch file was defined for the system, I used the wrote a service that runs this launch file at startup. This means that I just need to turn on the Jetson Nano and once I also turn on the joystick, I am ready to go without having the need to physically run the launch file from the Jetson Nano terminal. 
 
 ### Next Steps
+I have a few next steps in mind. For the month of July and August, I plan on learning CAD and designing some new parts for the robot (the cardboard baseplate is already bending because of the battery pack). I plan on getting new parts either 3D printed or cut in acrylic. I also expect to finish the little things that I need to get the car finished - like finishing the odometry functionality, writing a start/stop recording function for the joystick node, fusing the IMU and Odometry data using an extended Kalman filter, and cleaning up all my debug comments. 
+
+Once all that is done, time to setup the ML infrastructure and to start training my vehicle to drive on its own!
