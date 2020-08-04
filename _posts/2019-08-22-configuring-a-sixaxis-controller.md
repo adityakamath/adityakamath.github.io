@@ -6,7 +6,7 @@ gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
 thumbnail-img: /assets/img/sixaxis_controller.png
 share-img: /assets/img/sixaxis_controller.png
-tags: [donkeycar, robotics, hardware, software, teleop, test]
+tags: [donkeycar, robotics, electronics, software, teleop, test]
 comments: true
 ---
 
