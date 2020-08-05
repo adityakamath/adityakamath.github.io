@@ -10,12 +10,12 @@ tags: [donkeycar, robotics, electronics, chassis, build]
 comments: true
 ---
 
+The parts have arrived! At least, most of them. Most surprisingly, the car from Hong Kong arrived a day before the servo driver which I ordered from Amazon Germany. Once again, I used the [Donkeycar documentation](https://docs.donkeycar.com/) to build the car. However, I made a few tweaks...
+
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/donkeycar_assembly1.png" />
 	<figcaption>Partially assembled Donkey Car</figcaption>
 </figure>
-
-The parts have arrived! At least, most of them. Most surprisingly, the car from Hong Kong arrived a day before the servo driver which I ordered from Amazon Germany. Once again, I used the [Donkeycar documentation](https://docs.donkeycar.com/) to build the car. However, I made a few tweaks...
 
 #### Roll-cage super-glued to base-plate:
 
