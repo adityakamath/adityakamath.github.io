@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Being updated
+subtitle: TL;DR Robotic/Embedded Systems Engineer, Maker at heart
 ---
 
 Hi there, welcome to my website!
@@ -10,7 +10,7 @@ I am Aditya Kamath, an engineer from India but living in Eindhoven, in the Nethe
 
 I currently work as an Embedded Systems Consultant/Engineer at an engineering consulting company in Eindhoven. While my job involves designing embedded software for machines/mechatronic components, I do keep my passion for robotics alive by building robotic projects in my spare time. This website is an attempt to document my experiences, results and learnings. Its mostly meant as a journal for myself as well as a portfolio for future collaborators/recruiters, but if you find something interesting and want to know more, do get in touch.
 
-The quickest way to do it would probably be email or a message on LinkedIn. You can also contact me via Instagram. Here, you can check out my photography, travel experiences and other random things I like. I also post updates about my robot builds on my stories. All the links are at the bottom of this page. 
+The quickest way to do it would probably be email or a message on LinkedIn. You can also contact me via Instagram. Here, you can check out my photography, travel experiences, music that I like and other absolutely random things. I also post updates about my robot builds on my stories. All the links are at the bottom of this page. 
 
 Happy exploring!
 
