@@ -7,8 +7,7 @@ subtitle: tl;dr Robotic/Embedded Systems Engineer, Maker at heart
 Hi there, welcome to my website!
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/aboutme.png" />
-	<figcaption>Somewhere in Lisbon...</figcaption>
+	<img align="right" width="250" height="200" src="https://adityakamath.github.com/assets/img/aboutme.png" />
 </figure>
 
 I am Aditya Kamath, an engineer from India but living in Eindhoven, in the Netherlands. After a Bachelor's in Electronics Engineering from India, I first came to Eindhoven in 2015 to pursue a Master in Systems and Control. After I graduated in 2017, I decided to pursue a Professional Doctorate in Engineering (PDEng) in Mechatronic Systems Design. The common denominator between my varied academic background has always been the field of robotics and I have been fortunate enough to work with multiple robotic systems throughout my education and extra-curricular experience.
