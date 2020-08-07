@@ -6,7 +6,7 @@ gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
 thumbnail-img: /assets/img/ros_melodic_thumb.png
 share-img: /assets/img/ros_melodic_thumb.png
-tags: [roscar, ros, data-acquisition, electronics, software, design]
+tags: [roscar, robotics, ros, data-acquisition, electronics, software, design]
 comments: true
 ---
 
