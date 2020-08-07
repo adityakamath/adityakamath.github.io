@@ -10,7 +10,7 @@ Hi there, welcome to my website!
 	<img align="right" width="250" height="200" src="https://adityakamath.github.com/assets/img/aboutme.png" />
 </figure>
 
-I am Aditya Kamath, an engineer from India but living in Eindhoven, in the Netherlands. After a Bachelor's in Electronics Engineering from India, I first came to Eindhoven in 2015 to pursue a Master in Systems and Control. Later in 2019, I graduated with a Professional Doctorate in Engineering (PDEng) in Mechatronic Systems Design. 
+I am Aditya Kamath, an engineer from India but currently living in Eindhoven, in the Netherlands. After a Bachelor's in Electronics Engineering from India, I first came to the Netherlands in 2015 to pursue a Master in Systems and Control from TU Eindhoven. Later in 2019, I graduated with a Professional Doctorate in Engineering (PDEng) in Mechatronic Systems Design from the same university. 
 
 The common denominator between my varied academic background has always been the field of autonomous robotics and I have been fortunate enough to work with multiple robotic systems throughout my education and extra-curricular experience.
 
