@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Assembling the ROS Car version 2
-subtitle: ...with the new (self-designed) acrylic parts
+subtitle: ...with new (self-designed) acrylic parts
 gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
 thumbnail-img: /assets/img/roscar_assembled_v2_thumb.png
