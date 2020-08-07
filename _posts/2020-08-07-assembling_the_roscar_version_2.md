@@ -19,11 +19,11 @@ The design is three-tiered as in the image below. On the bottom most tier, the I
 	<figcaption>Fusion 360 screen-capture that shows the design files and how they will be assembled</figcaption>
 </figure>
 	
-I had originally planned on using the laser cutter at work, but due to the Covid-19 pandemic, this was not possible. This is where I found [SnijLab.nl](https://www.snijlab.nl). Within minutes, I was able to upload my design file, choose my material, and pay for the order and shipping. I placed the order on the weekend and I received the parts by Wednesday! 
+I had originally planned on using the laser cutter at work, but due to the Covid-19 pandemic, this was not possible. This is where I found [Snijlab.nl](https://www.snijlab.nl). Within minutes, I was able to upload my design file, choose my material, and pay for the order and shipping. I placed the order on the weekend and I received the parts by Wednesday! 
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_lasercut_plate.png" />
-	<figcaption>The 300x200mm acrylic plate that arrived from SnijLab.nl with the parts cut out. I asked them to tape the bottom so that the laser does not damage the look of the material.</figcaption>
+	<figcaption>The 300x200mm acrylic plate that arrived from Snijlab.nl with the parts cut out. I asked them to tape the bottom so that the laser does not damage the look of the material.</figcaption>
 </figure>
 	
 <figure class="aligncenter">
@@ -33,7 +33,7 @@ I had originally planned on using the laser cutter at work, but due to the Covid
 	
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_lasercut_assembly_wrong.png" />
-	<figcaption>The parts assembled with M2.5 screws and hex standoffs (brass and nylon). If you see, this is slightly different to the assembly in the design. This is where I realized that I had assembled the pieces upside down and that I had accidentally asked SnijLab to tape the wrong side.</figcaption>
+	<figcaption>The parts assembled with M2.5 screws and hex standoffs (brass and nylon). If you see, this is slightly different to the assembly in the design. This is where I realized that I had assembled the pieces upside down and that I had accidentally asked Snijlab to tape the wrong side.</figcaption>
 </figure>
 	
 <figure class="aligncenter">
@@ -43,7 +43,7 @@ I had originally planned on using the laser cutter at work, but due to the Covid
 	
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_assembled_tape.png" />
-	<figcaption>The assembled car with everything wired up</figcaption>
+	<figcaption>The assembled car with everything wired up. I never realized the LEDs on the fan still powered on when the fan was turned off. Makes the car look so much cooler!</figcaption>
 </figure>
 	
 While I was satisfied with the parts, the fact that I had that tape was still bugging me. So, with the scrap acrylic parts, I decided to try and remove the adhesive tape. It took some agressive scratching with a screwdriver but I was finally able to remove most of the adhesive. So, I disassembled the car and removed the adhesive tape. It took a while but it worked. I clicked a new set of pictures to show the different steps of assembly. 
