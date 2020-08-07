@@ -14,6 +14,6 @@ The quickest way to do it would probably be email or a message on LinkedIn. You 
 
 Happy exploring!
 
-- Aditya
+\- Aditya
 
 
