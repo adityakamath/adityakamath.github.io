@@ -12,7 +12,7 @@ comments: true
 
 Ever since I've started working from home (since mid-March), I have stopped using my phone while I'm working. It is usually lying on my bedside table, but I am able to use apps like Discord and Whatsapp using their web interfaces. However, I do miss a lot of notifications since I'm working and mostly in meetings. On the internet, I did find a lot of these devices that notify you when you get a notification on your phone, there are also apps that show your phone notifications on your desktop. I definitely wanted a physical solution instead of an app, and I decided to go ahead and build one myself. 
 
-I had a [NeoPixel]() ring with 24 LEDs from a previous project which I decided to use for the project. I also had a brand new [Arduino MKR Wi-Fi 1010]() which I also decided to use for this project. Arduino MKR Wi-Fi 1010 is designed for IoT applications over Wi-Fi, so this was perfect for this project. I also quickly designed some parts on Fusion 360 to mount the Arduino and the NeoPixel ring and sent them off for laser cutting. 
+I had a [NeoPixel](https://www.adafruit.com/product/1586) ring with 24 LEDs from a previous project which I decided to use for the project. I also had a brand new [Arduino MKR Wi-Fi 1010](https://store.arduino.cc/arduino-mkr-wifi-1010) which I also decided to use for this project. Arduino MKR Wi-Fi 1010 is designed for IoT applications over Wi-Fi, so this was perfect for this project. I also quickly designed some parts on Fusion 360 to mount the Arduino and the NeoPixel ring and sent them off for laser cutting. 
 
 Next step was to plan what exactly to implement. This is what I came up with:
 
@@ -56,7 +56,7 @@ Meanwhile, I also found a spare NeoPixel 8 LED strip, with which I also got some
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/pinguino_neopixel_stripart.png" />
+	<img src="https://adityakamath.github.com/assets/img/pinguino_neopixel_stripart.jpg" />
 	<figcaption>Light painting using the NeoPixel LED strip</figcaption>
 </figure>
 
