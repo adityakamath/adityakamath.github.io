@@ -44,7 +44,7 @@ I also tested the hardware to make sure they are working. The NeoPixel ring work
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/pinguino_neopixel_test2.png" />
+	<img src="https://adityakamath.github.com/assets/img/pinguino_neopixel_ringart.png" />
 	<figcaption>Long exposure art using the NeoPixel ring</figcaption>
 </figure>
 
