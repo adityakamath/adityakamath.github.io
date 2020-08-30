@@ -10,7 +10,7 @@ tags: [neopixel, arduino, iot, software, blynk, discord]
 comments: true
 ---
 
-So, I decided to call my desktop notification lamp 'Pinguino'. As in, Ping my Arduino. Over the last two days, I integrated the Blynk GUI that I talked about in the last blog. For this weekend, I wanted to achieve two things: first, to control the NeoPixel ring with the Blynk App. Secondly, for every change made from the Blynk GUI, I want to send a message to a Discord server. The following sections talk about how I did these tasks
+So, I decided to call my desktop notification lamp 'Pinguino'. As in, Ping my Arduino. Over the last two days, I integrated the Blynk GUI that I talked about in the last blog. For this weekend, I wanted to achieve two things: first, to control the NeoPixel ring with the Blynk App. Secondly, for every change made from the Blynk GUI, I want to send a message to a Discord server. The following sections talk about how I did these tasks.
 
 #### Controlling the Arduino MKR Wi-Fi 1010 and NeoPixel ring with Blynk
 
