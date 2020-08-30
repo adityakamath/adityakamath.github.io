@@ -3,8 +3,8 @@ layout: post
 title: Controlling Pinguino with Blynk
 subtitle: And trying out Discord webhook integration
 gh-repo: adityakamath/pinguino
-thumbnail-img: /assets/img/pinguino_blynk_thumb.png
-share-img: /assets/img/pinguino_blynk_thumb.png
+thumbnail-img: /assets/img/pinguino_blynk_thumb.jpg
+share-img: /assets/img/pinguino_blynk_thumb.jpg
 gh-badge: [star, fork, follow]
 tags: [neopixel, arduino, iot, software, blynk, discord]
 comments: true
