@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pinguino: Assembly guide
+title: Pinguino assembly guide
 subtitle: Putting it all together
 gh-repo: adityakamath/pinguino
 gh-badge: [star, fork, follow]
