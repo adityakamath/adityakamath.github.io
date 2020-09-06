@@ -36,7 +36,7 @@ Finally, I still have one part which I need to 3D print when I next go to work. 
 	<img src="https://adityakamath.github.com/assets/img/roscar_update_led.jpg" />
 </figure>
 
-I also added a NeoPixel LED strip to the underside of the Pi OLED PCB. Its for future purposes to indicate the current state of the car, but for now it looks really cool! Then I reoriented the servo driver and the IMU and mounted them to the bottom of the base-plate instead of the top. This made the entire assembly a lot more compact. The final results can be seen in the image below:
+I also added a NeoPixel LED strip to the underside of the Pi OLED PCB. Its for future purposes to indicate the current state of the car, but for now it looks really cool! Then I reoriented the servo driver and the IMU and mounted them to the bottom of the base-plate instead of the top. This made the entire assembly a lot more compact. Finally, I replaced Ice cooling tower with the original heat-sink and fan. This application does not heat up the Jetson Nano too much, and also its easier to access the wiring this way. The final results can be seen in the images below:
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_update_final2.jpg" />
