@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: tl;dr Robotic/Embedded systems engineer, Maker at heart
+subtitle: tl;dr Robotic/Embedded systems engineer, Maker
 ---
 
 Hi there, welcome to my website!
@@ -10,11 +10,11 @@ Hi there, welcome to my website!
 	<img align="left" width="250" height="250" src="https://adityakamath.github.com/assets/img/about_me2.png" />
 </figure>
 
-I am Aditya Kamath, an engineer from India but currently living in Eindhoven, in the Netherlands. After a Bachelor's in Electronics Engineering from India, I first came to the Netherlands in 2015 to pursue a Master in Systems and Control from TU Eindhoven. Later in 2019, I graduated with a Professional Doctorate in Engineering (PDEng) in Mechatronic Systems Design from the same university. 
+I am Aditya Kamath, an Embedded Systems/Robotics Engineer based in Eindhoven, the Netherlands. I have a varied academic background ranging from a Bachelor's in Electronics Engineering from Manipal Institute of Technology in India, and then a Master in Systems and Control from TU Eindhoven in the Netherlands. Later in 2019, I also graduated with a Professional Doctorate in Engineering (PDEng) in Mechatronic Systems Design from the same university. 
 
-The common denominator between my varied academic background has always been the field of autonomous robotics and I have been fortunate enough to work with multiple robotic systems throughout my education and extra-curricular experience.
+While I have studied a lot of different things, the common denominator in my education has always been the field of autonomous robotics and I have been fortunate enough to work with multiple robotic systems throughout my education and extra-curricular experience.
 
-I currently work as an Embedded Systems Consultant/Engineer at an engineering consulting company in Eindhoven. While my job involves designing embedded software for machines/mechatronic components, I do keep my passion for robotics alive by building robotic projects in my spare time. 
+I currently work as an Embedded Systems Consultant/Engineer at an engineering R&D company in Eindhoven. While my job involves designing embedded software for complex machines/mechatronic components, I do keep my passion for robotics alive by building robotic projects in my spare time. It isn't always a robotics build since I also love tinkering around with basic electronics, digital/analog sensors, microcontrollers/single-board computers, 3D printing and other rapid prototyping tools. 
 
 This website is an attempt to document my experiences, results and learnings. Its mostly meant as a journal for myself as well as a portfolio for future collaborators/recruiters, but if you find something interesting and want to know more, do get in touch.
 
