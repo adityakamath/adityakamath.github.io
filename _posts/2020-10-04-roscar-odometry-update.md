@@ -4,8 +4,8 @@ title: ROSCar odometry update
 subtitle: And some cool long-exposure photographs
 gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
-thumbnail-img: /assets/img/ros_melodic_thumb.png
-share-img: /assets/img/ros_melodic_thumb.png
+thumbnail-img: /assets/img/ros_odometry_thumb.jpg
+share-img: /assets/img/ros_odometry_thumb.jpg
 tags: [roscar, robotics, ros, odometry, data-acquisition, communication, electronics, software, design]
 comments: true
 ---
@@ -17,14 +17,13 @@ The hardware involves 5 parts: 1 hall effect sensor (I used a cheap one I bought
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_odometry_hardware.jpg" />
-	<figcaption>ROS publish/subscribe architecture</figcaption>
 </figure>
 
 The installation was tested by wiring the 5v and ground pins of the hall-effect sensor to the Arduino's pins and checking the LED to see if the distance between the sensor and each magnet is okay. Once verified, the digital output pin of the sensor is wired to digital pin 2 (hardware interrupt pin) on the Arduino Nano. A video of this is below:
 
 <add video>
   
-#### Arduino Nano / ROSSerial:
+#### Arduino Nano / ROSSerial
 On the Arduino, the first task is to read and compute the speed. For this, I used an interrupt callback function which increments a counter variable everytime a rising edge is sensed by the hardware interrupt. In the main loop of the code, the counter value is read every second, using which the number of rotations per minute can be calculated. The ratio between the RPM and the linear speed was measured by moving the car along a known straight line and measuring the linear distance travelled vs the number of rotations counted. I did this test multiple times and averaged the results.
 
 Next, I used [this](http://wiki.ros.org/rosserial_arduino/Tutorials/Hello%20World) example tutorial for a simple publisher to publish the computed speed via ROSSerial to the Jetson Nano. I used the *std_msgs/Float64* data type instead of the string as shown in the tutorial. On the Jetson Nano, one needs to run *roscore* and in another terminal, the *serial_node.py* provided by ROSSerial. I simply added this to the launch file so that the serial node is initialized everytime the car is started. This is verified by simply checking the topic list and echoing the particular topic.
@@ -49,17 +48,17 @@ While driving around, I also clicked some long exposure photographs of the car i
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_longex2.jpg" />
-	<figcaption>ROS publish/subscribe architecture</figcaption>
+	<figcaption>The light seen on the bottom left corner is from the Pinguino which I placed there for added effect</figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_longex3.jpg" />
-	<figcaption>ROS publish/subscribe architecture</figcaption>
+	<figcaption>Once again, the Pinguino is providing some much needed background lighting</figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_longex4.jpg" />
-	<figcaption>ROS publish/subscribe architecture</figcaption>
+	<figcaption>That one green line (from the Arduino Nano LED) seems to have taken a completely different turn. Strange.</figcaption>
 </figure>
 
 #### Ground-truth measurements
@@ -72,26 +71,24 @@ For the second hardware change, I added a spare/random piece of acrylic under th
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_odometry_changes.jpg" />
-	<figcaption>ROS publish/subscribe architecture</figcaption>
 </figure>
 
 Finally, my cheap 3rd party sixaxis controller finally died after 8 long years. I remember buying it sometime around 2011-2012 during my bachelor's in India. I tried to fix it but couldn't so I salvaged some parts like the joysticks and buttons and threw away the rest. This meant that I could also throw away the bulky receiver and hence replace the plastic standoffs with smaller ones to make the car more compact. Here are some before/after pics:
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_dongle_before.jpg" />
-	<figcaption>ROS publish/subscribe architecture</figcaption>
+	<figcaption>Before</figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_dongle_after.jpg" />
-	<figcaption>ROS publish/subscribe architecture</figcaption>
+	<figcaption>After</figcaption>
 </figure>
 
 For the new controller, I once again went for a 3rd party controller but made sure it came with a small USB dongle. 
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_new_controller.jpg" />
-	<figcaption>ROS publish/subscribe architecture</figcaption>
 </figure>
 
 ### Plans for the next update
