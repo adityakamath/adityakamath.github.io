@@ -4,7 +4,7 @@ title: ROSCar odometry update
 subtitle: And some cool long-exposure photographs
 gh-repo: adityakamath/ros1bot
 gh-badge: [star, fork, follow]
-thumbnail-img: /assets/img/roscar_odometry_changes.jpg
+thumbnail-img: /assets/img/roscar_odometry_thumb.jpg
 share-img: /assets/img/roscar_odometry_thumb.jpg
 tags: [roscar, robotics, ros, odometry, data-acquisition, communication, electronics, software, design]
 comments: true
