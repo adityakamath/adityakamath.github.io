@@ -21,7 +21,7 @@ The hardware involves 5 parts: 1 hall effect sensor (I used a cheap one I bought
 
 The installation was tested by wiring the 5v and ground pins of the hall-effect sensor to the Arduino's pins and checking the LED to see if the distance between the sensor and each magnet is okay. Once verified, the digital output pin of the sensor is wired to digital pin 2 (hardware interrupt pin) on the Arduino Nano. A video of this is below:
 
-<add video>
+[![ROSCar: Calibrating Odometry](https://adityakamath.github.com/assets/img/roscar_odometry_testing_ss.png)](https://www.youtube.com/watch?v=B_FwJiaJ6kg "ROSCar: Calibrating Odometry - Click to Watch!")
   
 #### Arduino Nano / ROSSerial
 On the Arduino, the first task is to read and compute the speed. For this, I used an interrupt callback function which increments a counter variable everytime a rising edge is sensed by the hardware interrupt. In the main loop of the code, the counter value is read every second, using which the number of rotations per minute can be calculated. The ratio between the RPM and the linear speed was measured by moving the car along a known straight line and measuring the linear distance travelled vs the number of rotations counted. I did this test multiple times and averaged the results.
@@ -36,7 +36,7 @@ The odometry node is a simple publisher/subscriber that subscribes to the float 
 #### Testing
 The car was tested by using timed trials over a known distance, while also recording the odometry received on the Jetson Nano. Now since my studio is quite small, and I also did not have a measuring tape, I could only use a 30cm vernier caliper and very low speeds to test the measured speed. I used a tripod and my smartphone to record the tests and measured the actual speed using these recordings. I then checked this with the recorded measurements on the Jetson. The odometry is very accurate, but not very precise but I can can live with it. While I deleted the recordings due to low memory on my phone, here's a small clip of the test setup (I'm just aimlessly driving around in this one, ~20% throttle).
 
-<add video>
+[![ROSCar: Driving (Top View)](https://adityakamath.github.com/assets/img/roscar_odometry_testing2_ss.png)](https://www.youtube.com/watch?v=-_84yx7CmNk "ROSCar: Driving (Top View) - Click to Watch!")
 
 ### Cool long-exposure photographs
 While driving around, I also clicked some long exposure photographs of the car in action. I must confess, for 50% of the time, the car battery was completely out of power and I was basically moving it around with my leg. The photos are still nice though (the Jetson battery, and hence the LEDs were still running).
@@ -75,14 +75,14 @@ For the second hardware change, I added a spare/random piece of acrylic under th
 
 Finally, my cheap 3rd party sixaxis controller finally died after 8 long years. I remember buying it sometime around 2011-2012 during my bachelor's in India. I tried to fix it but couldn't so I salvaged some parts like the joysticks and buttons and threw away the rest. This meant that I could also throw away the bulky receiver and hence replace the plastic standoffs with smaller ones to make the car more compact. Here are some before/after pics:
 
+Before:
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_dongle_before.jpg" />
-	<figcaption>Before</figcaption>
 </figure>
 
+After:
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_dongle_after.jpg" />
-	<figcaption>After</figcaption>
 </figure>
 
 For the new controller, I once again went for a 3rd party controller but made sure it came with a small USB dongle. 
@@ -90,6 +90,10 @@ For the new controller, I once again went for a 3rd party controller but made su
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_new_controller.jpg" />
 </figure>
+
+Here's me driving around my studio:
+
+[![ROSCar: Driving around the studio](https://adityakamath.github.com/assets/img/roscar_odometry_driving_ss.png)](https://www.youtube.com/watch?v=lx4kxBweW2Q "ROSCar: Driving around the studio - Click to Watch!")
 
 ### Plans for the next update
 For the next few months, I plan on working entirely on the AI. I have already started off doing experiments with face/object detection, lane detection/following. But I want to also work with concepts such as semantic segmentation and visual positioning. Lastly, I need to try and make this working with ROS. I want to get this done by the end of this year. Let's wait and see how that goes. 
