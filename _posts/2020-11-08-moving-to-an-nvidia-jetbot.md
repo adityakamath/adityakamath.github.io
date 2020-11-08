@@ -13,7 +13,7 @@ comments: true
 Since the last update, I have spent time doing NVIDIA's [2 Days to a Demo](https://developer.nvidia.com/embedded/twodaystoademo) program that contains a lot of resouces about training, retraining and deploying AI models with some of NVidia's own python notebooks and ROS. I have learnt mainly about classification, object detection and semantic segmentation using a monocular camera. And since I am using ROS, I am now able to integrate any of these AI applications with the rest of the ROSCar platform. 
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/roscar_inhand.png" />
+	<img src="https://adityakamath.github.com/assets/img/roscar_inhand.jpg" />
 </figure>
 
 This brings me to the JetBot. Unfortunately, I am in between apartments right now and the studio I stay in does not have a lot of space. This was making it difficult for me to drive and train my RC car indoors. I was in the lookout for a small differential drive platform I could move all the components too. I decided to move everything to the NVidia Jetbot platform, since I am using almost the same components. The first step to this was to disassemble everything from the ROSCar and reassemble the electronics to verify all the wiring. 
