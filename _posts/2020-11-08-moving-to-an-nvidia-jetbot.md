@@ -55,7 +55,7 @@ The biggest update was the change in the motor control board. I tried to reuse t
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/jetbot2_vs_roscar.jpg" />
+	<img src="https://adityakamath.github.com/assets/img/jetbot2_vs_roscar.jpeg" />
 	<figcaption>JetBot2 next to the old ROSCar platform</figcaption>
 </figure>
 
@@ -84,7 +84,6 @@ For an unrelated project that I plan on beginning next year, I ordered a RPLidar
 	<figcaption>RPLidar ROS Package running off the Jetbot2's Jetson Nano</figcaption>
 </figure>
 
-<insert lidar video>
 [![Testing the RPLidar with Slamtec RobotStudio and ROS Melodic](https://adityakamath.github.com/assets/img/testing_rplidar_ss.png)](https://www.youtube.com/watch?v=3pMYaUD-vEk "Testing the RPLidar A2M8 - Click to Watch!")
 
 #### Next Steps
