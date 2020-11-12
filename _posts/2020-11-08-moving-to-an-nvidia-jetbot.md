@@ -2,7 +2,7 @@
 layout: post
 title: Moving to an NVIDIA JetBot with ROS
 subtitle: + Testing a RPLidar A2 for another project
-gh-repo: adityakamath/ros_jetbot2
+gh-repo: adityakamath/akros_jetson
 gh-badge: [star, fork, follow]
 thumbnail-img: /assets/img/jetbot2_build_thumb.jpg
 share-img: /assets/img/jetbot2_build_thumb.jpg
