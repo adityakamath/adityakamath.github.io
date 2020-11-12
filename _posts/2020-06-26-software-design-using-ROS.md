@@ -2,7 +2,7 @@
 layout: post
 title: Software design using ROS1
 subtitle: Implementing sensor data acquisition and actuator control
-gh-repo: adityakamath/ros1bot
+gh-repo: adityakamath/akros_jetson
 gh-badge: [star, fork, follow]
 thumbnail-img: /assets/img/ros_melodic_thumb.png
 share-img: /assets/img/ros_melodic_thumb.png
