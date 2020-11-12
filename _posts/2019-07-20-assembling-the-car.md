@@ -2,7 +2,7 @@
 layout: post
 title: Assembling the (Donkey) car
 subtitle: Building the first prototype
-gh-repo: adityakamath/ros1bot
+gh-repo: adityakamath/akros_jetson
 gh-badge: [star, fork, follow]
 thumbnail-img: /assets/img/donkeycar_thumb.png
 share-img: /assets/img/donkeycar_thumb.png
