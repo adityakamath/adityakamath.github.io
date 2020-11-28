@@ -10,13 +10,13 @@ tags: [jetbot, jetbot2, robotics, ros, data-acquisition, communication, teleoper
 comments: true
 ---
 
-<figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/jetbot2_inhand2.jpg" />
-</figure>
-
 #### Driving the a Sixaxis Joystick
 
 The last few weeks have been particularly successful. Although I spend less time on this project than I normally do, I managed to completely rewrite the Jetbot control node for the Jetbot2 platform. Instead of subscribing to strings like "forward" and "backward", the motor control node now subcsribes to the cmd_vel topic published by the joystick node. In this case, the Sixaxis Joystick teleop node from the ROSCar was reused. The changes made to the control node were simple - instead of an if-else condition checking for different strings from the subscribed string topic, the node now uses the subscribed linear and angular velocities to compute PWM for each motor using the kinematics of a differential drive robot. For now, this is an open loop but I plan on closing it using the IMU in the future. Currently, the IMU is able to give pretty accurate orientation measurements even without any additional filter. 
+
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.com/assets/img/jetbot2_inhand2.jpg" />
+</figure>
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/jetbot2_teleop_test.jpg" />
