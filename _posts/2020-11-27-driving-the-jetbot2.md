@@ -10,7 +10,7 @@ tags: [jetbot, jetbot2, robotics, ros, data-acquisition, communication, teleoper
 comments: true
 ---
 
-The last few weeks have been particularly successful. Although I spend less time on this project than I normally do, I managed to accomplish a lot. For starters, I got the Jetbot2 to work with a Sixaxis Joystick (the same one I had integrated in the ROSCar). This finally let me drive the robot around without having to use the teleop_twist_keyboard package from my laptop. I also explored the vision_opencv (cv_bridge, image_transport) and opencv_apps packages in ROS Melodic and tried a few example programs such as blob detection, edge detection, hough lines detection. More about these in the following sections...
+The last few weeks have been particularly successful. Although I spent less time on this project than I normally do, I managed to accomplish a lot. For starters, I got the Jetbot2 to work with a Sixaxis Joystick (the same one I had integrated in the ROSCar). This finally let me drive the robot around without having to use the teleop_twist_keyboard package from my laptop. I also explored the vision_opencv (cv_bridge, image_transport) and opencv_apps packages in ROS Melodic and tried a few example programs such as blob detection, edge detection, hough lines detection. More about these in the following sections...
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/jetbot2_inhand2.jpg" />
