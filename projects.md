@@ -11,7 +11,7 @@ subtitle: Some of my projects from last to first (being updated)
 #### 2019 | Personal Project
 asdasdsa
 
-### Distributed Computing for Soccer Robots using 5G mm-Waves
+### Remote Computing for Soccer Robots using 5G mm-Waves
 #### 2018/2019 | BlueSPACE, Tech United, TU Eindhoven
 
 ### Multi-Drone Positioning and Formation Flying
