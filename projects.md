@@ -23,15 +23,15 @@ asdassdf
 
 ### AGV Localization in Changing Indoor Environments
 #### 2016/2017 | Prodrive Technologies, TU Eindhoven
-For my Master Thesis, worked with Prodrive Technologies to study and improve the their current AGV localization strategy for their next generation of autonomous robots. I surveyed and simulated multiple localization/SLAM strategies and proposed two main solution - 1: the addition of an inertial measurement unit for short range dead-reckoning for times when the current localization strategy is uncertain. This sensor data was fused with an Extended Kalman Filter in ROS. 2: Implementation of a long-term mapping strategy (using FreMEn) that remaps the environment in pre-defined intervals to update a map model that can also predict future occurences of certain obstacles. Both these strategies were implemented, and integrated in a simulated environment using ROS, Stage and Gazebo, and provided significant reduction in localization failures compared to the original strategy. Project resources are not open-access.
+For my Master Thesis, worked with Prodrive Technologies to study and improve the their current AGV localization strategy for their next generation of autonomous 2D LiDAR based robots. Two strategies were proposed and both these strategies were implemented, and integrated in a simulated environment using ROS, Stage and Gazebo. This provided significant reduction in localization failures compared to the original approach. Project resources are not open-access.
 
 ### Self Driving Solar Robot
 #### 2016 | TU Eindhoven
-As a part of the Embedded Visual Control course at TU Eindhoven, programmed a self driving robot car powered using a solar panel. The team of 3 assembled the robot kit, and programmed the Raspberry Pi to detect lanes using Hough Transforms and also detect traffic signs using Haar Cascade Classifiers. These functionalities were built using OpenCV and used to drive the robot along a simulated race track in the TU Eindhoven campus. As an additional project, we also built a teleop mode using the internal IMU of a smartphone. Unfortunately, documentation is not freely accessible. 
+Programmed a self driving robot car powered using a solar panel to detect lanes using Hough Transforms and also detect traffic signs using Haar Cascade Classifiers. These functionalities were built using OpenCV on a Raspberry Pi and used to drive the robot along a simulated race track in the TU Eindhoven campus. As an additional project, the team of 3 also built a teleop mode using the internal IMU of a smartphone. Unfortunately, documentation is not freely accessible. 
 
 ### Maze Solving Robot
 #### 2016 | TU Eindhoven
-As a part of the Embedded Motion Control course at TU Eindhoven, programmed a ROS-based holonomic robot platform to complete a maze using only 2D LiDAR data. Used the pledge algorithm to successfully solve simulated and physical mazes with 90 degree turns and open spaces. The robot was also programmed to detect doors and ring a bell for the door to open. The 3-member team participated in two challenges with the other teams, and consistently ranked second, thus winning a crate of (well-deserved) beer! Our work is documented !here! and source code is available !here!
+Programmed a ROS-based holonomic robot platform to complete a maze using only 2D LiDAR data. Used the pledge algorithm to successfully solve simulated and physical mazes with 90 degree turns and open spaces. The robot was also programmed to detect doors and ring a bell for the door to open. The 3-member team participated in two challenges with the other teams, and consistently ranked second, thus winning a crate of (well-deserved) beer! Our work is documented !here! and source code is available !here!
 
 ### Autonomous Navigation for a Lunar Excavator Robot
 #### 2013/2014 | MIT Manipal
@@ -39,7 +39,7 @@ fsdfhfgjdj
 
 ### NASA Lunabotics Mining Competition 2013
 #### 2012/2013 | RoboManipal, MIT Manipal
-Built and programmed the motor driver electronics of a 4 wheel differential drive excavator robot with features such as status indicators and an emergency button. Designed and developed a LabVIEW based GUI to control this Arduino based motor controller using TCP over a wireless LAN connection. Also took on the roles of System Engineer and Student Team Lead, managing activities such as the systems engineering analysis and the technical management of a team of 12. The team participated in the 4th NASA Lunabotics Mining Competition at Kennedy Space Center in Florida, USA, and ranked 19th from 50 teams. Find more !here!
+Built and programmed the motor driver electronics of a 4 wheel differential drive excavator robot with features such as status indicators and an emergency button. Designed and developed a LabVIEW based GUI to control this Arduino based motor controller using TCP over a wireless LAN connection. The team participated in the 4th NASA Lunabotics Mining Competition at Kennedy Space Center in Florida, USA, and ranked 19th from 50 teams. Find more !here!
 
 ### ABU Robocon 2012
 #### 2011/2012 | RoboManipal, MIT Manipal
