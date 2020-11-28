@@ -24,11 +24,23 @@ Since the last update, I managed to completely rewrite the Jetbot control node f
 	<img src="https://adityakamath.github.com/assets/img/jetbot2_teleop_test.jpg" />
 </figure>
 
-Here are a few videos of me driving around my room:
+Here is a video of me driving around my room:
 
 [![Driving the Jetbot2 with a Joystick - pt1](https://adityakamath.github.com/assets/img/jetbot2_teleop1_test.png)](https://www.youtube.com/watch?v=yQLC6U3oic4 "Driving the Jetbot2 - pt1 - Click to Watch!")
 
 [![Driving the Jetbot2 with a Joystick - pt2](https://adityakamath.github.com/assets/img/jetbot2_teleop2_test.png)](https://www.youtube.com/watch?v=AlmV-jZNECE "Driving the Jetbot2 - pt1 - Click to Watch!")
+
+#### Switching between different modes
+
+I decided on 2 modes for the control of the Jetbot2 - full teleop, teleop throttle / autonomous steering, full autonomy. To switch between them, I wrote a small function in the Joystick node that uses the 'select' button the sixaxis joystick to set the mode number. It simply increments a counter in a loop from 1 to 3. This is then publishes as an integer (Int8 topic). Next, I wrote a node within the AKROS Jetson package that subscribes to Twist messages from the telop node (AKROS Joystick), the auto node (to be written) and the to the Int8 topic from the joystick. In a separate node, I compose the output twist message using the three subscriptions and then publish the corresponding output. Mode 0 (the mode before the 'select' button is pressed) is considered as a slow mode, with only 75% linear/angular velocities. Once this was done, I made the necessary changes to the launch file and tested it out. Without the autonomous twist publisher, I couldn't test much, so here's another video of me driving the Jetbot2 around my studio. 
+
+[![Driving the Jetbot2 with a Joystick - pt2](https://adityakamath.github.com/assets/img/jetbot2_teleop2_test.png)](https://www.youtube.com/watch?v=AlmV-jZNECE "Driving the Jetbot2 - pt2 - Click to Watch!")
+
+The Jetbot2 also got another addition - a googly eye on the camera cover. I received a box of googly eyes, so I'm probably going to stick them on everything in the next few days...
+
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.com/assets/img/jetbot2_eye.jpg" />
+</figure>
 
 #### OpenCV, cv_bridge and opencv_apps
 
@@ -38,7 +50,7 @@ The second fortunate discovery was the opencv_apps package. This is an extremely
 
 ##### Next steps
 
-I am almost at the end of this project. By the end of this month, I would like to finish an application (i.e, a full configured launch file) that uses detectnet to detect a particular object and uses the rest of the implemented ROS packages to track it. I would also like to write a mixer node that can change the modes of the robot - teleop, fully autonomous, autonomous steering only, error, idle. This will help me go through the different functionalities of the car. I will probably have to write a state machine for this, if there isn't already a better method in ROS.
+I am almost at the end of this project. By the end of this month, I would like to finish an application (i.e, a full configured launch file) that uses detectnet to detect a particular object and uses the rest of the implemented ROS packages to track it. I will also probably have to write a state machine to switch between modes and do additional functions, if there isn't already a better method in ROS.
 
 In December, I have a nice long holiday but I expect to spend some time configuring the LED color to match the mode of the robot. I will also spend some time playing with the IMU to see if I can somehow improve the performance of the object tracking, or at least provide closed loop feedback control for the differential drive. 
 
