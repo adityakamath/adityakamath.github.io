@@ -85,7 +85,7 @@ As a part of a course, programmed a self driving solar powered robot to detect l
 
 Programmed a ROS-based holonomic robot platform to complete a maze using only 2D LiDAR data. Used the pledge algorithm to solve simulated and physical mazes with 90 degree turns and open spaces. The 3-member team participated in two challenges during the course, and ranked second, thus winning a crate of (well-deserved) beer! !links!
 
-## Autonomous Navigation of a Lunar Excavator Robot
+## Autonomous Navigation of a Lunar Robot
 #### 2013/2014 | MIT Manipal
 
 <figure class="aligncenter">
