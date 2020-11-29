@@ -6,7 +6,7 @@ subtitle: Some of my projects from last to first (being updated)
 
 ### AKROS Platform - Jetracer2, Jetbot2
 #### 2020 | Personal Project in Lockdown
-During the Covid-19 lockdown, designed, prototyped and implemented a drivetrain-agnostic ROS based software architecture/platform for Computer Vision and AI applications. Implemented the architecture on two robots - Jetracer2 (built on the Jetracer project with add-ons), and Jetbot2 (based on NVidia Jetbot). !links!
+During the Covid-19 lockdown, designed and implemented a drivetrain-agnostic ROS based software/hardware architecture for Computer Vision and AI applications. Implemented the design on two robots - Jetracer2 (built on the Jetracer project with add-ons), and Jetbot2 (based on NVidia Jetbot). !links!
 
 ### Blynk Controlled Desk Lamp with Discord Notifications
 #### 2020 | Personal Project in Lockdown
