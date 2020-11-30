@@ -4,8 +4,6 @@ title: Projects
 subtitle: Some of my projects from last to first (being updated)
 ---
 
-## AKROS Platform - Jetracer2, Jetbot2
-#### 2020 | Personal Project in Lockdown
 
 <figure class="aligncenter">
 	<img align="left" width="200" height="200" src="https://adityakamath.github.com/assets/img/jetbot_2.png" />
