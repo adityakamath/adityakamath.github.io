@@ -8,7 +8,7 @@ subtitle: Some of my projects from last to first (being updated)
 #### 2020 | Personal Project in Lockdown
 
 <figure class="aligncenter">
-	<img align="left" width="200" height="200" src="https://adityakamath.github.com/assets/img/jetbot_2.png" />
+	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/jetbot_2.png" />
 </figure>
 
 During the Covid-19 lockdown, designed and implemented a drivetrain-agnostic ROS based software/hardware architecture for Computer Vision and AI applications. Implemented the design on two robots - Jetracer2 (built on the Jetracer project with add-ons), and Jetbot2 (based on NVidia Jetbot). !links!
@@ -26,7 +26,7 @@ With a spare NeoPixel ring and an Arduino MKR 1010, built a programmable lamp wi
 #### 2019 | Personal Project
 
 <figure class="aligncenter">
-	<img align="left" width="200" height="200" src="https://adityakamath.github.com/assets/img/donkeycar_jetracer.png" />
+	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/donkeycar_jetracer.png" />
 </figure>
 
 To get started with Machine Learning and AI, I purchased the Donkey Car kit and experimented with the tutorials and examples. I replaced the Raspberry Pi with the NVidia Jetson Nano and instead of using the Donkey Car software for Jetson Nano, I decided to use Jetracer software platform from NVidia. !links!
@@ -44,7 +44,7 @@ PDEng Design Project: Designed, developed and integrated a functional prototype 
 #### 2018 | European Space Agency (ESTEC), TU Eindhoven
 
 <figure class="aligncenter">
-	<img align="left" width="200" height="200" src="https://adityakamath.github.com/assets/img/formation_flying.png" />
+	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/formation_flying.png" />
 </figure>
 
 With a team of 12, designed a multi-quadrotor demonstrator to simulate a multi-satellite space mission by ESA for the ESA ESTEC Open Day 2018. As software architect and lead designer, implemented the multi-camera positioning system to localize the drones in 6dof for accurate trajectory following and control. !links!
@@ -62,7 +62,7 @@ In a team of 7, designed and implemented an autonomous drone concept to referee 
 #### 2016/2017 | Prodrive Technologies, TU Eindhoven
 
 <figure class="aligncenter">
-	<img align="left" width="200" height="200" src="https://adityakamath.github.com/assets/img/master_thesis.png" />
+	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/master_thesis.png" />
 </figure>
 
 Master Thesis: Worked with Prodrive Technologies to study and improve their current AGV localization strategy for their next generation of autonomous 2D LiDAR based robots. Two strategies were proposed, implemented, and validated in a simulated environment using ROS and Gazebo. This project is not open-access. 
@@ -80,7 +80,7 @@ As a part of a course, programmed a self driving solar powered robot to detect l
 #### 2016 | TU Eindhoven
 
 <figure class="aligncenter">
-	<img align="left" width="200" height="200" src="https://adityakamath.github.com/assets/img/embedded_motion_control.png" />
+	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/embedded_motion_control.png" />
 </figure>
 
 Programmed a ROS-based holonomic robot platform to complete a maze using only 2D LiDAR data. Used the pledge algorithm to solve simulated and physical mazes with 90 degree turns and open spaces. The 3-member team participated in two challenges during the course, and ranked second, thus winning a crate of (well-deserved) beer! !links!
@@ -98,7 +98,7 @@ Bachelor's Thesis: Designed and simulated a complete autonomy strategy for the l
 #### 2012/2013 | RoboManipal, MIT Manipal
 
 <figure class="aligncenter">
-	<img align="left" width="200" height="200" src="https://adityakamath.github.com/assets/img/nasa_lunabotics.png" />
+	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/nasa_lunabotics.png" />
 </figure>
 
 As Team Lead and System Engineer, I designed and implemented the electronics, communications and control software for a differential drive lunar excavator robot. The 12-member team participated in the 4th NASA Lunabotics Mining Competition at Kennedy Space Center in Florida, USA, and ranked 19th from 50 teams. !links!
