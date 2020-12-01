@@ -11,7 +11,7 @@ subtitle: Some of my projects from last to first (being updated)
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/jetbot_2.png" />
 </figure>
 
-During the Covid-19 lockdown, designed and implemented a drivetrain-agnostic ROS based software/hardware architecture for Computer Vision and AI applications. Implemented the design on two robots - Jetracer2 (built on the Jetracer project with add-ons), and Jetbot2 (based on NVidia Jetbot). !links!
+During the Covid-19 lockdown, designed and implemented a drivetrain-agnostic ROS based software and hardware architecture for Computer Vision and AI applications. Implemented the design on two robots - Jetracer2 (built on the Jetracer project with add-ons), and Jetbot2 (based on NVidia Jetbot). !links!
 
 ## Blynk/Discord Controlled Desk Lamp
 #### 2020 | Personal Project in Lockdown
