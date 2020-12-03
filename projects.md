@@ -4,6 +4,7 @@ title: Projects
 subtitle: Some of my projects from last to first
 ---
 
+
 ## AKROS Platform - Jetracer2, Jetbot2
 #### 2020 | Personal Project in Lockdown
 
