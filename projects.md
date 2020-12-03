@@ -11,7 +11,7 @@ subtitle: Some of my projects from last to first (being updated)
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/jetbot_2.png" />
 </figure>
 
-During the Covid-19 lockdown, designed and implemented a drivetrain-agnostic ROS based software and hardware architecture for Computer Vision and AI applications. Implemented the design on two robots - Jetracer2 (built on the Jetracer project with add-ons), and Jetbot2 (based on NVidia Jetbot). !links!
+During the Covid-19 lockdown, designed and implemented a drivetrain-agnostic ROS based software and hardware architecture for Computer Vision and AI applications. Implemented the design on two robots - Jetracer2 (built on the Jetracer project with add-ons), and Jetbot2 (based on NVidia Jetbot). [[1]]https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/dusty-nv/jetson-inference) [[3]](https://github.com/dusty-nv/jetbot_ros) [[4]](https://adityakamath.github.io/tags/#jetbot2)
 
 ## Blynk/Discord Controlled Desk Lamp
 #### 2020 | Personal Project in Lockdown
@@ -20,7 +20,7 @@ During the Covid-19 lockdown, designed and implemented a drivetrain-agnostic ROS
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/pinguino_blynk_discord.png" />
 </figure>
 
-With a spare NeoPixel ring and an Arduino MKR 1010, built a programmable lamp with a laser cut acrylic cover. The Arduino was programmed to respond to an app designed using Blynk and update the status to a Discord Server. Using NodeJS, I also attempted to write my discord bot that would send messages from the server back to the Arduino. !links! 
+With a spare NeoPixel ring and an Arduino MKR 1010, built a programmable lamp with a laser cut acrylic cover. The Arduino was programmed to respond to an app designed using Blynk and update the status to a Discord Server. Using NodeJS, I also attempted to write my discord bot that would send messages from the server back to the Arduino. [[1]](https://adityakamath.github.io/tags/#pinguino) 
 
 ## Donkey Car, NVidia Jetracer
 #### 2019 | Personal Project
@@ -29,7 +29,7 @@ With a spare NeoPixel ring and an Arduino MKR 1010, built a programmable lamp wi
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/donkeycar_jetracer.png" />
 </figure>
 
-To get started with Machine Learning and AI, I purchased the Donkey Car kit and experimented with the tutorials and examples. I replaced the Raspberry Pi with the NVidia Jetson Nano and instead of using the Donkey Car software for Jetson Nano, I decided to use Jetracer software platform from NVidia. !links!
+To get started with Machine Learning and AI, I purchased the Donkey Car kit and experimented with the tutorials and examples. I replaced the Raspberry Pi with the NVidia Jetson Nano and instead of using the Donkey Car software for Jetson Nano, I decided to use Jetracer software platform from NVidia. [[1]](https://www.donkeycar.com/) [[2]](https://github.com/NVIDIA-AI-IOT/jetracer) [[3]](https://adityakamath.github.io/tags/#donkeycar)
 
 ## Remote Computing for Soccer Robots using 5G mm-Waves
 #### 2018/2019 | BlueSPACE, Tech United, TU Eindhoven
@@ -38,7 +38,7 @@ To get started with Machine Learning and AI, I purchased the Donkey Car kit and 
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/pdeng_thesis.png" />
 </figure>
 
-PDEng Design Project: Designed, developed and integrated a functional prototype for demonstration of 5G in Robotics. On an experimental setup using Tech United's TURTLE platform and BlueSPACE's mm-Wave setup, I validated that over a 5G network, a distributed robotic/motion control system at 1kHz can maintain its real-time properties. !links!
+PDEng Design Project: Designed, developed and integrated a functional prototype for demonstration of 5G in Robotics. On an experimental setup using Tech United's TURTLE platform and BlueSPACE's mm-Wave setup, I validated that over a 5G network, a distributed robotic/motion control system at 1kHz can maintain its real-time properties. [[1]](https://research.tue.nl/nl/publications/enabling-remote-computation-for-soccer-robots-using-5g-mm-waves-d) [[2]](https://zenodo.org/record/3519223#.X8ko9WhKhPY)
 
 ## Multi-Drone Positioning and Formation Flying
 #### 2018 | European Space Agency (ESTEC), TU Eindhoven
@@ -47,7 +47,7 @@ PDEng Design Project: Designed, developed and integrated a functional prototype 
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/formation_flying.png" />
 </figure>
 
-With a team of 12, designed a multi-quadrotor demonstrator to simulate a multi-satellite space mission by ESA for the ESA ESTEC Open Day 2018. As software architect and lead designer, implemented the multi-camera positioning system to localize the drones in 6dof for accurate trajectory following and control. !links!
+With a team of 12, designed a multi-quadrotor demonstrator to simulate a multi-satellite space mission by ESA for the ESA ESTEC Open Day 2018. As software architect and lead designer, implemented the multi-camera positioning system to localize the drones in 6dof for accurate trajectory following and control. [[1]](https://www.tue.nl/en/research/aiming-at-the-sun-with-flying-drones/) [[2]](https://www.4tu.nl/sai/en/valorisation/PDEng%20trainees%20working%20on%20new%20ESA%20space%20missions/) [[3]](https://www.hannovermesse.de/product/pdeng-demonstrator-with-drones/229789/K988717)
 
 ## Autonomous Drone Referee
 #### 2018 | Tech United, Eindhoven University of Technology
@@ -56,7 +56,7 @@ With a team of 12, designed a multi-quadrotor demonstrator to simulate a multi-s
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/drone_referee.png" />
 </figure>
 
-In a team of 7, designed and implemented an autonomous drone concept to referee RoboSoccer matches. The drone was programmed to track a calculated "bubble of active play" and provide recommendations based on the status of the ball (goal, throw in) and the tracked players (fouls). This was demonstrated on Tech United's RoboCup field. !links!
+In a team of 7, designed and implemented an autonomous drone concept to referee RoboSoccer matches. The drone was programmed to track a calculated "bubble of active play" and provide recommendations based on the status of the ball (goal, throw in) and the tracked players (fouls). This was demonstrated on Tech United's RoboCup field. [[1]](http://cstwiki.wtb.tue.nl/index.php?title=Drone_Referee_-_MSD_2017/18)
 
 ## AGV Localization in Changing Indoor Environments
 #### 2016/2017 | Prodrive Technologies, TU Eindhoven
@@ -65,7 +65,7 @@ In a team of 7, designed and implemented an autonomous drone concept to referee 
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/master_thesis.png" />
 </figure>
 
-Master Thesis: Worked with Prodrive Technologies to study and improve their current AGV localization strategy for their next generation of autonomous 2D LiDAR based robots. Two strategies were proposed, implemented, and validated in a simulated environment using ROS and Gazebo. This project is not open-access. 
+Master Thesis: Worked with Prodrive Technologies to study and improve their current AGV localization strategy for their next generation of autonomous 2D LiDAR based robots. Two strategies were proposed, implemented, and validated in a simulated environment using ROS and Gazebo. This project is not open-access. [[1]](https://research.tue.nl/nl/studentTheses/a-study-of-mobile-robot-localization-in-changing-indoor-environme)
 
 ## Self Driving Solar Robot
 #### 2016 | TU Eindhoven
@@ -74,7 +74,7 @@ Master Thesis: Worked with Prodrive Technologies to study and improve their curr
 	<img align="right" width="200" height="200" padding-right="10" src="https://adityakamath.github.com/assets/img/embedded_visual_control.png" />
 </figure>
 
-As a part of a course, programmed a self driving solar powered robot to detect lanes and traffic signs using OpenCV on a Raspberry Pi. This was demonstrated on a track built on the TU Eindhoven campus. As an additional project, the team of 3 also built a teleop mode using the internal IMU of a smartphone. !links!
+As a part of a course, programmed a self driving solar powered robot to detect lanes and traffic signs using OpenCV on a Raspberry Pi. This was demonstrated on a track built on the TU Eindhoven campus. As an additional project, the team of 3 also built a teleop mode using the internal IMU of a smartphone. [[1]](http://www.es.ele.tue.nl/~heco/courses/EmbeddedVisualControl/index.html)
 
 ## Maze Solving Robot
 #### 2016 | TU Eindhoven
@@ -83,7 +83,7 @@ As a part of a course, programmed a self driving solar powered robot to detect l
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/embedded_motion_control.png" />
 </figure>
 
-Programmed a ROS-based holonomic robot platform to complete a maze using only 2D LiDAR data. Used the pledge algorithm to solve simulated and physical mazes with 90 degree turns and open spaces. The 3-member team participated in two challenges during the course, and ranked second, thus winning a crate of (well-deserved) beer! !links!
+Programmed a ROS-based holonomic robot platform to complete a maze using only 2D LiDAR data. Used the pledge algorithm to solve simulated and physical mazes with 90 degree turns and open spaces. The 3-member team participated in two challenges during the course, and ranked second, thus winning a crate of (well-deserved) beer! [[1]](http://cstwiki.wtb.tue.nl/index.php?title=Embedded_Motion_Control_2016)
 
 ## Autonomous Navigation of a Lunar Robot
 #### 2013/2014 | MIT Manipal
@@ -92,7 +92,7 @@ Programmed a ROS-based holonomic robot platform to complete a maze using only 2D
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/bachelor_thesis.png" />
 </figure>
 
-Bachelor's Thesis: Designed and simulated a complete autonomy strategy for the lunar excavator robot built by RoboManipal in 2012-2013. This involved a study and implementation of robot perception, trajectory planning and finally motion control to complete the NASA Lunabotics Mining Challenge problem statement autonomously. !links!
+Bachelor's Thesis: Designed and simulated a complete autonomy strategy for the lunar excavator robot built by RoboManipal in 2012-2013. This involved a study and implementation of robot perception, trajectory planning and finally motion control to complete the NASA Lunabotics Mining Challenge problem statement autonomously. [[1]](https://issuu.com/impactjournals/docs/1._eng-autonomous_navigation_of_a_l) [[2]](http://oaji.net/articles/2014/489-1409643664.pdf)
 
 ## NASA Lunabotics Mining Competition 2013
 #### 2012/2013 | RoboManipal, MIT Manipal
@@ -101,7 +101,8 @@ Bachelor's Thesis: Designed and simulated a complete autonomy strategy for the l
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/nasa_lunabotics.png" />
 </figure>
 
-As Team Lead and System Engineer, I designed and implemented the electronics, communications and control software for a differential drive lunar excavator robot. The 12-member team participated in the 4th NASA Lunabotics Mining Competition at Kennedy Space Center in Florida, USA, and ranked 19th from 50 teams. !links!
+As Team Lead and System Engineer, I designed and implemented the electronics, communications and control software for a differential drive lunar excavator robot. The 12-member team participated in the 4th NASA Lunabotics Mining Competition at Kennedy Space Center in Florida, USA, and ranked 19th from 50 teams. [[1]](https://robomanipal.wordpress.com/) [[2]](https://robomanipal.com/) [[3]](https://forums.ni.com/t5/Academics-Documents/Telerobotic-Lunar-Excavator-RMX-13/ta-p/3520498?profile.language=en)
+
 
 ## ABU Robocon 2012
 #### 2011/2012 | RoboManipal, MIT Manipal
@@ -110,4 +111,4 @@ As Team Lead and System Engineer, I designed and implemented the electronics, co
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/abu_robocon.png" />
 </figure>
 
-Built and programmed the electronics (sensor arrays, relay boards, Arduinos) for an autonomous grid following robot and a manually operated robot. The autonomous robot was programmed to navigate on a grid, grab an object and place it autonomously at a pre-defined location. The team participated in the ABU Robocon 2012 in Pune, India. !links!
+Built and programmed the electronics (sensor arrays, relay boards, Arduinos) for an autonomous grid following robot and a manually operated robot. The autonomous robot was programmed to navigate on a grid, grab an object and place it autonomously at a pre-defined location. The team participated in the ABU Robocon 2012 in Pune, India. [[1]](https://robomanipal.wordpress.com/) [[2]](https://robomanipal.com/)
