@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Photography
-subtitle: My most memorable clicks
+subtitle: Travels across Europe and India
 ---
 
-Here are fifteen of my most memorable clicks from my travels around Europe and in India. More photos are available and regularly updated on my Instagram handle [@kamathsblog](https://instagram.com/kamathsblog). I also sell prints, but only on request. To purchase a printed copy, please contact me through one of the channels at the bottom of the page.
+Here are fifteen of my most favourite clicks from my travels around Europe and in India. More photos are available and regularly updated on my Instagram handle [@kamathsblog](https://instagram.com/kamathsblog). I also sell prints, but only on request. To purchase a printed copy, please contact me through one of the channels at the bottom of the page.
 
 <center>
 
