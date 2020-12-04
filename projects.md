@@ -15,15 +15,6 @@ I started my engineering journey when I joined MIT Manipal as a fresher in 2010.
 
 During the Covid-19 lockdown, designed and implemented a drivetrain-agnostic ROS based software and hardware architecture for Computer Vision and AI applications. Implemented the design on two robots - Jetracer2 (built on the Jetracer project with add-ons), and Jetbot2 (based on NVidia Jetbot). [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/dusty-nv/jetson-inference) [[3]](https://github.com/dusty-nv/jetbot_ros) [[4]](https://adityakamath.github.io/tags/#jetbot2)
 
-### Blynk/Discord Controlled Desk Lamp
-#### 2020 | Personal Project in Lockdown
-
-<figure class="aligncenter">
-	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/pinguino_blynk_discord.png" />
-</figure>
-
-With a spare NeoPixel ring and an Arduino MKR 1010, built a programmable lamp with a laser cut acrylic cover. The Arduino was programmed to respond to an app designed using Blynk and update the status to a Discord Server. Using NodeJS, I also attempted to write my discord bot that would send messages from the server back to the Arduino. [[1]](https://adityakamath.github.io/tags/#pinguino) 
-
 ### Donkey Car, NVidia Jetracer
 #### 2019 | Personal Project
 
