@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Kamath's Blog' has a new name!
+title: \'Kamath\'s Blog\' has a new name!
 subtitle: 
 thumbnail-img: /assets/img/jetbot2_jsdrive_thumb.jpg
 share-img: /assets/img/jetbot2_jsdrive_thumb.jpg
