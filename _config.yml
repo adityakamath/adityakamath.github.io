@@ -12,12 +12,9 @@ author: Aditya Kamath
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Blog: "blog/index.html"
   Projects: "projects"
   Photography: "photography"
   About Me: "aboutme"
-  
-paginate_path: "/blog/page:num/"
 
 # --- Logo --- #
 
