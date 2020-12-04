@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Kamath's Blog has a new name
-subtitle: 
+title: Finally naming the blog
+subtitle: ...and some plans for 2021
 thumbnail-img: /assets/img/jetbot2_jsdrive_thumb.jpg
 share-img: /assets/img/jetbot2_jsdrive_thumb.jpg
 tags: [random]
