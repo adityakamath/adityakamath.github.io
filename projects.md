@@ -4,7 +4,7 @@ title: Projects
 subtitle: Robotics/Embedded projects from 2010 - Present
 ---
 
-I started my engineering journey when I joined MIT Manipal as a fresher in 2010. Since then, I've worked on multiple projects for universities (both MIT Manipal and TU Eindhoven), for industry clients (in the Netherlands) and also for myself as side projects. Here are all of my major projects (at least the ones that I can talk about), listed from last to first. 
+I started my engineering journey when I joined the BE Electronics and Communication Engineering course at MIT Manipal in 2010. Since then, I've worked on multiple projects for universities (both MIT Manipal and TU Eindhoven), for industry clients (in the Netherlands) and also for myself as side projects. Here are all of my major projects (at least the ones that I can talk about), listed from last to first. 
 
 ### AKROS Platform - Jetracer2, Jetbot2
 #### 2020 | Personal Project in Lockdown
