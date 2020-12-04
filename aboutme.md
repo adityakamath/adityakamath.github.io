@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: TL;DR Robotic/Embedded systems engineer, Maker
+subtitle: Robotic/Embedded systems engineer, Maker
 ---
 
 Hi there, welcome to my website!
