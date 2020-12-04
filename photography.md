@@ -6,6 +6,8 @@ subtitle: My most memorable clicks
 
 Here are fifteen of my most memorable clicks from my travels around Europe and in India. More photos are available and regularly updated on my Instagram handle [@kamathsblog](https://instagram.com/kamathsblog). I also sell prints, but only on request. To purchase a printed copy, please contact me through one of the channels at the bottom of the page.
 
+<center>
+
 {% include instagram.html id="B0JexGTizkq" %}
 
 {% include instagram.html id="BvB7mSal4pG" %}
@@ -35,5 +37,7 @@ Here are fifteen of my most memorable clicks from my travels around Europe and i
 {% include instagram.html id="BJIOcPahRLC" %}
 
 {% include instagram.html id="BTJru7fDfms" %}
+
+</center>
 
 <script async src="//www.instagram.com/embed.js"></script>
