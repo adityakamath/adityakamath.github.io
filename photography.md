@@ -7,7 +7,7 @@ subtitle: My most memorable clicks
 Here are some of my most memorable clicks from my travels around Europe and in India. More photos can be seen on my Instagram handle [@kamathsblog](https://instagram.com/kamathsblog).
 
 #### 2019 | Stonehenge, UK
-{% include instagram.html id="B0JexGTizkq" %}
+{% include instagram.html id="B0JexGTizkq" align="center" %}
 
 #### 2019 | Scotland, UK
 {% include instagram.html id="Bz-2iuqC172" %}
