@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: Robotics/Embedded projects from 2010 - Present
+subtitle: Robotics, embedded projects from 2010 - present
 ---
 
 I started my engineering journey when I joined the BE Electronics and Communication Engineering course at MIT Manipal in 2010. Since then, I've worked on multiple projects for universities (both MIT Manipal and TU Eindhoven), for industry clients (in the Netherlands) and also for myself as side projects. Here are all of my major projects (at least the ones that I can talk about), listed from last to first. 
