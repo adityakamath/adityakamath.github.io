@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: Some of my favourite projects since 2010
+subtitle: Robotics/Embedded Projects from 2010 - Present
 ---
 
 I started my engineering journey when I joined MIT Manipal as a fresher in 2010. Since then, I've worked on multiple projects for universities (both MIT Manipal and TU Eindhoven), for industry clients (in the Netherlands) and also for myself as side projects. Here are some of my favourites, listed from last to first. 
