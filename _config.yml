@@ -12,16 +12,18 @@ author: Aditya Kamath
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Blog: "index.html"
+  Blog: "blog/index.html"
   Projects: "projects"
   Photography: "photography"
   About Me: "aboutme"
+  
+paginate_path: "/blog/page:num/"
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-#avatar: "/assets/img/me_avatar_icon2.png"
+avatar: "/assets/img/me_avatar_icon2.png"
 
 #favicon: "/favicon.ico"
 
