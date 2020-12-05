@@ -1,6 +1,6 @@
 ---
 layout: page
 title: Hi, I'm Aditya
-subtitle: Welcome to my blog and portfolio website!
+subtitle: Robotics/Embedded Systems Engineer, Maker
 cover-img: "/assets/img/cover_img.jpg"
 ---
