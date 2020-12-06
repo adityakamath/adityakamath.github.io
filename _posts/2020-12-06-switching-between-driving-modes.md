@@ -22,12 +22,12 @@ To indicate the switching between modes, the Arduino Nano and the NeoPixel LED s
 
 Some of these features can be seen in the video below. This video was taken before all the functionalities were written and does not fully show the connection-loss or the Idle modes. 
 
-[![Testing drive modes on the Jetbot2 - pt1](https://adityakamath.github.com/assets/img/jetbot2_teleop1_test.png)](https://www.youtube.com/watch?v=-XmJxytU4ko "[Testing drive modes on the Jetbot2 - pt1 - Click to Watch!")
+[![Testing drive modes on the Jetbot2](https://adityakamath.github.com/assets/img/jetbot2_driving_modes_ss.png)](https://www.youtube.com/watch?v=-XmJxytU4ko "[Testing drive modes on the Jetbot2 - Click to Watch!")
 
 Meanwhile, I also found some other fun things I can stick googly eyes on, and this was my favourite: 
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/jetbot2_messy_desk.jpg" />
+	<img src="https://adityakamath.github.com/assets/img/googly_eyes_random.jpg" />
 </figure>
 
 For the next week, I want to work on camera calibration and Aruco/AprilTag/Fiducial Marker recognition using OpenCV. I plan on writing these as a ROS service and node. Meanwhile, it is also holiday time, and I have registered for the Reddit Secret Santa gift exchange. You can use [this link](http://www.redditgifts.com/?inv=ExCc) to sign up yourself, but you've got only a day left!
