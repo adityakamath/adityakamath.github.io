@@ -4,7 +4,7 @@ title: Projects
 subtitle: Robotics, embedded projects from 2010 - present
 ---
 
-I started my engineering journey when I joined the BE Electronics and Communication Engineering course at MIT Manipal in 2010. Since then, I've worked on multiple projects for universities (both MIT Manipal and TU Eindhoven), for industry clients (in the Netherlands) and also for myself as side projects. Here are all of my major projects (at least the ones that I can talk about), listed from last to first. 
+I started my engineering journey in high-school when I learnt to make a hovercraft in an after-school program. Soon after, I decided to study engineering in college. Since then, I've worked on multiple projects for universities (both MIT Manipal and TU Eindhoven), for industry clients (in the Netherlands) and also for myself as side projects. Here are some of my major projects, listed from last to first. 
 
 ### AKROS Platform - Jetracer2, Jetbot2
 #### 2020 | Personal Project in Lockdown
@@ -13,16 +13,7 @@ I started my engineering journey when I joined the BE Electronics and Communicat
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/jetbot_2.png" />
 </figure>
 
-During the Covid-19 lockdown, designed and implemented a drivetrain-agnostic ROS based software and hardware architecture for Computer Vision and AI applications. Implemented the design on two robots - Jetracer2 (built on the Jetracer project with add-ons), and Jetbot2 (based on NVidia Jetbot). [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/dusty-nv/jetson-inference) [[3]](https://github.com/dusty-nv/jetbot_ros) [[4]](https://adityakamath.github.io/tags/#jetbot2)
-
-### Donkey Car, NVidia Jetracer
-#### 2019 | Personal Project
-
-<figure class="aligncenter">
-	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/donkeycar_jetracer.png" />
-</figure>
-
-To get started with Machine Learning and AI, I purchased the Donkey Car kit and experimented with the tutorials and examples. I replaced the Raspberry Pi with the NVidia Jetson Nano and instead of using the Donkey Car software for Jetson Nano, I decided to use Jetracer software platform from NVidia. [[1]](https://www.donkeycar.com/) [[2]](https://github.com/NVIDIA-AI-IOT/jetracer) [[3]](https://adityakamath.github.io/tags/#donkeycar)
+During the Covid-19 lockdown, designed and implemented a ROS1 based system for Computer Vision and AI applications. Implemented the design on two robot platforms - Jetracer2 (ackermann-steered, based on NVidia Jetracer with custom add-ons), and Jetbot2 (differential-drive, based on NVidia Jetbot with add-ons). [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/dusty-nv/jetson-inference) [[3]](https://github.com/dusty-nv/jetbot_ros) [[4]](https://github.com/NVIDIA-AI-IOT/jetracer)
 
 ### Remote Computing for Soccer Robots using 5G mm-Waves
 #### 2018/2019 | BlueSPACE, Tech United, TU Eindhoven
