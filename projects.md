@@ -22,7 +22,7 @@ During the Covid-19 lockdown, designed and implemented a ROS1 based system for C
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/pdeng_thesis.png" />
 </figure>
 
-PDEng Design Project: Designed, developed and integrated a functional prototype for demonstration of 5G in Robotics. On an experimental setup using Tech United's TURTLE platform and BlueSPACE's mm-Wave setup, I validated that over a 5G network, a distributed robotic/motion control system at 1kHz can maintain its real-time properties. [[1]](https://research.tue.nl/nl/publications/enabling-remote-computation-for-soccer-robots-using-5g-mm-waves-d) [[2]](https://zenodo.org/record/3519223#.X8ko9WhKhPY)
+PDEng Design Project: Designed, developed and integrated a functional prototype for demonstration of 5G in Robotics. On an experimental setup using Tech United's TURTLE platform and BlueSPACE's mm-Wave setup, I validated that over a 5G network, a distributed robotic/motion control system can be operated at 1kHz while maintaining its real-time properties. [[1]](https://research.tue.nl/nl/publications/enabling-remote-computation-for-soccer-robots-using-5g-mm-waves-d) [[2]](https://zenodo.org/record/3519223#.X8ko9WhKhPY)
 
 ### Multi-Drone Positioning and Formation Flying
 #### 2018 | European Space Agency (ESTEC), TU Eindhoven
@@ -40,7 +40,7 @@ With a team of 12, designed a multi-quadrotor demonstrator to simulate a multi-s
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/drone_referee.png" />
 </figure>
 
-In a team of 7, designed and implemented an autonomous drone concept to referee RoboSoccer matches. The drone was programmed to track a calculated "bubble of active play" and provide recommendations based on the status of the ball (goal, throw in) and the tracked players (fouls). This was demonstrated on Tech United's RoboCup field. [[1]](http://cstwiki.wtb.tue.nl/index.php?title=Drone_Referee_-_MSD_2017/18)
+In a team of 7, designed and implemented an autonomous drone concept to referee RoboSoccer matches. The drone was programmed to track a calculated "bubble of active play" and provide recommendations based on the status of the ball (goal, throw in) and the tracked players (collisions, fouls). This was demonstrated on Tech United's RoboCup field. [[1]](http://cstwiki.wtb.tue.nl/index.php?title=Drone_Referee_-_MSD_2017/18)
 
 ### AGV Localization in Changing Indoor Environments
 #### 2016/2017 | Prodrive Technologies, TU Eindhoven
@@ -58,7 +58,7 @@ Master Thesis: Worked with Prodrive Technologies to study and improve their curr
 	<img align="right" width="200" height="200" padding-right="10" src="https://adityakamath.github.com/assets/img/embedded_visual_control.png" />
 </figure>
 
-As a part of a course, programmed a self driving solar powered robot to detect lanes and traffic signs using OpenCV on a Raspberry Pi. This was demonstrated on a track built on the TU Eindhoven campus. As an additional project, the team of 3 also built a teleop mode using the internal IMU of a smartphone. [[1]](http://www.es.ele.tue.nl/~heco/courses/EmbeddedVisualControl/index.html)
+As a part of a course, programmed a self driving solar powered robot to detect/follow lanes and traffic signs using OpenCV on a Raspberry Pi. This was demonstrated on a track built on the TU Eindhoven campus. As an additional project, the team of 3 also built a teleop mode using the internal IMU of a smartphone. [[1]](http://www.es.ele.tue.nl/~heco/courses/EmbeddedVisualControl/index.html)
 
 ### Maze Solving Robot
 #### 2016 | TU Eindhoven
@@ -85,7 +85,7 @@ Bachelor's Thesis: Designed and simulated a complete autonomy strategy for the l
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/nasa_lunabotics.png" />
 </figure>
 
-As Team Lead and System Engineer, I designed and implemented the electronics, communications and control software for a differential drive lunar excavator robot. The 12-member team participated in the 4th NASA Lunabotics Mining Competition at Kennedy Space Center in Florida, USA, and ranked 19th from 50 teams. [[1]](https://robomanipal.wordpress.com/) [[2]](https://robomanipal.com/) [[3]](https://forums.ni.com/t5/Academics-Documents/Telerobotic-Lunar-Excavator-RMX-13/ta-p/3520498?profile.language=en)
+As Team Lead and System Engineer, I designed and implemented the electronics, communications and control software for a differential drive lunar excavator robot teleoperated over a high-latency wireless network. The 12-member team participated in the 4th NASA Lunabotics Mining Competition at Kennedy Space Center in Florida, USA, and ranked 19th from 50 teams. [[1]](https://robomanipal.wordpress.com/) [[2]](https://robomanipal.com/) [[3]](https://forums.ni.com/t5/Academics-Documents/Telerobotic-Lunar-Excavator-RMX-13/ta-p/3520498?profile.language=en)
 
 
 ### ABU Robocon 2012
@@ -95,4 +95,4 @@ As Team Lead and System Engineer, I designed and implemented the electronics, co
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/abu_robocon.png" />
 </figure>
 
-Built and programmed the electronics (sensor arrays, relay boards, Arduinos) for an autonomous grid following robot and a manually operated robot. The autonomous robot was programmed to navigate on a grid, grab an object and place it autonomously at a pre-defined location. The team participated in the ABU Robocon 2012 in Pune, India. [[1]](https://robomanipal.wordpress.com/) [[2]](https://robomanipal.com/)
+Built and programmed the electronics (IR sensor arrays, relay boards, Arduinos) for an autonomous grid following robot and a manually operate mobile robot. The autonomous robot was programmed to navigate on a grid, grab an object and place it autonomously at a pre-defined location. The team participated in the ABU Robocon 2012 in Pune, India. [[1]](https://robomanipal.wordpress.com/) [[2]](https://robomanipal.com/)
