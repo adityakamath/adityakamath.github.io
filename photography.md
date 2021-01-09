@@ -4,7 +4,7 @@ title: Photography
 subtitle: Captures from travels across Europe and India
 ---
 
-Here are fifteen of my most favourite clicks from my travels around Europe and in India. More photos are available and regularly updated on my Instagram handle [@kamathsblog](https://instagram.com/kamathsblog). I am also open to selling prints, but I don't have a webshop (yet). To purchase a printed copy, please contact me through one of the channels at the bottom of the page.
+Here are some of my most favourite clicks from my travels around Europe and in India. More photos are available and regularly updated on my Instagram handle [@kamathsblog](https://instagram.com/kamathsblog). I am also open to selling prints, but I don't have a webshop (yet). To purchase a printed copy, please contact me through one of the channels at the bottom of the page.
 
 <center>
 
