@@ -22,7 +22,7 @@ To indicate the switching between modes, the Arduino Nano and the NeoPixel LED s
 
 Some of these features can be seen in the video below. This video was taken before all the functionalities were written and does not fully show the connection-loss or the Idle modes. 
 
-[![Testing drive modes on the Jetbot2](https://adityakamath.github.com/assets/img/jetbot2_driving_modes_ss.png)](https://www.youtube.com/watch?v=-XmJxytU4ko "[Testing drive modes on the Jetbot2 - Click to Watch!")
+[![Avoiding edges with the Jetbot2](https://adityakamath.github.com/assets/img/jetbot2_edge_avoidance_ss.png)](https://www.youtube.com/watch?v=9J5rK8DWGGw "[Avoiding edges with the Jetbot2 - Click to Watch!")
 
 Meanwhile, I also found some other fun things I can stick googly eyes on, and this was my favourite: 
 
