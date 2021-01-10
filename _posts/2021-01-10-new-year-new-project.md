@@ -10,16 +10,14 @@ tags: [jetbot2, akros, robotics, electronics, software, holonomic, planning]
 comments: true
 ---
 
-#### Looking back at 2020
-
-2020 has been quite a different year. I has just started my new job as a consultant, and my first assignment at a client, when the Netherlands went into lockdown. My mid-march, I was completely working from home and was left with a lot of spare time. I had already started to build the ROSCar platform, and with the lockdown, I decided to dig into that project during the spare hours indoors. I gave myself the added goal of using ROS1 from scratch, instead of using the software provided by NVidia and from similar platforms like the DonkeyCar. Meanwhile, I also decided to start this blog mainly to log my work but it soon evolved into something I can potentially share with colleagues, collaborators or employers. 
+Looking back, 2020 has been a really weird year. I had just started my new job as a consultant, and my first assignment at a client, when the Netherlands went into lockdown. By mid-march, I was completely working from home and was left with a lot of spare time. I had already started to build the ROSCar platform, and with the lockdown, I decided to dig into that project during the spare hours indoors. I gave myself the added goal of using ROS1 from scratch, instead of using the software provided by NVidia and from similar platforms like the DonkeyCar. Meanwhile, I also decided to start this blog mainly to log my work but it soon evolved into something I can potentially share with colleagues, collaborators or employers. 
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/roscar_update_final.jpg" />
 	<figcaption>The ROSCar/Jetracer2 platform</figcaption>
 </figure>
 
-By November, the ROSCar project was almost at the end. I was able to use ROS on the NVidia Jetson Nano to run NVidia's Deep Learning examples, and then control the robot accordingly. However, while testing, I realized that the RC car was probably too big for my studio. The turning radius was too big, which made it really difficult to make complete turns (programming an autonomous 3 point turn was not something I planned on getting into, yet). I decided to purchase NVidia/Adafruit's Jetbot kit (v1, I believe) and moved the electronics from the RC car platform to this new smaller, differential drive robot. Once that was done, I had to change a small piece of software to drive the differential robot. By the end, I had this:
+By November, the ROSCar project was almost done. I was able to use ROS on the NVidia Jetson Nano to run NVidia's Deep Learning examples, and then control the robot accordingly. However, while testing, I realized that the RC car was probably too big for my studio. The turning radius was too big, which made it really difficult to make complete turns (programming an autonomous 3 point turn was not something I planned on getting into, yet). I decided to purchase NVidia/Adafruit's Jetbot kit (v1, I believe) and moved the electronics from the RC car platform to this new smaller, differential drive robot. Once that was done, I had to change a small piece of software to drive the differential robot. By the end, I had this:
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/jetbot2_finaltest.jpg" />
