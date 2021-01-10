@@ -26,7 +26,7 @@ By November, the ROSCar project was almost done. I was able to use ROS on the NV
 
 I used this robot platform to capture images, trained a neural network using NVidia's resources and finally developed a edge avoidance demo running completely with ROS Melodic. The results can be seen here:
 
-[![Testing drive modes on the Jetbot2](https://adityakamath.github.com/assets/img/jetbot2_driving_modes_ss.png)](https://www.youtube.com/watch?v=-XmJxytU4ko "[Testing drive modes on the Jetbot2 - Click to Watch!")
+[![Edge avoidance on the Jetbot2](https://adityakamath.github.com/assets/img/jetbot2_edge_avoidance_ss.png)](https://www.youtube.com/watch?v=9J5rK8DWGGw "[Edge avoidance on the Jetbot2 - Click to Watch!")
 
 I hope to clean up my code and write documentation for it soon, so that others can reproduce it. I think the Jetbot is really handy tool for anybody getting into Computer Vision and Deep Learning because NVidia provides a lot of resources regarding this. However, for aspiring roboticists, getting started with ROS is equally as important, so ROS powered Jetbot2 could be a great place to start. I also designed my system such that the same electronics could be used on an RC car, with only high-level configuration changes in the software. In 2021, one of my goals is to improve the modularity of the system, so that it can work with differential, ackermann and different holonomic drive systems. Until I find a better name, I call it the AKROS project (simply my initials + ROS).
 
