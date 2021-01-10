@@ -26,13 +26,13 @@ By November, the ROSCar project was almost done. I was able to use ROS on the NV
 
 I used this robot platform to capture images, trained a neural network using NVidia's resources and finally developed a edge avoidance demo running completely with ROS Melodic. The results can be seen here:
 
-[![Edge avoidance on the Jetbot2](https://adityakamath.github.com/assets/img/jetbot2_edge_avoidance_ss.png)](https://www.youtube.com/watch?v=9J5rK8DWGGw "[Edge avoidance on the Jetbot2 - Click to Watch!")
+[![Edge avoidance on the Jetbot2](https://adityakamath.github.com/assets/img/jetbot2_edge_avoidance_ss.png)](https://www.youtube.com/watch?v=9J5rK8DWGGw "Edge avoidance on the Jetbot2 - Click to Watch!")
 
 I hope to clean up my code and write documentation for it soon, so that others can reproduce it. I think the Jetbot is really handy tool for anybody getting into Computer Vision and Deep Learning because NVidia provides a lot of resources regarding this. However, for aspiring roboticists, getting started with ROS is equally as important, so the ROS powered Jetbot2 could be a great place to start. I also designed my system such that the same electronics could be used on an RC car, with only high-level configuration changes in the software. In 2021, one of my goals is to improve the modularity of the system, so that it can work with differential, ackermann and different holonomic drive systems. Until I find a better name, I call it the AKROS project (simply my initials + ROS).
 
 #### Plans for 2021:
 
-For 2021, I decided to stick with the hobby and build a more complex system. In 2020, I backed the OpenCV AI Kit (OAK) on Kickstarter and purchased an OAK-D, which is a stereo camera and a monocular camera with on-board monocular and spatial AI. Also, thanks to the 'innovation budget' my employer's provide, I was able to purchase new components like a Lidar scanner and a Raspberry Pi 4. I had purchased a cheap holonomic platform with 4 motors (with encoders) and omniwheels earlier in 2020, which I also decided to use. During the christmas holidays, I managed to assemble together a platform with all the electronics and some custom acrylic parts. I am still waiting for the OAK-D camera to be delivered, but here's a preview of what the robot looks like:
+For 2021, I decided to stick with the hobby and build a more complex system. In mid-2020, I had backed the OpenCV AI Kit (OAK) on Kickstarter and purchased an OAK-D, which is a stereo camera and a monocular camera with on-board monocular and spatial AI. Also, thanks to the 'innovation budget' my employer provides, I was able to purchase new components like a LiDAR scanner and a Raspberry Pi 4. I had also purchased a cheap holonomic platform with 4 motors (+ encoders) and omniwheels earlier in 2020, which I decided to use for this project. During the christmas holidays, I managed to assemble together a platform with all the electronics and some custom acrylic parts. I am still waiting for the OAK-D camera to be delivered, but here's a preview of what the robot looks like:
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/akros_differential_holonomic.jpg" />
@@ -42,7 +42,7 @@ For 2021, I decided to stick with the hobby and build a more complex system. In 
 In 2021, I have 3 big plans for this robot: 
 
 * I want to explore ROS2 as an option for this holonomic platform. It has a lot of advantages over ROS1 and I really want to learn more about DDSs (Data Distribution Services) and microROS (ROS for microcontrollers)
-* Secondly, I want to go back to my roots of mechatronics/control systems and design a robust controller for this holonomic system. I intend to add this to the AKROS platform, with the differential and ackermann drive systems (these are ROS1 packages, so I will use the ROS1-ROS2 bridge). 
-* Finally, I want to design and build a universal SLAM/navigation package with the Lidar and the OAK-D camera, using Nav2 (the ROS2 Navigation Stack) on the Raspberry Pi 4. This is something I expect to reuse in different robots in the future.
+* Firstly, I want to design and build a universal SLAM/navigation package with the Lidar and the OAK-D camera, using Nav2 (the ROS2 Navigation Stack) on the Raspberry Pi 4. This is something I expect to reuse in different robots in the future.
+* Next, I want to go back to my roots of mechatronics/control systems and design a robust controller for this holonomic system. I intend to add this to the AKROS platform, with the differential and ackermann drive systems (these are ROS1 packages, so I will use the ROS1-ROS2 bridge). 
 
 I certainly don't expect to achieve all these goals, especially since I hope to get vaccinated against Covid-19 this year and hopefully the travel restrictions are eased and I can make up for not going to India last year. However, since I'll be working on all three in parallel, hopefully there is some progress on each topic by the end of 2021.
