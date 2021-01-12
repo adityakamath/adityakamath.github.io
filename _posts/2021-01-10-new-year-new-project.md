@@ -39,10 +39,11 @@ For 2021, I decided to stick with the hobby and build a more complex system. In 
 	<figcaption>The AKROS Differential robot alongside the Holonomic platform without the OAK-D camera. The cardboard parts are only prototypes/placeholders while I get acrylic parts.</figcaption>
 </figure>
 
-In 2021, I have 3 big plans for this robot: 
+In 2021, I have a few big plans for this robot: 
 
 * I want to explore ROS2 as an option for this holonomic platform. It has a lot of advantages over ROS1 and I really want to learn more about DDSs (Data Distribution Services) and microROS (ROS for microcontrollers)
 * Firstly, I want to design and build a universal SLAM/navigation package with the Lidar and the OAK-D camera, using Nav2 (the ROS2 Navigation Stack) on the Raspberry Pi 4. This is something I expect to reuse in different robots in the future.
-* Next, I want to go back to my roots of mechatronics/control systems and design a robust controller for this holonomic system. I intend to add this to the AKROS platform, with the differential and ackermann drive systems (these are ROS1 packages, so I will use the ROS1-ROS2 bridge). 
+* Parallelly, I also want to work on a positioning system using UWB for indoor use, GPS for outdoor use and an IMU for correction. I plan on designing and fabricating my own PCB for this process, using the Teensy 4.0 (and potentially microROS)
+* Finally, a robust controller for this holonomic system. I intend to add this to the AKROS platform, with the differential and ackermann drive systems (these are ROS1 packages, so I will use the ROS1-ROS2 bridge). 
 
-I certainly don't expect to achieve all these goals, especially since I hope to get vaccinated against Covid-19 this year and hopefully the travel restrictions are eased and I can make up for not going to India last year. However, since I'll be working on all three in parallel, hopefully there is some progress on each topic by the end of 2021.
+I also want to find a collaborator who could take over the motor control task since the SLAM package and the PCB would take most of my time. That being said, I certainly don't expect to finish these goals 100%, especially since I hope to get vaccinated against Covid-19 this year and find some time to travel. However, with two people and three projects running in parallel, hopefully there is some progress on each topic by the end of 2021.
