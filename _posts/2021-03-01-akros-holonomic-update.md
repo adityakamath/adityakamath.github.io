@@ -1,7 +1,7 @@
 ---
 layout: post
-title: New year, new project
-subtitle: Looking back at 2020 + plans for 2021
+title: AKROS Holo update
+subtitle: Setting up the OAK-D and RPLidar
 gh-repo: adityakamath/depthai_ros
 thumbnail-img: /assets/img/akros_holo_thumb.jpg
 share-img: /assets/img/akros_holo_thumb.jpg
