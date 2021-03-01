@@ -14,14 +14,14 @@ Since the last update, I have been waiting on acrylic parts for the OAK-D camera
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/akros_holo_assembly.jpg" />
-	<figcaption>The ROSCar/Jetracer2 platform</figcaption>
+	<figcaption>The AKROS Holo platform</figcaption>
 </figure>
 
 I added some spare LED boards to the front with some acrylic mounts and connected them to the Arduino. For now, it just randomly cycles through the colors but I plan on using them as status LEDs in the future. The OAK-D camera also needs a DC power input, but since I hadn't accounted for that earlier, I still need to power the camera externally. For now, I separated the top part of the robot (the platform with the RPi, the RPLidar and the OAK-D) and I'm using it for testing the sensors.
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/akros_holo_assembly_top.jpg" />
-	<figcaption>The ROSCar/Jetracer2 platform</figcaption>
+	<figcaption>Disassembled top part used for testing</figcaption>
 </figure>
 
 For starters, I only want to set up the ROS packages for the lidar and the camera and make sure I have all the ROS transforms configured correctly. After quite some support from the [Luxonis](https://luxonis.com/depthai) (the company that makes the OAK-D cameras) discord community and the RPLidar ROS packages, I was able to setup both the sensors and their transforms in ROS Noetic on the RPi4. The choice of Noetic was simple, since I plan on migrating to ROS2 Foxy and they both run on the same Ubuntu 20.04 OS. For the ROS setup, I did the following:
@@ -37,18 +37,18 @@ For starters, I only want to set up the ROS packages for the lidar and the camer
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/akros_holo_top_vs_urdf.jpg" />
-	<figcaption>The ROSCar/Jetracer2 platform</figcaption>
+	<figcaption>Actual setup vs URDF visualization in RViz (values still to be fine-tuned)</figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/akros_holo_top_pointcloud.jpg" />
-	<figcaption>The ROSCar/Jetracer2 platform</figcaption>
+	<figcaption>Pointcloud from the depth_image_proc package</figcaption>
 </figure>
 
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/akros_holo_top_viz.jpg" />
-	<figcaption>The ROSCar/Jetracer2 platform</figcaption>
+	<figcaption>RViz view showing the URDFs, the laser scan, depth cloud and the RGB pointcloud</figcaption>
 </figure>
 
 #### Next Steps
