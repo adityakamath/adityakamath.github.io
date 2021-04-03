@@ -36,19 +36,16 @@ In the above images, RViz subscribes to the depth image and visualizes it as a p
 
 Finally, I wanted to get a RGB pointcloud, for which I decided to use *[depth_image_proc](http://wiki.ros.org/depth_image_proc)/register* to register the depth image to the RGB camera optical frame (currently depth is registered to the right camera optical frame) and then I planned on using *[depth_image_proc](http://wiki.ros.org/depth_image_proc)/point_cloud_xyzrgb* to combine the registered depth image and the RGB image to get a RGB pointcloud. Unfortunately, the *[depth_image_proc](http://wiki.ros.org/depth_image_proc)/register* node is not as robust to sync issues as I thought. The resulting registered depth and RGB pointcloud were garbage data as can be seen below:
 
-<error_depthcloud_registered>
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/akros_error_depth_registered.png" />
 	<figcaption>Output depth map when depth image is registered to the RGB camera frame</figcaption>
 </figure>
 
-<error_pointcloud_rgb>
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/akros_error_pointcloud_rgb.png" />
 	<figcaption>Output pointcloud when registered depth map is blended with the RGB camera image</figcaption>
 </figure>
 
-<error_pointcloud>
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.com/assets/img/akros_error_pointcloud_orig.png" />
 	<figcaption>Output pointcloud_xyz using the original depth map</figcaption>
