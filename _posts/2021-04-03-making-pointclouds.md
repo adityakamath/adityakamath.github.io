@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Experimenting with pointclouds
+title: Playing with pointclouds
 subtitle: Setting up the OAK-D and RPLidar with ROS
 gh-repo: adityakamath/depthai_nodes
 thumbnail-img: /assets/img/akros_pointcloud_thumb.jpg
