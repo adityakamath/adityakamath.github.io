@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Experimenting with pointclouds
