@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AKROS Holo update
+title: AKROS Holonomic update
 subtitle: Setting up the OAK-D and RPLidar
 gh-repo: adityakamath/depthai_ros
 thumbnail-img: /assets/img/akros_holo_thumb.jpg
