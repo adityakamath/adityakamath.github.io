@@ -4,7 +4,7 @@ title: Photography
 subtitle: Captures from travels around Europe and India
 ---
 
-My passion for travel and photography began as a teenager in India and came with me to Europe. Being in Europe has made it even more easy to travel to different countries and experience different cultures, and has also given me the opportunity to experiment with different styles and techniques. Here is a collection of some of these experiments. I also post regularly on my Instagram handle [@kamathsblog](https://instagram.com/kamathsblog). I don't sell prints but if you want one, do get in touch. 
+My passion for travel and photography began as a teenager in India and came with me to the Netherlands. Being in Europe made it even more easy to travel to different countries and experience different cultures, and also provided me the opportunity to experiment with different photography styles and techniques. Here is a collection of some of these experiments. I also post regularly on my Instagram handle [@kamathsblog](https://instagram.com/kamathsblog). I don't sell prints but if you want one, do get in touch. 
 
 <center>
 
