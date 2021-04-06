@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Projects
-subtitle: Robotics, embedded projects from 2010 - present
+subtitle: Things I've been working on
 ---
 
-I started my engineering journey in high-school when I learnt to make a hovercraft in an after-school program. Soon after, I decided to study engineering in college. Since then, I've worked on multiple projects for universities (both MIT Manipal and TU Eindhoven), for industry clients (in the Netherlands) and also for myself as side projects. Here are some of my major projects, listed from last to first. 
+I started my robotics journey in high-school when I learnt to make a hovercraft in an after-school program. Soon after, I decided to study engineering in college. Since then, I've worked on multiple projects at universities (MIT Manipal and TU Eindhoven), for industry clients (in the Netherlands) and also for myself as side projects. Here are some of my favourite projects, listed from last to first. 
 
 ### AKROS Platform - Jetracer2, Jetbot2
 #### 2020 | Personal Project in Lockdown
@@ -13,7 +13,7 @@ I started my engineering journey in high-school when I learnt to make a hovercra
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/jetbot_2.png" />
 </figure>
 
-During the Covid-19 lockdown, designed and implemented a ROS1 based system for Computer Vision and AI applications. Implemented the design on two robot platforms - Jetracer2 (ackermann-steered, based on NVidia Jetracer with custom add-ons), and Jetbot2 (differential-drive, based on NVidia Jetbot with add-ons). [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/dusty-nv/jetson-inference) [[3]](https://github.com/dusty-nv/jetbot_ros) [[4]](https://github.com/NVIDIA-AI-IOT/jetracer)
+During the Covid-19 lockdown, I designed and implemented a ROS1 based system for Computer Vision and AI applications. Implemented the design on two robot platforms - Jetracer2 (ackermann-steered, based on NVidia Jetracer with custom add-ons), and Jetbot2 (differential-drive, based on NVidia Jetbot with add-ons). [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/dusty-nv/jetson-inference) [[3]](https://github.com/dusty-nv/jetbot_ros) [[4]](https://github.com/NVIDIA-AI-IOT/jetracer)
 
 ### Remote Computing for Soccer Robots using 5G mm-Waves
 #### 2018/2019 | BlueSPACE, Tech United, TU Eindhoven
@@ -31,7 +31,7 @@ PDEng Design Project: Designed, developed and integrated a functional prototype 
 	<img align="right" width="200" height="200" src="https://adityakamath.github.com/assets/img/formation_flying.png" />
 </figure>
 
-With a team of 12, designed a multi-quadrotor demonstrator to simulate a multi-satellite space mission by ESA for the ESA ESTEC Open Day 2018. As software architect and lead designer, implemented the multi-camera positioning system to localize the drones in 6dof for accurate trajectory following and control. [[1]](https://www.tue.nl/en/research/aiming-at-the-sun-with-flying-drones/) [[2]](https://www.4tu.nl/sai/en/valorisation/PDEng%20trainees%20working%20on%20new%20ESA%20space%20missions/) [[3]](https://www.hannovermesse.de/product/pdeng-demonstrator-with-drones/229789/K988717)
+In a team of 12, designed a multi-quadrotor demonstrator to simulate a multi-satellite space mission by ESA for the ESA ESTEC Open Day 2018. As software architect and lead designer, I implemented the multi-camera positioning system to localize the drones in 6dof for accurate trajectory following and control. [[1]](https://www.tue.nl/en/research/aiming-at-the-sun-with-flying-drones/) [[2]](https://www.4tu.nl/sai/en/valorisation/PDEng%20trainees%20working%20on%20new%20ESA%20space%20missions/) [[3]](https://www.hannovermesse.de/product/pdeng-demonstrator-with-drones/229789/K988717)
 
 ### Autonomous Drone Referee
 #### 2018 | Tech United, Eindhoven University of Technology
@@ -50,15 +50,6 @@ In a team of 7, designed and implemented an autonomous drone concept to referee 
 </figure>
 
 Master Thesis: Worked with Prodrive Technologies to study and improve their current AGV localization strategy for their next generation of autonomous 2D LiDAR based robots. Two strategies were proposed, implemented, and validated in a simulated environment using ROS and Gazebo. This project is not open-access. [[1]](https://research.tue.nl/nl/studentTheses/a-study-of-mobile-robot-localization-in-changing-indoor-environme)
-
-### Self Driving Solar Robot
-#### 2016 | TU Eindhoven
-
-<figure class="aligncenter">
-	<img align="right" width="200" height="200" padding-right="10" src="https://adityakamath.github.com/assets/img/embedded_visual_control.png" />
-</figure>
-
-As a part of a course, programmed a self driving solar powered robot to detect/follow lanes and traffic signs using OpenCV on a Raspberry Pi. This was demonstrated on a track built on the TU Eindhoven campus. As an additional project, the team of 3 also built a teleop mode using the internal IMU of a smartphone. [[1]](http://www.es.ele.tue.nl/~heco/courses/EmbeddedVisualControl/index.html)
 
 ### Maze Solving Robot
 #### 2016 | TU Eindhoven
