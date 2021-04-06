@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Photography
-subtitle: Captures from travels across Europe and India
+subtitle: Captures from my travels
 ---
 
 Here are some of my most favourite clicks from my travels around Europe and in India. I regularly post more photos on my Instagram handle [@kamathsblog](https://instagram.com/kamathsblog). I don't sell prints but if you want one, do get in touch. 
