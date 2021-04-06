@@ -58,4 +58,6 @@ Fortunately, Luxonis is already working on a fix for this. Recently, they announ
 	<figcaption>Depth image blended with Right camera image (monochrome) on RViz</figcaption>
 </figure>
 
-For this month (April), I plan on going to the next step of the plan - RTABMap. Hopefully the Luxonis update is released soon and I can get an update on that front as well. 
+For this month (April), I plan on going to the next step of the plan - RTABMap. Hopefully the Luxonis update is released soon and I can get an update on that front as well. For now, here's a video of me playing with pointclouds on my laptop touchscreens (this is the perfect laptop config for ROS, in my opinion):
+
+[![OAK-D: Playing with Pointclouds](https://adityakamath.github.com/assets/img/akros_pointclouds_ss.png)](https://www.youtube.com/watch?v=9lzIxv-3E_w "[OAK-D: Playing with Pointclouds - Click to Watch!")
