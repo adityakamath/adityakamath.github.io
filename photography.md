@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Photography
-subtitle: Captures from my travels
+subtitle: Captures from my travels around Europe and India
 ---
 
 I first got into photography when my parents once allowed me to take an analog camera to a primary school trip. Since then, I've never gone on an outing without a camera (or two, sometimes three). Being in Europe has made it even more easy to travel to different countries and experience different cultures, and has also given me the opportunity to experiment with different styles and techniques. Here is a collection of some of my favourite clicks. I also post regularly on my Instagram handle [@kamathsblog](https://instagram.com/kamathsblog). I don't sell prints but if you want one, do get in touch. 
