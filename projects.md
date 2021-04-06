@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: Things I've been working (2011 - Present)
+subtitle: Things I've been working on (2011 - Present)
 ---
 
 I started my robotics journey in high-school when I learnt to make a hovercraft in an after-school program. Soon after, I decided to study engineering in college. Since then, I've worked on multiple projects at universities (MIT Manipal and TU Eindhoven), for industry clients (in the Netherlands) and also for myself as side projects. Here are some of my favourite projects, listed from last to first. 
