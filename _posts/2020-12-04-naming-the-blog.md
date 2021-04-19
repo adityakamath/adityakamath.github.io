@@ -20,6 +20,6 @@ For the new year, I have the following goals:
 As to whether I achieve these goals, only time will tell. For now, back to finishing the Jetbot2:
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/jetbot2_messy_desk.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/jetbot2_messy_desk.jpg" />
 </figure>
 
