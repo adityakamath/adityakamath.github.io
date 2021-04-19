@@ -47,4 +47,3 @@ I also added a NeoPixel LED strip to the underside of the OLED PCB. For now, it 
 </figure>
 
 This month I am building tutorial applications on the Jetson Nano and sometime in October I plan on setting up a track and driving autonomously. Meanwhile, there's work to be done on the Pinguino lamp.
-
