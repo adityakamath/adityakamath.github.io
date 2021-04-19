@@ -27,36 +27,36 @@ To start with, I need a user interface. Although the system is supposed to just 
 I used the [Blynk]() app for this, which made the entire UI process extremely quick. I ended up using all my app credits to add the different UI features, but I don't mind paying for more features down the line. For now, the free version is good enough. 
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/pinguino_blynk_interface.png" />
+	<img src="https://adityakamath.github.io/assets/img/pinguino_blynk_interface.png" />
 	<figcaption>Blynk User Interface with on/off button, real-time clock, offline notification, lamp-face chooser, discord notification button, intensity slider and a RGB selection zebra</figcaption>
 </figure>
 
 I also tested the hardware to make sure they are working. The NeoPixel ring works with only 3 connections - power, ground and input signal, which I soldered to the LED board. These wires were connected to the 5V, GND and PIN6 respectively on the Arduino MKR board. I ran the sample code from the NeoPixel library and also managed to make some of my own functions to test each LED. Here are some of the cool pictures I ended up with:
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/pinguino_neopixel_test1.png" />
+	<img src="https://adityakamath.github.io/assets/img/pinguino_neopixel_test1.png" />
 	<figcaption>NeoPixel LED ring connected to the Arduino MKR Wi-Fi 1010</figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/pinguino_neopixel_test2.png" />
+	<img src="https://adityakamath.github.io/assets/img/pinguino_neopixel_test2.png" />
 	<figcaption>NeoPixel ring at full intensity</figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/pinguino_neopixel_ringart.png" />
+	<img src="https://adityakamath.github.io/assets/img/pinguino_neopixel_ringart.png" />
 	<figcaption>Long exposure art using the NeoPixel ring</figcaption>
 </figure>
 
 Meanwhile, I also found a spare NeoPixel 8 LED strip, with which I also got some really cool photographs. This LED strip went on to the ROS Car to function as a status indicator. More will be explained in a later post. 
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/pinguino_neopixel_test0.png" />
+	<img src="https://adityakamath.github.io/assets/img/pinguino_neopixel_test0.png" />
 	<figcaption>Arduino MKR with a NeoPixel 8 LED strip</figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/pinguino_neopixel_stripart.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/pinguino_neopixel_stripart.jpg" />
 	<figcaption>Light painting using the NeoPixel LED strip</figcaption>
 </figure>
 
