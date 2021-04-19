@@ -13,19 +13,19 @@ comments: true
 In the last update, I had setup the required nodes to publish a depth image and convert that into a pointcloud message. This weekend, I worked towards filtering the noise from this depth pointcloud. I started by playing with the Point Cloud Library (PCL) and the ROS nodelets provided by it. To cleanup the pointcloud data, I first ran it through an SOR (statistical outlier removal) filter after which I downsampled the output using the VoxelGrid filter. I also ran the laser scan message through a filter, which filters out values with an angle range (from behind the laser scanner, which we do not want to use). The resulting filtered pointcloud and laserscan outputs can be seen below:
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_pointclouds_filtered.png" />
+	<img src="https://adityakamath.github.io/assets/img/akros_pointclouds_filtered.png" />
 	<figcaption>Cleaned and downsampled depth pointcloud overlayed over filtered Laserscan data</figcaption>
 </figure>
 
 Once I had the laserscan and the pointclouds filtered according to my requirements, I set up Hector SLAM using this tutorial I found on Youtube. With the default setup, I now have a rudimentary mapping/SLAM application which works sufficiently well. Following images show the outputs of the Hector SLAM application on RViz. 
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_hectorslam_pc2.png" />
+	<img src="https://adityakamath.github.io/assets/img/akros_hectorslam_pc2.png" />
 	<figcaption>Map generated using the first acquired laser scan</figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_hectorslam_pc.png" />
+	<img src="https://adityakamath.github.io/assets/img/akros_hectorslam_pc.png" />
 	<figcaption>Map of my studio, generated after moving the lidar setup was moved around in the horizontal plane</figcaption>
 </figure>
 
