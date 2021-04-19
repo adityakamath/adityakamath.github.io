@@ -13,14 +13,14 @@ comments: true
 Since the last update, I have been waiting on acrylic parts for the OAK-D camera and the [OAK-D](https://store.opencv.ai/products/oak-d) itself. The [OpenCV AI Kit](https://opencv.org/introducing-oak-spatial-ai-powered-by-opencv/) - Depth ([OAK-D](https://docs.luxonis.com/en/latest/pages/products/bw1098obc/)) is a spatial-AI camera with a RGB and stereo cameras with on-board mono/stereo inferencing. After a few delays, apparently due to Brexit, the camera finally arrived at the start of February and the acrylic parts arrived soon after. Once assembled, the platform looks like this:
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_holo_assembly.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/akros_holo_assembly.jpg" />
 	<figcaption>The AKROS Holo platform</figcaption>
 </figure>
 
 I added some spare LED boards to the front with some acrylic mounts and connected them to the Arduino. For now, it just randomly cycles through the colors but I plan on using them as status LEDs in the future. The OAK-D camera also needs a DC power input, but since I hadn't accounted for that earlier, I still need to power the camera externally. For now, I separated the top part of the robot (the platform with the RPi, the RPLidar and the OAK-D) and I'm using it for testing the sensors.
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_holo_assembly_top.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/akros_holo_assembly_top.jpg" />
 	<figcaption>Disassembled top part used for testing</figcaption>
 </figure>
 
@@ -36,18 +36,18 @@ For starters, I only want to set up the ROS packages for the lidar and the camer
 #### Results
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_holo_top_vs_urdf.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/akros_holo_top_vs_urdf.jpg" />
 	<figcaption>Actual setup vs URDF visualization in RViz (values still to be fine-tuned)</figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_holo_top_pointcloud.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/akros_holo_top_pointcloud.jpg" />
 	<figcaption>Pointcloud from the depth_image_proc package</figcaption>
 </figure>
 
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_holo_top_viz.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/akros_holo_top_viz.jpg" />
 	<figcaption>RViz view showing the URDFs, the laser scan, depth cloud and the RGB pointcloud</figcaption>
 </figure>
 
