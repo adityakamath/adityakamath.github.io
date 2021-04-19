@@ -37,7 +37,7 @@ Now that the motor control is done, I need to provide a way to give it some velo
 
 For the joystick, I used the (joy)[http://wiki.ros.org/joy/Tutorials/ConfiguringALinuxJoystick] package and its tutorials based on C++. Since I have a 3rd party controller, I had to map the buttons to the package. This mapping was again stored in a YAML file and the implemented node was modified to read the config file and use its values. 
 
-[![Static steering test: Sixaxis Controller](https://adityakamath.github.com/assets/img/roscar_steeringtest_ss.png)](https://www.youtube.com/watch?v=jIY-cny0djM "Static steering test: Sixaxis Controller - Click to Watch!")
+[![Static steering test: Sixaxis Controller](https://adityakamath.github.io/assets/img/roscar_steeringtest_ss.png)](https://www.youtube.com/watch?v=jIY-cny0djM "Static steering test: Sixaxis Controller - Click to Watch!")
 
 [![Static steering + throttle test: Sixaxis Controller](https://adityakamath.github.io/assets/img/roscar_steeringthrottletest_ss.png)](https://www.youtube.com/watch?v=NJRmjyDKF2c "Static steering + throttle test: Sixaxis Controller - Click to Watch!")
 
