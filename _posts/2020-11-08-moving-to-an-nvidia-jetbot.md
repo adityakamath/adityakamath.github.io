@@ -84,7 +84,7 @@ For an unrelated project that I plan on beginning next year, I ordered a RPLidar
 	<figcaption>RPLidar ROS Package running off the Jetbot2's Jetson Nano</figcaption>
 </figure>
 
-[![Testing the RPLidar with Slamtec RobotStudio and ROS Melodic](https://adityakamath.github.com/assets/img/testing_rplidar_ss.png)](https://www.youtube.com/watch?v=3pMYaUD-vEk "Testing the RPLidar A2M8 - Click to Watch!")
+[![Testing the RPLidar with Slamtec RobotStudio and ROS Melodic](https://adityakamath.github.io/assets/img/testing_rplidar_ss.png)](https://www.youtube.com/watch?v=3pMYaUD-vEk "Testing the RPLidar A2M8 - Click to Watch!")
 
 #### Next Steps
 
