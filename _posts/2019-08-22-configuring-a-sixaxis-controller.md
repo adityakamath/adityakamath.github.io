@@ -13,7 +13,7 @@ comments: true
 After all the hardware changes from last time, this is how the car looks:
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/img/donkeycar_assembly3.png"/>
+	<img src="https://adityakamath.github.io/assets/img/donkeycar_assembly3.png"/>
 	<figcaption>Assembled Donkey Car</figcaption>
 </figure>
 
