@@ -42,7 +42,7 @@ This was the easy part. The next step was to solder headers on to the proto boar
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/jetbot2_loader_solder5.png" />
+	<img src="https://adityakamath.github.io/assets/img/jetbot2_loader_solder5.png" />
 	<figcaption>Proto board re-attached to the baseplate, servo motor not yet attached</figcaption>
 </figure>
 
