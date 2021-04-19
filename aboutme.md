@@ -7,7 +7,7 @@ subtitle: Who am I and why did I make this website?
 Hi there, welcome to my website!
 
 <figure class="aligncenter">
-	<img align="left" width="200" height="200" src="https://adityakamath.github.com/assets/img/about_me2.png" />
+	<img align="left" width="200" height="200" src="https://adityakamath.github.io/assets/img/about_me2.png" />
 </figure>
 
 I am Aditya Kamath, an Embedded/Robotics Systems Engineer based in Eindhoven, the Netherlands. I currently work as an Embedded Systems Consultant at an engineering R&D company in Eindhoven. While my job involves designing embedded software for complex machines and mechatronic components, I do keep my passion for robotics and DIY alive by building projects in my spare time. It isn't always a robotics build since I also love tinkering around with basic electronics, digital and analog sensors, microcontrollers/single-board computers, 3D printing and other rapid prototyping tools.  
