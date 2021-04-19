@@ -13,7 +13,7 @@ comments: true
 First post! This is very exciting. Over the last couple of weeks, and especially with the long weekends and bridging holidays in the Netherlands, I have been thinking of getting acquainted with AI/Machine Learning/Deep Learning techniques for autonomous cars and robots. What better way to do this than using an actual robot! I initially thought of building a robot from scratch, but while I was doing some research, I came upon the [DIYRobocars](http://www.diyrobocars.com) community and the [Donkeycar](http://www.donkeycar.com) project.
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/donkeycar_donkey2.png" />
+	<img src="https://adityakamath.github.io/assets/img/donkeycar_donkey2.png" />
 	<figcaption>The Donkey 2 Platform. <a href="https://www.donkeycar.com/" target="_blank">(Source)</a></figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ All you need are the following parts and [instructions](http://docs.donkeycar.co
 That's it! Most of these are available commercially and I was able to order them from Amazon Germany. The 3D parts can be found on [Thingiverse](https://www.thingiverse.com/thing:2566276) and I got them printed from 3D Hubs. That's everything, except for the car.
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/donkeycar_baserc.png" />
+	<img src="https://adityakamath.github.io/assets/img/donkeycar_baserc.png" />
 	<figcaption>HSP 94186 RC Car Platform. <a href="https://www.robocarstore.com/" target="_blank">(Source)</a></figcaption>
 </figure>
 
