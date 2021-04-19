@@ -13,51 +13,51 @@ comments: true
 Over the last few weeks, I've been trying to get the [OAK-D](https://store.opencv.ai/products/oak-d) camera up and running with ROS1 Noetic. My goal was to produce a RGB pointcloud from the incoming depth and RGB camera images from the OAK-D. I initially started experimenting with the [depthai_ros](https://github.com/rapyuta-robotics/depthai_ros) package made by [Rapyuta Robotics](https://github.com/rapyuta-robotics) using the [Gen1 API](https://docs.luxonis.com/en/gen1_master/pages/faq/) of DepthAI. In a few weeks, Luxonis, the makers of OAK-D and DepthAI released their own ROS package ([depthai-ros](https://github.com/luxonis/depthai-ros)) and I migrated to it soon after. This ROS package uses the latest [Gen2 API](https://docs.luxonis.com/en/latest/pages/faq/) and comes with an examples repository ([depthai-ros-examples](https://github.com/luxonis/depthai-ros-examples)). The following images show the results of the stereo depth, RGB camera, and the L/R mono cameras as shown in RViz alongside the RPLidar scan data (I'm using the same URDF as described in the last post):
   
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_depth_lidar.png" />
+	<img src="https://adityakamath.github.io/assets/img/akros_depth_lidar.png" />
 	<figcaption>Depth map overlayed with Lidar scan in red</figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_depthcloud_lidar.png" />
+	<img src="https://adityakamath.github.io/assets/img/akros_depthcloud_lidar.png" />
 	<figcaption>Depth map showing intensity (zoomed out)</figcaption>
 </figure>
 
 In the above images, RViz subscribes to the depth image and visualizes it as a pointcloud. But, I wanted to publish a pointcloud instead of the depth image. So, I experimented with *[depth_image_proc](http://wiki.ros.org/depth_image_proc)/point_cloud_xyz* to subscribe to the depth image, convert it to a pointcloud and publish it. The results can be seen below:
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_pointcloud_lidar.png" />
+	<img src="https://adityakamath.github.io/assets/img/akros_pointcloud_lidar.png" />
 	<figcaption>Pointcloud_xyz (green) overlayed on top of Lidar scan (red)</figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_rgbd_pointcloud_lidar.png" />
+	<img src="https://adityakamath.github.io/assets/img/akros_rgbd_pointcloud_lidar.png" />
 	<figcaption>Depth map (purple) overlayed with pointcloud_xyz (green) and Lidar (red). RGB camera image can be seen in the bottom left.</figcaption>
 </figure>
 
 Finally, I wanted to get a RGB pointcloud, for which I decided to use *[depth_image_proc](http://wiki.ros.org/depth_image_proc)/register* to register the depth image to the RGB camera optical frame (currently depth is registered to the right camera optical frame) and then I planned on using *[depth_image_proc](http://wiki.ros.org/depth_image_proc)/point_cloud_xyzrgb* to combine the registered depth image and the RGB image to get a RGB pointcloud. Unfortunately, the *[depth_image_proc](http://wiki.ros.org/depth_image_proc)/register* node is not as robust to sync issues as I thought. The resulting registered depth and RGB pointcloud were garbage data as can be seen below:
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_error_depth_registered.png" />
+	<img src="https://adityakamath.github.io/assets/img/akros_error_depth_registered.png" />
 	<figcaption>Output depth map when depth image is registered to the RGB camera frame</figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_error_pointcloud_rgb.png" />
+	<img src="https://adityakamath.github.io/assets/img/akros_error_pointcloud_rgb.png" />
 	<figcaption>Output pointcloud when registered depth map is blended with the RGB camera image</figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_error_pointcloud_orig.png" />
+	<img src="https://adityakamath.github.io/assets/img/akros_error_pointcloud_orig.png" />
 	<figcaption>Output pointcloud_xyz using the original depth map</figcaption>
 </figure>
 
 Fortunately, Luxonis is already working on a fix for this. Recently, they announced an update ([pull request](https://github.com/luxonis/depthai-python/pull/147)) to their core API with a [depth-RGB alignment](https://www.youtube.com/watch?v=TuXbULqsG1A&feature=youtu.be) feature. This should solve all issues since I can expect a registered depth image directly from the OAK-D instead of registering it on the RPi. Meanwhile, just for visualizing, I overlayed the right camera image with the depth image using RViz as shown below. This is not a greyscale pointcloud being published but just a visualization created by RViz. I believe a greyscale pointcloud can be generated by using *[depth_image_proc](http://wiki.ros.org/depth_image_proc)/point_cloud_xyzrgb* with the depth image and the right camera image. 
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.com/assets/img/akros_pointcloud_greyscale.png" />
+	<img src="https://adityakamath.github.io/assets/img/akros_pointcloud_greyscale.png" />
 	<figcaption>Depth image blended with Right camera image (monochrome) on RViz</figcaption>
 </figure>
 
 For this month (April), I plan on going to the next step of the plan - RTABMap. Hopefully the Luxonis update is released soon and I can get an update on that front as well. For now, here's a video of me playing with pointclouds on my laptop touchscreens (this is the perfect laptop config for ROS, in my opinion):
 
-[![OAK-D: Playing with Pointclouds](https://adityakamath.github.com/assets/img/akros_pointclouds_ss.png)](https://www.youtube.com/watch?v=9lzIxv-3E_w "[OAK-D: Playing with Pointclouds - Click to Watch!")
+[![OAK-D: Playing with Pointclouds](https://adityakamath.github.io/assets/img/akros_pointclouds_ss.png)](https://www.youtube.com/watch?v=9lzIxv-3E_w "[OAK-D: Playing with Pointclouds - Click to Watch!")
