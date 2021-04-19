@@ -24,13 +24,13 @@ I first started with running the RGB ring test code in the examples of the NeoPi
 
 The next step was to read the VPINs from the Arduino MKR board and assign these values to specific functions. A good starting point to do this was the [PuzzleBox](https://create.arduino.cc/projecthub/Arduino_Genuino/puzzlebox-with-mkr-wifi-1010-7a39c4) example on the Arduino Project Hub. 
 
-[![Pinguino Blynk Test](https://adityakamath.github.com/assets/img/pinguino_blynk_ss.png)](https://www.youtube.com/watch?v=Qy86EHXYYbk "Pinguino Blynk Test - Click to Watch!")
+[![Pinguino Blynk Test](https://adityakamath.github.io/assets/img/pinguino_blynk_ss.png)](https://www.youtube.com/watch?v=Qy86EHXYYbk "Pinguino Blynk Test - Click to Watch!")
 
 #### Sending the Arduino/NeoPixel status info to Discord
 
 Once I had the first task set up, the next step was to send status messages to Discord. Once again, I relied on the Arduino Project Hub to realize this task. I found [this tutorial](https://create.arduino.cc/projecthub/labsud/send-a-message-on-discord-f216e0?ref=search&ref_id=discord&offset=0) to send messages easily from the Arduino MKR 1010 to the Discord Server. I created a webhook on my Discord server, and assiged it to its own private channel which will log the status of the Pinguino. Aptly, I named this webhook as Cobblebot (after Oswald Cobblepot AKA The Penguin). Then, it was easy using the tutorial to send messages to Discord, however, I realized that it took at least a few seconds to send messages as you can see in the video below. I will try using a software interrupt in my next update. 
 
-[![Pinguino Blynk + Discord Webhook Test](https://adityakamath.github.com/assets/img/pinguino_discord_webhook_ss.png)](https://www.youtube.com/watch?v=cjWjZEVDjls "Pinguino Blynk + Discord Webhook Test - Click to Watch!")
+[![Pinguino Blynk + Discord Webhook Test](https://adityakamath.github.io/assets/img/pinguino_discord_webhook_ss.png)](https://www.youtube.com/watch?v=cjWjZEVDjls "Pinguino Blynk + Discord Webhook Test - Click to Watch!")
 
 #### Next Steps
 
