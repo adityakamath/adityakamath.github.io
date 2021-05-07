@@ -47,7 +47,7 @@ For the next few weeks, I want to work with the mobilenet detection and spatial 
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/esp32_kits.jpg" />
-	<figcaption>[M5Stack Core Grey](), [Open-SmarWatch]() and a [TT-Go](). I also have an ESP-32 DevKit-C as well, but not in the picture.</figcaption>
+	<figcaption>[M5Stack Core Grey](https://shop.m5stack.com/products/grey-development-core), [Open-SmarWatch](https://open-smartwatch.github.io/) and a [TT-Go](http://www.lilygo.cn/prod_view.aspx?TypeId=50033&Id=1126&FId=t3:50033:3). I also have an ESP-32 DevKit-C as well, but not in the picture.</figcaption>
 </figure>
   
 I had originally planned to implement RTABMap in the next few months, but looks like this will take a while. I'm still waiting for support from Luxonis about publishing disparity instead of depth, and about depth-RGB alignment. Hopefully by the time I'm done learning about ROS2, microROS, they have some updates and I can implement RTABMap. I'll also probably upgrade to a RPi4 8GB or a Jetson device by then, for better performance.
