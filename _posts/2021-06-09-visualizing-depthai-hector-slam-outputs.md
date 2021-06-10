@@ -15,7 +15,7 @@ Last weekend, I really got playing with [Foxglove Studio](https://foxglove.dev/d
 I started with [my depthAI ROS example](https://github.com/adityakamath/depthai_nodes) on based on [this repo](https://github.com/luxonis/depthai-ros-examples) from Luxonis. My example published the depth output, spatial object detection output (detections in 3D world coordinates, 2D bounding boxes), RGB image used by the neural network, and a full frame RGB camera output. From previous weekends, I had a URDF for the RPLidar + OAK-D setup, which made it easy to setup a launch file to publish the lidar scan, the depthAI outputs in their correct frames with all the correct transforms between these frames. These launch files are in my AKROS_test repo [here](https://github.com/adityakamath/akros_test). The RPLidar + OAK-D setup is seen in the image below:
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/akros_holo_assembly_top.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/akros_holo_assembly_top2.jpg" />
 	<figcaption>AKROS test setup</figcaption>
 </figure>
 
