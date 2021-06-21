@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 4WD Mobile base with ESP32 + Teensy 4.0
+title: 4WD mobile robot with ESP32 + Teensy
 subtitle: First steps towards ROS2/MicroROS implementation
 gh-repo: adityakamath/akros_micro_test
 thumbnail-img: /assets/img/akros_micro_step_thumb.jpg
