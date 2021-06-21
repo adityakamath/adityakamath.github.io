@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Demo - Visualizing DepthAI and SLAM outputs
+title: Visualizing DepthAI and SLAM outputs
 subtitle: Pointclouds + Map + Fiducials + Object Detections
 gh-repo: adityakamath/depthai_nodes
 thumbnail-img: /assets/img/akros_foxglove_thumb.png
