@@ -15,7 +15,7 @@ Ever since I read [this article](https://micro.ros.org/blog/2020/08/27/esp32/) a
 So, when I first got some spare time, I drilled some holes into a proto-board and attached the 4 motors to each corner. I also soldered headers to attach the [ESP32 DevKit C](https://www.espressif.com/en/products/devkits/esp32-devkitc/overview). I then soldered headers for the 2 motor driver boards and also soldered the motor's wires to the proto-board. Next, I took a spare IMU and soldered headers for it on the board. Here's how it looked like:
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/akros_micro_step1.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/akros_micro_step_1.jpg" />
 	<figcaption>Step 1: Attached motors and sub-module boards with headers</figcaption>
 </figure>
   
@@ -24,7 +24,7 @@ By this time, I was getting some idea of what I want to do with this board/robot
 With an idea in place and the basic robot structure already set up, it was time to do the wiring. I first wired all the Vcc and Gnd pins to respective pins on the ESP32 to see if everything was working. Once this was verified, I connected the IMU SDA/SCL pins to the I2C pins of the ESP32, and the IN1/IN2/PWM pins of each motor to digital pins on the ESP32. I then connected the motor +/- pins to respective pins on each motor driver board. Now, everything except the encoders were connected and this can be seen below:
   
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/akros_micro_step_.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/akros_micro_step_2.jpg" />
 	<figcaption>Step 2: Connected the motors and motor drivers to the ESP32</figcaption>
 </figure>
   
@@ -43,7 +43,7 @@ To top it all off, I took another PCB of the same size and attached it using PCB
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/akros_micro_step_4b.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/akros_micro_step4b.jpg" />
 	<figcaption>Step 4: Added battery pack</figcaption>
 </figure>
   
