@@ -5,7 +5,7 @@ subtitle: Experimenting with different ESP32 kits
 gh-repo: adityakamath/akros_micro_test
 thumbnail-img: /assets/img/akros_ttgo_feather_thumb.jpg
 share-img: /assets/img/akros_ttgo_feather_thumb.jpg
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 tags: [akros, robotics, software, encoders, motion control, ros, micro-ros]
 comments: true
 ---
