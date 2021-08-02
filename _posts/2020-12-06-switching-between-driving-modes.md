@@ -3,7 +3,7 @@ layout: post
 title: Switching drive modes on the Jetbot2
 subtitle: And mapping drive modes with NeoPixel LEDs
 gh-repo: adityakamath/arduino_sketchbook_ros
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 thumbnail-img: /assets/img/jetbot2_driving_modes_thumb.jpg
 share-img: /assets/img/jetbot2_driving_modes_thumb.jpg
 tags: [jetbot, jetbot2, robotics, ros, teleoperation, software, arduino]
