@@ -106,12 +106,12 @@ I was pretty impressed! It didn't cost me a lot of money either, so now I can at
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/cortex_hector.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/cortex_hector.png" />
 	<figcaption>Visualization of the map created using a basic implementation of Hector SLAM. Visualized on Foxglove Studio</figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/cortex_gmapping.jpg" />
+	<img src="https://adityakamath.github.io/assets/img/cortex_gmapping.png" />
 	<figcaption>Visualization of the map created using a basic GMapping implementation</figcaption>
 </figure>
   
