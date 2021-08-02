@@ -5,7 +5,7 @@ subtitle: Assembly and setup with ROS
 gh-repo: adityakamath/jetbot2_ws
 thumbnail-img: /assets/img/jetbot2_loader_thumb.png
 share-img: /assets/img/jetbot2_loader_thumb.png
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 tags: [jetbot2, robotics, hardware, software, assembly, electronics]
 comments: true
 ---
