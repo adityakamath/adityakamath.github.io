@@ -5,7 +5,7 @@ subtitle: Using PCL, laser_filters, and Hector SLAM
 gh-repo: adityakamath/akros_test
 thumbnail-img: /assets/img/akros_filters_thumb.png
 share-img: /assets/img/akros_filters_thumb.png
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 tags: [akros, robotics, software, stereo, pointcloud, slam]
 comments: true
 ---
