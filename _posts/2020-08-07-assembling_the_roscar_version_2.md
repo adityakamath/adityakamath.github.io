@@ -3,7 +3,7 @@ layout: post
 title: Assembling the ROS Car version 2
 subtitle: ...with new (self-designed) acrylic parts
 gh-repo: adityakamath/akros_jetson
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 thumbnail-img: /assets/img/roscar_assembled_v2_thumb.png
 share-img: /assets/img/roscar_assembled_v2.png
 tags: [roscar, robotics, electronics, chassis, build]
