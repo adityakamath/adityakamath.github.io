@@ -5,7 +5,7 @@ subtitle: With Arduino MKR 1010 and a NeoPixel LED ring
 gh-repo: adityakamath/pinguino
 thumbnail-img: /assets/img/pinguino_planning_thumb.png
 share-img: /assets/img/pinguino_planning_thumb.png
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 tags: [pinguino, neopixel, arduino, iot, electronics, software, planning]
 comments: true
 ---
