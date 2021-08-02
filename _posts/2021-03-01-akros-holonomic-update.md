@@ -5,7 +5,7 @@ subtitle: Setting up the OAK-D and RPLidar
 gh-repo: adityakamath/depthai_ros
 thumbnail-img: /assets/img/akros_holo_thumb.jpg
 share-img: /assets/img/akros_holo_thumb.jpg
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 tags: [akros, robotics, electronics, software, holonomic]
 comments: true
 ---
