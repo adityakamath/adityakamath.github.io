@@ -3,7 +3,7 @@ layout: post
 title: ROSCar v2 - Final hardware updates
 subtitle: Camera mount + new antenna + other updates
 gh-repo: adityakamath/akros_jetson
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 thumbnail-img: /assets/img/roscar_update_thumb.jpg
 share-img: /assets/img/roscar_update_thumb.jpg
 tags: [roscar, robotics, electronics, chassis, build]
