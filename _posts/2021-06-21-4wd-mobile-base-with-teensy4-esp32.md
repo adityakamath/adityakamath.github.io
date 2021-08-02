@@ -5,7 +5,7 @@ subtitle: First steps towards ROS2/MicroROS implementation
 gh-repo: adityakamath/akros_micro_test
 thumbnail-img: /assets/img/akros_micro_step_thumb.jpg
 share-img: /assets/img/akros_micro_step_thumb.jpg
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 tags: [akros, robotics, software, encoders, motion control, IOT]
 comments: true
 ---
