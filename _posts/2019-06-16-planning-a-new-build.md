@@ -5,7 +5,7 @@ subtitle: Building a self-driving RC car (Donkey Car)
 gh-repo: adityakamath/akros_jetson
 thumbnail-img: /assets/img/donkeycar_baserc_thumb.png
 share-img: /assets/img/donkeycar_baserc_thumb.png
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 tags: [donkeycar, robotics, electronics, chassis, planning]
 comments: true
 ---
