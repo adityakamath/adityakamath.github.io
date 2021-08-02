@@ -5,7 +5,7 @@ subtitle: Setting up the OAK-D and RPLidar with ROS
 gh-repo: adityakamath/depthai_nodes
 thumbnail-img: /assets/img/akros_pointcloud_thumb.png
 share-img: /assets/img/akros_pointcloud_thumb.png
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 tags: [akros, robotics, software, stereo, pointcloud]
 comments: true
 ---
