@@ -3,7 +3,7 @@ layout: post
 title: Configuring a Sixaxis controller
 subtitle: ...and first drive in teleop mode!
 gh-repo: adityakamath/akros_joystick
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 thumbnail-img: /assets/img/sixaxis_controller.png
 share-img: /assets/img/sixaxis_controller.png
 tags: [donkeycar, robotics, electronics, software, teleop, test]
