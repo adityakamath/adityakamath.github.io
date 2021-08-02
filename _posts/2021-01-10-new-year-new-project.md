@@ -5,7 +5,7 @@ subtitle: Looking back at 2020 + plans for 2021
 gh-repo: adityakamath/akros_jetson
 thumbnail-img: /assets/img/akros_holonomic_thumb.jpg
 share-img: /assets/img/akros_holonomic_thumb.jpg
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 tags: [jetbot2, akros, robotics, electronics, software, holonomic, planning]
 comments: true
 ---
