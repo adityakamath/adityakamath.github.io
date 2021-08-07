@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AKROS holonomic drive update
+title: AKROS Holonomic drive update
 subtitle: Driving using ROSSerial and a PS4 controller
 gh-repo: adityakamath/akros_test
 thumbnail-img: /assets/img/akros_holo1_thumb.jpg
