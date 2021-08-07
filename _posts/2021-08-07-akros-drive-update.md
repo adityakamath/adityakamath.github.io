@@ -3,8 +3,8 @@ layout: post
 title: AKROS holonomic drive update
 subtitle: Driving using ROSSerial and a PS4 controller
 gh-repo: adityakamath/akros_test
-thumbnail-img: /assets/img/akros_ttgo_feather_thumb.jpg
-share-img: /assets/img/akros_ttgo_feather_thumb.jpg
+thumbnail-img: /assets/img/akros_holo1_thumb.jpg
+share-img: /assets/img/akros_holo1_thumb.jpg
 gh-badge: [follow]
 tags: [akros, robotics, software, motion control, ros, slam]
 comments: true
@@ -12,9 +12,45 @@ comments: true
 
 I've been on holiday this week, and decided to have a staycation and spare some time working on the AKROS holonomic platform. I got it back from the friend I lent it to, wired it up, tested it and assembled with the [navigation module](https://adityakamath.github.io/2021-08-01-navigation-module-design-update/). I am not using the encoders for now, since I have the Intel Realsense T265 to provide some odometry estimates. First, I wrote the Arduino code to drive the holonomic platform (using [kinematic equations](https://research.ijcaonline.org/volume113/number3/pxc3901586.pdf)) taking velocity in x direction, velocity in y direction and rotation around z values as inputs. I made the robot drive along a pre-programmed path to test if everything worked. Since I was also charging the battery at the time, I decided to map the x, y and z values to RGB values for the neopixel headlights on the robot. This let me test the ROSSerial interface without having to drive the motors. I then added a cmd_vel ([twist](http://docs.ros.org/en/api/geometry_msgs/html/msg/Twist.html) message) subscriber and added the motor/neopixel control functionality to the callback function. Next, I tested if the wiring was correct and assembled the base with the navigation module.
 
-_insert image assembly_
-  
-_insert image assembled_
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.io/assets/img/akros_base_holo.jpg" />
+	<figcaption>Holonomic base platform with the battery pack, an Arduino Mega 2560 and a 4xDC motor driver (2x L29DN). The battery is a 6x18650 battery pack with a DC power output and a regulated USB power output. The USB power output is used to power up the Arduino as explained later</figcaption>
+</figure>
+
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.io/assets/img/akros_motor_driver.jpg" />
+	<figcaption>Wiring of the motor driver (on top of the Arduino)</figcaption>
+</figure>
+
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.io/assets/img/akros_buck_boost_converter.jpg" />
+	<figcaption>Buck boost converter used to convert the battery output to 9v for the motor driver</figcaption>
+</figure>
+
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.io/assets/img/akros_buck_converter.jpg" />
+	<figcaption>3A Buck converter used to convert the battery output to 5v/3A for the Raspberry Pi 4. Its important for this to be rated 3A, I tried a 2A buck converter but this was not able to power the Pi correctly.</figcaption>
+</figure>
+
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.io/assets/img/akros_neopixel_headlight.jpg" />
+	<figcaption>Headlights made using 2x neopixel compatible LED boards with 3x LEDs each, connected to the Arduino Mega</figcaption>
+</figure>
+
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.io/assets/img/akros_holo_testing.jpg" />
+	<figcaption>Testing the base platform with the navigation module.</figcaption>
+</figure>
+
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.io/assets/img/akros_holo_assy1.jpg" />
+	<figcaption>Assembling the navigation module on top of the base platform</figcaption>
+</figure>
+
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.io/assets/img/akros_holo_assd.jpg" />
+	<figcaption>Assembled AKROS robot</figcaption>
+</figure>
 
 Next, I used the [ds4_driver library](https://github.com/chrippa/ds4drv) and the corresponding [ROS package](http://wiki.ros.org/ds4_driver) to connect the RPi4 with a PS4 controller over bluetooth. Fortunately, for me the [ROS package](https://github.com/naoki-mizuno/ds4_driver) already comes with a twist publisher node. I simply added a 3dof (linear x, linear y, angular z) config file and the twist node was good to go. I also modified the demo node provided to set the PS4 controller's LED to specific colors according to the input values (R=x, G=y, B=rotation). Now, the PS4 controller's LED should match the neopixel headlights on the robot. The next step was to add the ds4_driver nodes along with the [rosserial_python](http://wiki.ros.org/rosserial_python) node in a launch file, and try driving the robot around. I had to tweak the linear/angular gains and max velocity values and finally, I had a platform that I could drive around with a PS4 controller. The following videos show the process and results along the way:
   
