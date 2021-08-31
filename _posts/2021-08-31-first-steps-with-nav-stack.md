@@ -3,10 +3,10 @@ layout: post
 title: First steps with the ROS Navigation Stack
 subtitle: Experimenting with gmapping, hector_slam and amcl
 gh-repo: adityakamath/akros
-thumbnail-img: /assets/img/akros_holo1_thumb.jpg
-share-img: /assets/img/akros_holo1_thumb.jpg
+thumbnail-img: /assets/img/akros_amcl_thumb.jpg
+share-img: /assets/img/akros_amcl_thumb.jpg
 gh-badge: [follow]
-tags: [akros, robotics, software, motion control, ros, slam]
+tags: [akros, robotics, software, localization, ros, slam]
 comments: true
 ---
 
