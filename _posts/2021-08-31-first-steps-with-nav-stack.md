@@ -46,7 +46,6 @@ While driving the robot around, I made sure to also run SLAM algorithms in the b
 	<figcaption>Map created using Hector SLAM. This took quite some parameter tuning and the resulting map is not bad, however needs to be post-processed before it can be used for localization. One advantage that Hector SLAM has over GMapping is that it can make maps without an odometry source. However, I do have a pretty good odometry source, so I'll keep this method for a project without odometry...</figcaption>
 </figure>
   
-<insert map from gmapping>
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/akros_gmapping_map.jpg" />
 	<figcaption>Map created using GMapping. It is pretty much perfect and definitely the winner against Hector SLAM. GMapping uses the odometry provided by the T265 camera.</figcaption>
@@ -59,7 +58,6 @@ Next, I saved these maps using map_saver and then launched the localization node
 	<figcaption>The AKROS robot being tested in my studio. It is being driven manually using a PS4 controller</figcaption>
 </figure>
   
-<insert testing image>
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/akros_amcl_foxglove.png" />
 	<figcaption>Foxglove viz for the experiments. I've chosen to see compressed images from one of the T265's two fisheye lenses for debugging. The errors in the debug panel shows when the Arduino lost connection with the ROS master. This is a common problem that I haven't solved yet. Fortunately, the Arduino reconnects automatically, and I've written recovery functions in the Arduino code.</figcaption>
