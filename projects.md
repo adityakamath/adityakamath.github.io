@@ -6,14 +6,14 @@ subtitle: Things I've been working on (2011 - Present)
 
 I started my robotics journey in high-school when I learnt to make a hovercraft in an after-school program. Soon after, I decided to study engineering in college. Since then, I've worked on multiple projects at universities (MIT Manipal and TU Eindhoven), for industry clients (in the Netherlands) and also for myself as side projects. Here are some of my favourite projects, listed from last to first. 
 
-### AKROS - Autonomous holonomic robot platform
+### AKROS - Autonomous Holonomic Robot Platform
 #### 2021 | Personal Project in Lockdown
 
 <figure class="aligncenter">
-	<img align="left" width="200" height="200" src="https://adityakamath.github.io/assets/img/jetbot_2.png" />
+	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/akros_holo_circle.png" />
 </figure>
 
-As the lockdown(s) extended into 2021, I built an autonomous ROS robot from scratch. I used a 2D LiDAR scanner, a tracking/odometry sensor (Intel T265 camera) and a depth camera (OAK-D) to build a robot that can autonomously map and navigate in my studio apartment. The entire system was developed using the ROS (ROS1 Noetic) navigation stack, and migration to ROS2 (and Nav2) is still in progress. [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/dusty-nv/jetson-inference) [[3]](https://github.com/dusty-nv/jetbot_ros) [[4]](https://github.com/NVIDIA-AI-IOT/jetracer)
+As the lockdown(s) extended into 2021, I built an autonomous ROS robot from scratch. I used a 2D LiDAR scanner, a tracking/odometry sensor (Intel T265 camera) and a depth camera (OAK-D) to build a robot that can autonomously map and navigate in my studio apartment. The entire system was developed using the ROS (ROS1 Noetic) navigation stack, and migration to ROS2 (and Nav2) is still in progress. [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/adityakamath/akros) [[3]](https://github.com/ros-planning/navigation) [[4]](https://navigation.ros.org/)
 
 ### Jetson Robot Platforms - JetRacer, JetBot
 #### 2020 | Personal Project in Lockdown
