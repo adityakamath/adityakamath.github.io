@@ -3,8 +3,8 @@ layout: post
 title: Comparing different SLAM methods
 subtitle: Experimenting with slam_karto and slam_toolbox
 gh-repo: adityakamath/akros
-thumbnail-img: /assets/img/akros_slam_toolbox_thumb.jpg
-share-img: /assets/img/akros_slam_toolbox_thumb.jpg
+thumbnail-img: /assets/img/akros_slam_test_thumb.png
+share-img: /assets/img/akros_slam_test_thumb.png
 gh-badge: [follow]
 tags: [akros, robotics, software, localization, ros, slam]
 comments: true
