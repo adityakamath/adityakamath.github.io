@@ -14,7 +14,7 @@ author: Aditya Kamath
 navbar-links:
   # Blog: "blog"
   Projects: "projects"
-  Photography: "photography"
+  # Photography: "photography"
   About Me: "aboutme"
   
 paginate_path: "/blog/page:num/"
