@@ -2,8 +2,8 @@
 layout: post
 title: Finally naming the blog
 subtitle: And some goals for 2021
-thumbnail-img: /assets/img/sense_think_act_thumb.png
-share-img: /assets/img/sense_think_act_thumb.png
+thumbnail-img: /assets/img/l5_thumb.png
+share-img: /assets/img/l5_thumb.png
 tags: [random]
 comments: true
 ---
