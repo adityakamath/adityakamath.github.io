@@ -6,7 +6,6 @@ gh-repo: adityakamath/pinguino
 thumbnail-img: /assets/img/pinguino_blynk_thumb.jpg
 share-img: /assets/img/pinguino_blynk_thumb.jpg
 gh-badge: [follow]
-tags: [pinguino, neopixel, arduino, iot, software, blynk, discord]
 comments: true
 ---
 
