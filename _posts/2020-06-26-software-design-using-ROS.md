@@ -6,7 +6,6 @@ gh-repo: adityakamath/akros_jetson
 gh-badge: [follow]
 thumbnail-img: /assets/img/ros_melodic_thumb.png
 share-img: /assets/img/ros_melodic_thumb.png
-tags: [roscar, robotics, ros, data-acquisition, electronics, software, design]
 comments: true
 ---
 
