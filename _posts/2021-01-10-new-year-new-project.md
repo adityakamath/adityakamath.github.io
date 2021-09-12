@@ -6,7 +6,6 @@ gh-repo: adityakamath/akros_jetson
 thumbnail-img: /assets/img/akros_holonomic_thumb.jpg
 share-img: /assets/img/akros_holonomic_thumb.jpg
 gh-badge: [follow]
-tags: [jetbot2, akros, robotics, electronics, software, holonomic, planning]
 comments: true
 ---
 
