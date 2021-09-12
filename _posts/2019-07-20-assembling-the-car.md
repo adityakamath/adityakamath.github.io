@@ -6,7 +6,6 @@ gh-repo: adityakamath/akros_jetson
 gh-badge: [follow]
 thumbnail-img: /assets/img/donkeycar_thumb.png
 share-img: /assets/img/donkeycar_thumb.png
-tags: [donkeycar, robotics, electronics, chassis, build]
 comments: true
 ---
 
