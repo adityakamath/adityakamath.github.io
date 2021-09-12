@@ -23,7 +23,7 @@ paginate_path: "/blog/page:num/"
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/me_avatar_yat.png"
+avatar: "/assets/img/me_avatar_yat2.png"
 
 #favicon: "/favicon.ico"
 
