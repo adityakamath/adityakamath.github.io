@@ -6,7 +6,6 @@ gh-repo: adityakamath/arduino_sketchbook_ros
 gh-badge: [follow]
 thumbnail-img: /assets/img/jetbot2_driving_modes_thumb.jpg
 share-img: /assets/img/jetbot2_driving_modes_thumb.jpg
-tags: [jetbot, jetbot2, robotics, ros, teleoperation, software, arduino]
 comments: true
 ---
 
