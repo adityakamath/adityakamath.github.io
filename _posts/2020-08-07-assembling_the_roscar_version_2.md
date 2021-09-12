@@ -6,7 +6,6 @@ gh-repo: adityakamath/akros_jetson
 gh-badge: [follow]
 thumbnail-img: /assets/img/roscar_assembled_v2_thumb.png
 share-img: /assets/img/roscar_assembled_v2.png
-tags: [roscar, robotics, electronics, chassis, build]
 comments: true
 ---
 
