@@ -6,7 +6,6 @@ gh-repo: adityakamath/akros
 thumbnail-img: /assets/img/akros_slam_test_thumb.png
 share-img: /assets/img/akros_slam_test_thumb.png
 gh-badge: [follow]
-tags: [akros, robotics, software, localization, ros, slam]
 comments: true
 ---
 
