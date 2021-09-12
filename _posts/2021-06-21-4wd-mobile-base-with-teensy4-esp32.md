@@ -6,7 +6,6 @@ gh-repo: adityakamath/akros_micro_test
 thumbnail-img: /assets/img/akros_micro_step_thumb.jpg
 share-img: /assets/img/akros_micro_step_thumb.jpg
 gh-badge: [follow]
-tags: [akros, robotics, software, encoders, motion control, IOT]
 comments: true
 ---
 
