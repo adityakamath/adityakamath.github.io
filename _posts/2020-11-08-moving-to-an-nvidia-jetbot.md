@@ -6,7 +6,6 @@ gh-repo: adityakamath/akros_jetson
 gh-badge: [follow]
 thumbnail-img: /assets/img/jetbot2_build_thumb.jpg
 share-img: /assets/img/jetbot2_build_thumb.jpg
-tags: [jetbot, jetbot2, robotics, ros, data-acquisition, communication, electronics, software, design, build]
 comments: true
 ---
 
