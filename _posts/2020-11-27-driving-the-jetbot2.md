@@ -6,7 +6,6 @@ gh-repo: adityakamath/akros_joystick
 gh-badge: [follow]
 thumbnail-img: /assets/img/jetbot2_jsdrive_thumb.jpg
 share-img: /assets/img/jetbot2_jsdrive_thumb.jpg
-tags: [jetbot, jetbot2, robotics, ros, data-acquisition, communication, teleoperation, software]
 comments: true
 ---
 
