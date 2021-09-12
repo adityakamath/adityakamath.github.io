@@ -12,7 +12,6 @@ author: Aditya Kamath
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Home: ""
   Blog: "blog"
   Projects: "projects"
   # Photography: "photography"
