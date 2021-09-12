@@ -6,7 +6,6 @@ gh-repo: adityakamath/depthai_nodes
 thumbnail-img: /assets/img/akros_foxglove_thumb.png
 share-img: /assets/img/akros_foxglove_thumb.png
 gh-badge: [follow]
-tags: [akros, robotics, software, fiducials, detection, slam, depthai]
 comments: true
 ---
 
