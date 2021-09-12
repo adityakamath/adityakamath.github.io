@@ -6,7 +6,6 @@ gh-repo: adityakamath/ros1bot
 gh-badge: [follow]
 thumbnail-img: /assets/img/roscar_thumb.png
 share-img: /assets/img/roscar_thumb.png
-tags: [roscar, robotics, electronics, chassis, build]
 comments: true
 ---
 
