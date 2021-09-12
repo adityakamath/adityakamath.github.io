@@ -6,7 +6,6 @@ gh-repo: adityakamath/akros_joystick
 gh-badge: [follow]
 thumbnail-img: /assets/img/sixaxis_controller.png
 share-img: /assets/img/sixaxis_controller.png
-tags: [donkeycar, robotics, electronics, software, teleop, test]
 comments: true
 ---
 
