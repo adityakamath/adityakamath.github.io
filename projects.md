@@ -5,7 +5,6 @@ subtitle: Things I've been working on (2011 - Present)
 ---
 
 &nbsp;
-&nbsp;
 
 ### AKROS - Autonomous Holonomic Robot Platform
 #### 2021 | Personal Project in Lockdown
