@@ -6,7 +6,6 @@ gh-repo: adityakamath/akros_test
 thumbnail-img: /assets/img/akros_filters_thumb.png
 share-img: /assets/img/akros_filters_thumb.png
 gh-badge: [follow]
-tags: [akros, robotics, software, stereo, pointcloud, slam]
 comments: true
 ---
 
