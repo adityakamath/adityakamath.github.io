@@ -6,7 +6,6 @@ gh-repo: adityakamath/akros_test
 thumbnail-img: /assets/img/akros_fiducial_thumb.png
 share-img: /assets/img/akros_fiducial_thumb.png
 gh-badge: [follow]
-tags: [akros, robotics, software, fiducials, calibration, slam]
 comments: true
 ---
 
