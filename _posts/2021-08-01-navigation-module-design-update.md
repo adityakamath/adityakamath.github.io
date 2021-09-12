@@ -6,7 +6,6 @@ gh-repo: adityakamath/akros_test
 thumbnail-img: /assets/img/cortex_build_thumb.jpg
 share-img: /assets/img/cortex_build_thumb.jpg
 gh-badge: [follow]
-tags: [akros, robotics, assembly, SLAM, navigation, software]
 comments: true
 ---
 
