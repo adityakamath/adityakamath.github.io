@@ -6,7 +6,6 @@ gh-repo: adityakamath/pinguino
 gh-badge: [follow]
 thumbnail-img: /assets/img/pinguino_build_thumb.jpg
 share-img: /assets/img/pinguino_build_thumb.jpg
-tags: [pinguino, iot, neopixel, arduino, electronics, chassis, build]
 comments: true
 ---
 
