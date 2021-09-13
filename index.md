@@ -19,5 +19,3 @@ While this website is mostly meant as a journal for myself, it is also a portfol
 Happy exploring!
 
 \- Aditya
-
-:robot::rocket::camera::bulb:
