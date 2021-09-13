@@ -4,7 +4,7 @@ title: Projects
 subtitle: Things I've been working on (2011 - Present)
 ---
 
-asdfa
+Some of my favourite robotics projects - a representation of the kind of projects I would like to work on and write about on this blog. I have also worked on other projects, but they are not very relevant to this website. You can have a look at these experiences on my LinkedIn (link at the bottom of the page).
 
 ### AKROS - Autonomous Holonomic Robot Platform
 #### 2021 | Personal Project in Lockdown
