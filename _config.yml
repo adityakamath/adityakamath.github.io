@@ -9,7 +9,7 @@ description: Blog and Portfolio
 # Your name to show in the footer
 author: Aditya Kamath
 
-# --- List of links in the navigation bar --- #
+# --- List of links in the navigation bar --- ##
 
 navbar-links:
   Level 5 / Blog: "blog"
