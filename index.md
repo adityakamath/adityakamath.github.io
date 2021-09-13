@@ -1,6 +1,6 @@
 ---
 layout: page
 title: Aditya Kamath
-subtitle: Design Engineer - Robotics / Mechatronics / Embedded Systems
-cover-img: "/assets/img/cover_img.png"
+subtitle: Robotics / Embedded Systems Design Engineer
+cover-img: "/assets/img/cover_img.jpg"
 ---
