@@ -15,7 +15,7 @@ navbar-links:
   Blog: "blog"
   Projects: "projects"
   # Photography: "photography"
-  About Me: "aboutme"
+  # About Me: "aboutme"
   
 paginate_path: "/blog/page:num/"
 
