@@ -3,15 +3,15 @@ layout: post
 title: Navigation stack update
 subtitle: Testing assisted_teleop and move_base
 gh-repo: adityakamath/akros
-thumbnail-img: /assets/img/akros_move_base_thumb.jpg
-share-img: /assets/img/akros_move_base_thumb.jpg
+thumbnail-img: /assets/img/akros_move_base_thumb.png
+share-img: /assets/img/akros_move_base_thumb.png
 gh-badge: [follow]
 comments: true
 ---
 
 After the last update, I had a robot capable of performing SLAM, building 2D maps and localizing within a map using [amcl](http://wiki.ros.org/amcl). This weekend, I continued further and implemented the [move_base](http://wiki.ros.org/move_base) package to complete the [ROS navigation stack](http://wiki.ros.org/navigation). Before I did that, I was exploring the [navigation_experimental](http://wiki.ros.org/navigation_experimental) package and found the [assisted_teleop](http://wiki.ros.org/assisted_teleop?distro=noetic) node. This node uses the laser scan to create a local costmap. Using this costmap and input teleop commands, the node decides when the robot is too close to an obstacle and accordingly changes the teleop commands provided to the motor controller. For this, I had to modify my twist mixer node to accept three inputs - the original teleop commands, the remapped assisted_teleop commands and the twist messages from the move_base. Using the PS4 controller, I am able to switch between these modes. The following video shows the assisted_teleop node in action:
 
-  [![AKROS: trying different SLAM methods](https://adityakamath.github.io/assets/img/akros_assisted_teleop.png)](https://www.youtube.com/watch?v=CMW9YnUrFxs "AKROS: trying different SLAM methods")
+  [![AKROS: trying different SLAM methods](https://adityakamath.github.io/assets/img/akros_assisted_teleop_ss.png)](https://www.youtube.com/watch?v=CMW9YnUrFxs "AKROS: trying different SLAM methods")
   
 With the assisted_teleop done, it was time to implement move_base. I used the standard configuration with [base_local_planner](http://wiki.ros.org/base_local_planner), [global_planner](http://wiki.ros.org/global_planner) and default recovery behaviors. I did have to modify some parameters like the linear/angular accelaration and velocity limits and the robot footprint. I also set the holonomic parameter to true, so that the local planner could generate twist messages for the robot accordingly. The video below shows the results of this first experiment, although there are still a lot of work to be done. 
   
