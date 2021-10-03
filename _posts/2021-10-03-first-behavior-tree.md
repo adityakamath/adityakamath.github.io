@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Navigation stack update
-subtitle: First Behavior Tree
+subtitle: My First Behavior Tree
 gh-repo: Experimenting with BehaviorTree.cpp and move_base
 thumbnail-img: /assets/img/baby_groot_robot_thumb.png
 share-img: /assets/img/baby_groot_robot_thumb.png
@@ -22,4 +22,4 @@ With the ROS node was all set up, it was now time to test. Groot provides the fu
 
 [![AKROS: Following a sequence using Behavior Trees](https://adityakamath.github.io/assets/img/akros_bt_video_ss.png)](https://www.youtube.com/watch?v=_udEX6V8Utg "AKROS: Following a sequence using Behavior Trees")
    
-For my next steps, I'm excited to learn about designing robot behaviors even further, especially in the ROS context. While Sebastian in his blog mentions [py_trees](https://github.com/splintered-reality/py_trees) and [py_trees_ros](https://github.com/splintered-reality/py_trees_ros), I haven't been able to install/run them correctly on the Raspberry Pi. The terminology used also seems quite different to the BehaviorTree.cpp implementation, and from the looks of it, there seems to be more support/development focused towards ROS2. For now, I am sufficiently happy with BehaviorTree.cpp and since its being supported in ROS2 as well, I don't see a reason to stop using it or switching over to Python (also a programming language I'm not entirely fluent in). I also want to explore how FSMs are implemented in ROS and from a brief survey, [FlexBE](http://wiki.ros.org/flexbe) looks like the way to start. I currenly have a node with nested if conditions to switch between different modes (manual, autonomous, assisted teleop) and it would be great to try and design it using state machines...
+For my next steps, I'm excited to learn about designing robot behaviors even further, especially in the ROS context. While Sebastian in his blog mentions [py_trees](https://github.com/splintered-reality/py_trees) and [py_trees_ros](https://github.com/splintered-reality/py_trees_ros), I haven't been able to install/run them correctly on the Raspberry Pi. The terminology used also seems quite different to the BehaviorTree.cpp implementation, and from the looks of it, there seems to be more support/development focused towards ROS2. For now, I am sufficiently happy with BehaviorTree.cpp and since its being supported in ROS2 as well, I don't see a reason to stop using it or switching over to Python (also a programming language I'm not entirely fluent in). So, for my next challenge - I currenly have a node with nested if conditions to switch between different modes (manual, autonomous, assisted teleop) and it would be great to try and design it using state machines or behavior trees. I also want to explore how FSMs are implemented in ROS and from a brief survey, [FlexBE](http://wiki.ros.org/flexbe) looks like the way to start.
