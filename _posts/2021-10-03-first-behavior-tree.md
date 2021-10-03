@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Navigation stack update
-subtitle: My First Behavior Tree
-gh-repo: Experimenting with BehaviorTree.cpp and move_base
+title: My First Behavior Tree
+subtitle: Experimenting with BehaviorTree.cpp and move_base
+gh-repo: adityakamath/akros
 thumbnail-img: /assets/img/baby_groot_robot_thumb.png
 share-img: /assets/img/baby_groot_robot_thumb.png
 gh-badge: [follow]
