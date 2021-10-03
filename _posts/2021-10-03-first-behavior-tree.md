@@ -13,7 +13,7 @@ I spent this week mostly learning about Behavior Trees, especially in robotics u
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/akros_bt_groot.png" />
-  <figcaption>Behavior tree designed in Groot in Windows. The 'Save Tree' option saves the tree as an XML file. Custom nodes are highlighted on the left in blue.</figcaption>
+  <figcaption>Behavior tree designed in [Groot on Windows](https://github.com/ah-forklib/Groot-Windows). The 'Save Tree' option saves the tree as an XML file. Custom nodes are highlighted on the left in blue.</figcaption>
 </figure>
   
 Once this behavior tree was designed, Groot saves it in the form of an XML file. This XML file is then loaded into the C++ node at runtime, using which a tree is created. The custom nodes are defined in a separate navigation_behaviors.cpp source file. I reused the behaviors made by Sebastian and added some modifications. My custom behaviors are: **SetWaypoints** (sets the number of waypoints and loads them to the back of stack), **GetWaypointFromQueue** (pops waypoints from the front of the stack and returns the coordinates. If the stack is empty, reloads the stack) and finally **GoToGoal** (takes the coordinates and passes them to move_base. Returns the result of move_base). The KeepRunningUntilFailure node keeps ticking the sequence continuously until a failure is returned from one of the child nodes. 
