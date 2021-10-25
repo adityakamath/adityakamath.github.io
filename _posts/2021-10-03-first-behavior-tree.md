@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My First Behavior Tree
+title: My first behavior tree
 subtitle: Experimenting with BehaviorTree.cpp and move_base
 gh-repo: adityakamath/akros
 thumbnail-img: /assets/img/baby_groot_robot_thumb.png
