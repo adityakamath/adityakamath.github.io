@@ -3,8 +3,8 @@ layout: post
 title: Holonomic motion planning
 subtitle: Using dwa_local_planner and move_base
 gh-repo: adityakamath/akros
-thumbnail-img: /assets/img/akros_holonomic_motion.jpg
-share-img: /assets/img/akros_holonomic_motion.jpg
+thumbnail-img: /assets/img/akros_holonomic_motion_thumb.jpg
+share-img: /assets/img/akros_holonomic_motion_thumb.jpg
 gh-badge: [follow]
 comments: true
 ---
