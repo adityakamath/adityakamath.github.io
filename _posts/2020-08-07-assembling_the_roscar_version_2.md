@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Assembling the ROS Car version 2
+title: Assembling the upgraded ROSCar
 subtitle: ...with new (self-designed) acrylic parts
 gh-repo: adityakamath/akros_jetson
 gh-badge: [follow]
