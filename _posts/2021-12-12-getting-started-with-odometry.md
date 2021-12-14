@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AKROS - Getting started with Odometry
-subtitle: Using quadrature wheel encoders + Updates
+subtitle: Using quadrature wheel encoders + OAK-D updates
 gh-repo: adityakamath/akros
 thumbnail-img: /assets/img/akros_encoder_thumb.jpg
 share-img: /assets/img/akros_encoder_thumb.jpg
