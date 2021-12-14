@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AKROS - storing/loading waypoints
+title: Storing/Loading waypoints in ROS
 subtitle: Using a PS4 controller and move_base
 gh-repo: adityakamath/akros
 thumbnail-img: /assets/img/akros_wp_store_thumb.png
