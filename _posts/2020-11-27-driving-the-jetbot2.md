@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Driving the Jetbot2 with a Joystick
-subtitle: + Working with OpenCV in ROS
+title: Driving the Jetbot with a Joystick
+subtitle: and working with OpenCV in ROS
 gh-repo: adityakamath/akros_joystick
 gh-badge: [follow]
 thumbnail-img: /assets/img/jetbot2_jsdrive_thumb.jpg
