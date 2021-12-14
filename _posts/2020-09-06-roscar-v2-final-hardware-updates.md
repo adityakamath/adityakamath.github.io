@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ROSCar v2 - Final hardware updates
+title: ROSCar - Final hardware updates
 subtitle: Camera mount + new antenna + other updates
 gh-repo: adityakamath/akros_jetson
 gh-badge: [follow]
