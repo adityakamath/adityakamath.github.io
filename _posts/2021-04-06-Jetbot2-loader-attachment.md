@@ -1,6 +1,6 @@
 ---
 layout: post
-title: One day build - Jetbot2 Loader
+title: One day build - Jetbot Loader
 subtitle: Assembly and setup with ROS
 gh-repo: adityakamath/jetbot2_ws
 thumbnail-img: /assets/img/jetbot2_loader_thumb.png
