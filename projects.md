@@ -13,7 +13,7 @@ Some of my favourite robotics projects - a representation of the kind of project
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/akros_holo_circle.png" />
 </figure>
 
-As the lockdown(s) extended into 2021, I built an autonomous ROS robot from scratch. I used a 2D LiDAR scanner, a tracking/odometry sensor (Intel T265 camera) and a depth camera (OAK-D) to build a robot that can autonomously map and navigate in my studio apartment. The entire system was developed using the ROS (ROS1 Noetic) navigation stack, and migration to ROS2 (and Nav2) is still in progress. [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/adityakamath/akros) [[3]](https://github.com/ros-planning/navigation) [[4]](https://navigation.ros.org/)
+As the lockdown(s) extended into 2021, I built an autonomous ROS robot from scratch. I used a 2D LiDAR scanner, a tracking/odometry sensor (Intel T265 camera) and a depth camera (OAK-D) to build a robot that can autonomously map and navigate in my studio apartment. I also implemented additional features such as closed loop (holonomic) motion control, life-long SLAM and behavior trees. The entire system was developed using the ROS (ROS1 Noetic) navigation stack on a Raspberry Pi 4. [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/adityakamath/akros) [[3]](https://github.com/ros-planning/navigation) [[4]](http://wiki.ros.org/navigation)
 
 ### Jetson Robot Platforms - JetRacer, JetBot
 #### 2020 | Personal Project in Lockdown
@@ -22,7 +22,7 @@ As the lockdown(s) extended into 2021, I built an autonomous ROS robot from scra
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/jetbot_2.png" />
 </figure>
 
-During the Covid-19 lockdown, I decided to upgrade my Donkey Car into a JetRacer (ackermann-steered, based on NVidia JetRacer). I also added some custom add-ons like an IMU. Due to the lack of driving space, I moved everything to a JetBot platform (differential-drive). To demonstrate the Jetson Nano's AI capabilities, I trained an edge-detection model to drive the robot on a desk without falling off. [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/dusty-nv/jetson-inference) [[3]](https://github.com/dusty-nv/jetbot_ros) [[4]](https://github.com/NVIDIA-AI-IOT/jetracer)
+During the Covid-19 lockdown, I decided to upgrade my Donkey Car into an NVidia JetRacer (based on the NVidia Jetson Nano), with custom add-ons like an IMU. Due to the lack of driving space, I moved everything to a JetBot platform (differential drive). To demonstrate the Jetson Nano's AI capabilities, I trained an edge detection model to drive the robot on a desk without falling off. [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/dusty-nv/jetson-inference) [[3]](https://github.com/dusty-nv/jetbot_ros) [[4]](https://github.com/NVIDIA-AI-IOT/jetracer)
 
 ### Remote Computing for Soccer Robots using 5G mm-Waves
 #### 2018/2019 | BlueSPACE, Tech United, TU Eindhoven
@@ -49,7 +49,7 @@ Our team of 12 designed a multi-quadrotor demonstrator to simulate a multi-satel
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/drone_referee.png" />
 </figure>
 
-In a team of 7, we designed and implemented an autonomous drone concept to referee Robot Soccer matches. The drone was programmed to track a calculated "bubble of active play" and provide recommendations based on the status of the ball (goal, throw in) and the tracked players (collisions, fouls). This was demonstrated on Tech United's RoboCup field. [[1]](http://cstwiki.wtb.tue.nl/index.php?title=Drone_Referee_-_MSD_2017/18)
+In a team of 7, we designed and implemented an autonomous drone concept to referee Robot Football matches. The drone was programmed to track a calculated "bubble of active play" and provide recommendations based on the status of the tracked ball (goal, throw in) and the tracked players (collisions, fouls). This was demonstrated on Tech United's RoboCup field. [[1]](http://cstwiki.wtb.tue.nl/index.php?title=Drone_Referee_-_MSD_2017/18)
 
 ### AGV Localization in Changing Indoor Environments
 #### 2016/2017 | Prodrive Technologies, TU Eindhoven
@@ -76,7 +76,7 @@ As a part of a master's course, our team of 3 programmed a ROS-based holonomic r
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/bachelor_thesis.png" />
 </figure>
 
-For my Bachelor End Project, I designed and simulated an autonomy strategy for the lunar excavator robot built by our team RoboManipal in 2012-2013. This involved a study and implementation of robot perception, trajectory planning and finally motion control to complete the NASA Lunabotics Mining Challenge 2013 problem statement autonomously. [[1]](https://issuu.com/impactjournals/docs/1._eng-autonomous_navigation_of_a_l) [[2]](http://oaji.net/articles/2014/489-1409643664.pdf)
+For my Bachelor End Project, I designed and simulated an autonomy strategy for the lunar excavator robot built by our student team RoboManipal in 2012-2013. This involved the study and implementation of robot perception, trajectory planning and finally motion control to complete the NASA Lunabotics Mining Challenge 2013 problem statement autonomously. [[1]](https://issuu.com/impactjournals/docs/1._eng-autonomous_navigation_of_a_l) [[2]](http://oaji.net/articles/2014/489-1409643664.pdf)
 
 ### NASA Lunabotics Mining Competition 2013
 #### 2012/2013 | RoboManipal, MIT Manipal
@@ -85,7 +85,7 @@ For my Bachelor End Project, I designed and simulated an autonomy strategy for t
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/nasa_lunabotics.png" />
 </figure>
 
-Our 12-member team participated in the 4th NASA Lunabotics Mining Competition at Kennedy Space Center in Florida, USA in 2013. I played the roles of Team Lead and Systems Engineer (Electronics/Software). As system engineer, I designed the electronics, communications and control software for our differential drive lunar excavator robot which teleoperated over a high-latency wireless network. The team ranked 19th from 50 teams. [[1]](https://robomanipal.wordpress.com/) [[2]](https://robomanipal.com/) [[3]](https://forums.ni.com/t5/Academics-Documents/Telerobotic-Lunar-Excavator-RMX-13/ta-p/3520498?profile.language=en)
+Our 12-member team participated in the 4th NASA Lunabotics Mining Competition at Kennedy Space Center in Florida, USA in 2013. I was the Student Team Lead and Systems Engineer (Electronics/Software). As system engineer, I designed the electronics, communications and control software for our lunar excavator robot which teleoperated over a high-latency wireless network. The team ranked 19th from 50 teams. [[1]](https://robomanipal.wordpress.com/) [[2]](https://robomanipal.com/) [[3]](https://forums.ni.com/t5/Academics-Documents/Telerobotic-Lunar-Excavator-RMX-13/ta-p/3520498?profile.language=en)
 
 ### ABU Robocon 2012
 #### 2011/2012 | RoboManipal, MIT Manipal
@@ -94,4 +94,4 @@ Our 12-member team participated in the 4th NASA Lunabotics Mining Competition at
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/abu_robocon.png" />
 </figure>
 
-Our student team built an autonomous robot and a manually operated robot for the ABU Robocon 2012 problem statement. I was involved mostly in the design of the electronics (IR sensor arrays, relay boards, Arduinos) and development of the autonomous functionalities based on a grid following algorithm. The autonomous robot was programmed to navigate on a grid, grab an object and place it autonomously at a pre-defined location. [[1]](https://robomanipal.wordpress.com/) [[2]](https://robomanipal.com/)
+Our student team built one autonomous robot and one manually operated robot for the ABU Robocon 2012 national-level competition. I was involved in the design of the electronics (IR sensor arrays, relay boards, Arduino shields) and development of the autonomous functionalities based on grid-based positioning algorithms. The autonomous robot was programmed to navigate on a flat surface with a grid, grab an object and place it autonomously at a pre-defined location. [[1]](https://robomanipal.wordpress.com/) [[2]](https://robomanipal.com/)
