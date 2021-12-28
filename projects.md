@@ -13,7 +13,7 @@ Some of my favourite robotics projects - a representation of the kind of project
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/akros_holo_circle.png" />
 </figure>
 
-As the lockdown(s) extended into 2021, I built an autonomous ROS robot from scratch. I used a 2D LiDAR scanner, a tracking/odometry sensor (Intel T265 camera) and a depth camera (OAK-D) to build a robot that can autonomously map and navigate in my studio apartment. I also implemented additional features such as closed loop (holonomic) motion control, life-long SLAM and behavior trees. The entire system was developed using the ROS (ROS1 Noetic) navigation stack on a Raspberry Pi 4. [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/adityakamath/akros) [[3]](https://github.com/ros-planning/navigation) [[4]](http://wiki.ros.org/navigation)
+As the lockdown(s) extended into 2021, I built an autonomous ROS robot from scratch. I used a 2D LiDAR scanner, a tracking/odometry sensor (Intel T265 camera) and a depth camera (OAK-D) to build a robot that can autonomously map and navigate in my studio apartment. I also implemented additional features such as closed loop (holonomic) motion control, life-long SLAM and behavior trees. The entire system was developed using the ROS1 navigation stack on a Raspberry Pi 4. [[1]](https://github.com/adityakamath?tab=repositories) [[2]](https://github.com/adityakamath/akros) [[3]](https://github.com/ros-planning/navigation) [[4]](http://wiki.ros.org/navigation)
 
 ### Jetson Robot Platforms - JetRacer, JetBot
 #### 2020 | Personal Project in Lockdown
