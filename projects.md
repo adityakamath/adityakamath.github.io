@@ -60,7 +60,7 @@ In a team of 7, we designed and implemented an autonomous drone concept to refer
 
 For my Master Thesis, I worked with Prodrive Technologies to study and improve their current AGV localization strategy for their next generation of autonomous 2D LiDAR based robots. Two strategies were proposed, implemented, and validated in a simulated environment using ROS and Gazebo. This project is not open-access.
 
-### [Maze Solving Robot]((http://cstwiki.wtb.tue.nl/index.php?title=Embedded_Motion_Control_2016)
+### [Maze Solving Robot](http://cstwiki.wtb.tue.nl/index.php?title=Embedded_Motion_Control_2016)
 #### 2016 | TU Eindhoven
 
 <figure class="aligncenter">
@@ -78,7 +78,7 @@ As a part of a master's course, our team of 3 programmed a ROS-based holonomic r
 
 For my Bachelor End Project, I designed and simulated an autonomy strategy for the lunar excavator robot built by our student team RoboManipal in 2012-2013. This involved the study and implementation of robot perception, trajectory planning and finally motion control to complete the NASA Lunabotics Mining Challenge 2013 problem statement autonomously.
 
-### [NASA Lunabotics Mining Competition 2013](https://forums.ni.com/t5/Academics-Documents/Telerobotic-Lunar-Excavator-RMX-13/ta-p/3520498?profile.language=en)
+### [NASA Lunabotics Mining Competition 2013](https://www.nasa.gov/pdf/726112main_Lunabotics%202013%20Press%20Kit_Layout%201.pdf)
 #### 2012/2013 | RoboManipal, MIT Manipal
 
 <figure class="aligncenter">
@@ -87,7 +87,7 @@ For my Bachelor End Project, I designed and simulated an autonomy strategy for t
 
 Our 12-member team participated in the 4th NASA Lunabotics Mining Competition at Kennedy Space Center in Florida, USA in 2013. I was the Student Team Lead and Systems Engineer (Electronics/Software). As system engineer, I designed the electronics, communications and control software for our lunar excavator robot which teleoperated over a high-latency wireless network. The team ranked 19th from 50 teams.
 
-### [ABU Robocon 2012](https://robomanipal.com/)
+### [ABU Robocon 2012](https://www.youtube.com/watch?v=Ljupjcuj8JI)
 #### 2011/2012 | RoboManipal, MIT Manipal
 
 <figure class="aligncenter">
