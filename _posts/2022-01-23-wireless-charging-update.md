@@ -3,7 +3,7 @@ layout: post
 title: Wireless charging module update
 subtitle: Design and assembly
 gh-repo: adityakamath/akros
-thumbnail-img: /assets/img/akros_render_thumb.png
+thumbnail-img: /assets/img/akros_render_thumb2.png
 share-img: /assets/img/akros_render_thumb.png
 gh-badge: [follow]
 comments: true
@@ -67,7 +67,7 @@ Here's a video of the wireless charging module working individually and once its
 	<figcaption>The actual robot, with the receiver module attached. Its wired to the back of the robot into the input port of the UPS. The receiver module is attached using 4 M# screws, and the also held in place by the four motors.</figcaption>
 </figure>
 
-[![AKROS: wireless charging module test](https://adityakamath.github.io/assets/img/akros_wireless_test_ss.png)](https://www.youtube.com/watch?v=RzZgzBwSV4U "AKROS: wireless charging module test")
+[![AKROS: wireless charging module test](https://adityakamath.github.io/assets/img/akros_wireless_test_ss.PNG)](https://www.youtube.com/watch?v=RzZgzBwSV4U "AKROS: wireless charging module test")
 
 Finally, it was time to update my CAD model with parts, so that I can have an updated robot model for visualizations. This meant adding parts to my Fusion360 design like motors and encoders, which I found off the internet - these parts representative, they don't look exactly like the parts on the robot - the mecanum wheel for example, has 9 rollers on the robot, but 12 in the 3D model. Some parts like the Arduino, motor driver, UPS/battery, wires and nuts/bolts are still missing, but in its current state, the CAD looks a lot like the real thing. Using Fusion360, I was also able to render the CAD design (which I then put them together in this really nice collage) and generate some videos:
 
