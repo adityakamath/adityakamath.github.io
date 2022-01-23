@@ -69,15 +69,14 @@ Here's a video of the wireless charging module working individually and once its
 
 [![AKROS: wireless charging module test](https://adityakamath.github.io/assets/img/akros_wireless_test_ss.png)](https://www.youtube.com/watch?v=RzZgzBwSV4U "AKROS: wireless charging module test")
 
-Finally, it was time to update my CAD model with parts, so that I can have an updated robot model for visualizations. This meant adding parts to my Fusion360 design like motors and encoders, which I found off the internet - these parts representative, they don't look exactly like the parts on the robot - the mecanum wheel for example, has 9 rollers on the robot, but 12 in the 3D model. Some parts like the Arduino, motor driver, UPS, wires and nuts/bolts are still missing, but in its current state, the CAD looks a lot like the real thing. Using Fusion360, I was also able to render the CAD design (which I then put them together in this really nice collage) and generate some videos:
+Finally, it was time to update my CAD model with parts, so that I can have an updated robot model for visualizations. This meant adding parts to my Fusion360 design like motors and encoders, which I found off the internet - these parts representative, they don't look exactly like the parts on the robot - the mecanum wheel for example, has 9 rollers on the robot, but 12 in the 3D model. Some parts like the Arduino, motor driver, UPS/battery, wires and nuts/bolts are still missing, but in its current state, the CAD looks a lot like the real thing. Using Fusion360, I was also able to render the CAD design (which I then put them together in this really nice collage) and generate some videos:
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/akros_cad_actual_collage.jpg"/>
-	<figcaption>New side panel with hole for the E-stop button</figcaption>
+	<figcaption>Drawing vs Rendering vs Actual robot. While I would have prefered opaque panels, I really like how the translucent panels diffuse the light, and how the shadows form due to the internal wiring. </figcaption>
 </figure>
 
---insert turntable video --
-[![AKROS renders](https://adityakamath.github.io/assets/img/akros_renderings_ss.png)](https://www.youtube.com/watch?v=6AxlMWnKvZE "[AKROS renders")
+[![AKROS renders](https://adityakamath.github.io/assets/img/akros_renderings_ss.png)](https://www.youtube.com/watch?v=6AxlMWnKvZE "AKROS renders")
 
 That's all for this week. For the next week, I plan on fine-tuning the odometry and the navigation stack, in order to optimize performance. I also have some minor issues with my behavior tree and high level sequences, so I plan on fixing them too. Next week, I'll also receive a metal storage box that I ordered for AKROS and all its peripherals, and also some goodies for my next project. I'll detail out my plans in the next blog post...
 
