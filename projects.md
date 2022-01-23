@@ -13,7 +13,7 @@ Some of my favourite robotics projects - a representation of the kind of project
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/akros_holo_circle.png" />
 </figure>
 
-As the lockdown(s) extended into 2021, I decided to build an autonomous mecanum-wheel based ROS robot. I used a 2D LiDAR scanner, a tracking/odometry sensor (Intel T265 camera) and a depth camera (OAK-D) to build a robot that can autonomously map and navigate in my studio apartment. I also implemented additional features such as closed loop (holonomic) motion control, life-long SLAM and behavior trees. The entire system was developed using the ROS1 navigation stack on a Raspberry Pi 4. 
+Through 2021, I built and programmed an autonomous mecanum-wheel based robot using ROS1 on a Raspberry Pi 4. I used a 2D LiDAR, a visual-inertial odometry camera (Intel T265), and wheel odometry to build a robot that can autonomously map and navigate in my studio apartment. I also implemented additional features such as teleop assist/mixing, closed loop (holonomic) motion control, life-long SLAM and behavior trees.
 
 ### [Jetson Robot Platforms - JetRacer, JetBot](https://github.com/adityakamath/jetbot2_ws)
 #### 2020 |
@@ -22,7 +22,7 @@ As the lockdown(s) extended into 2021, I decided to build an autonomous mecanum-
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/jetbot_2.png" />
 </figure>
 
-During the Covid-19 lockdown, I decided to upgrade my Donkey Car into an NVidia JetRacer (based on the NVidia Jetson Nano), with custom add-ons like an IMU. Due to the lack of driving space, I moved everything to a JetBot platform (differential drive). To demonstrate the Jetson Nano's AI capabilities, I trained an edge detection model to drive the robot on a desk without falling off.
+During the Covid-19 lockdown, I decided to upgrade my Donkey Car into an NVidia JetRacer (based on the NVidia Jetson Nano), with custom add-ons like an IMU and teleop control. Due to the lack of driving space, I moved everything to a JetBot platform (differential drive). To demonstrate the Jetson Nano's AI capabilities, I trained an edge detection model to drive the robot on a desk without falling off.
 
 ### [Remote Computing for Soccer Robots using 5G mm-Waves](https://research.tue.nl/nl/publications/enabling-remote-computation-for-soccer-robots-using-5g-mm-waves-d)
 #### 2018/2019 | BlueSPACE, Tech United, TU Eindhoven
@@ -31,7 +31,7 @@ During the Covid-19 lockdown, I decided to upgrade my Donkey Car into an NVidia 
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/pdeng_thesis.png" />
 </figure>
 
-For my PDEng Thesis, I designed and built a functional prototype for 5G-Robotics demonstrations. This experimental setup was built using Tech United's TURTLE platform and BlueSPACE's mm-Wave setup, in order to validate that a distributed robotic/motion control system (operating at 1 kHz) can still maintain its real-time properties over a 5G network.
+For my PDEng Thesis, I designed and built a functional prototype for 5G-Robotics demonstrations using RoboCup MSL football playing robots. This experimental setup was built using Tech United's TURTLE platform and BlueSPACE's mm-Wave setup, in order to validate that a distributed robotic/motion control system (operating above 1 kHz) can still maintain its real-time properties over a 5G network.
 
 ### [Multi-Drone Positioning and Formation Flying](https://www.tue.nl/en/research/aiming-at-the-sun-with-flying-drones/)
 #### 2018 | European Space Agency (ESTEC), TU Eindhoven
@@ -40,7 +40,7 @@ For my PDEng Thesis, I designed and built a functional prototype for 5G-Robotics
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/formation_flying.png" />
 </figure>
 
-Our team of 12 designed a multi-quadrotor demonstrator to simulate a multi-satellite space mission by ESA for the ESA ESTEC Open Day 2018. As Software Architect and Designer, I implemented the multi-camera positioning system to localize the drones in 6dof for accurate trajectory following and control.
+Our team of 12 designed a multi-quadrotor demonstrator to simulate a multi-satellite space mission by ESA for the ESA ESTEC Open Day 2018. As Software Architect and Designer, I led the development of a multi-camera positioning system to localize two quadrotors in 6dof for accurate trajectory following and control.
 
 ### [Autonomous Drone Referee](http://cstwiki.wtb.tue.nl/index.php?title=Drone_Referee_-_MSD_2017/18)
 #### 2018 | Tech United, Eindhoven University of Technology
@@ -49,7 +49,7 @@ Our team of 12 designed a multi-quadrotor demonstrator to simulate a multi-satel
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/drone_referee.png" />
 </figure>
 
-In a team of 7, we designed and implemented an autonomous drone concept to referee Robot Football matches. The drone was programmed to track a calculated "bubble of active play" and provide recommendations based on the status of the tracked ball (goal, throw in) and the tracked players (collisions, fouls). This was demonstrated on Tech United's RoboCup field.
+In a team of 7, we designed and implemented an autonomous drone concept to referee RoboCup MSL football matches. The drone was programmed to track a calculated "bubble of active play" and provide recommendations based on the status of the tracked ball (goal, throw in) and the tracked player robots (collisions, fouls). This was demonstrated on Tech United's RoboCup field using their TURTLE robot platform.
 
 ### [AGV Localization in Changing Indoor Environments](https://research.tue.nl/nl/studentTheses/a-study-of-mobile-robot-localization-in-changing-indoor-environme)
 #### 2016/2017 | Prodrive Technologies, TU Eindhoven
@@ -58,7 +58,7 @@ In a team of 7, we designed and implemented an autonomous drone concept to refer
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/master_thesis.png" />
 </figure>
 
-For my Master Thesis, I worked with Prodrive Technologies to study and improve their current AGV localization strategy for their next generation of autonomous 2D LiDAR based robots. Two strategies were proposed, implemented, and validated in a simulated environment using ROS and Gazebo. This project is not open-access.
+For my Master Thesis, I worked with Prodrive Technologies to study and improve their current AGV localization strategy for their next generation of autonomous 2D LiDAR based robots. Multiple strategies were proposed, implemented, and validated in a simulated environment using ROS and Gazebo. The leading strategy involved the inclusion of an IMU to correct for any localization failures, and predictive re-mapping of the environment to correct for changes in the environment. This project is not open-access.
 
 ### [Maze Solving Robot](http://cstwiki.wtb.tue.nl/index.php?title=Embedded_Motion_Control_2016)
 #### 2016 | TU Eindhoven
@@ -67,7 +67,7 @@ For my Master Thesis, I worked with Prodrive Technologies to study and improve t
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/embedded_motion_control.png" />
 </figure>
 
-As a part of a master's course, our team of 3 programmed a ROS-based holonomic robot platform to complete a maze using only 2D LiDAR data. We implemented the pledge algorithm to solve simulated and physical mazes with 90 degree turns, interactive doorwars, and open spaces. We participated in two challenges during the course, and ranked second, thus winning a crate of (well-deserved) beer!
+As a part of a master's course, our team of 3 programmed a ROS-based holonomic robot platform to complete a maze using only 2D LiDAR data. We implemented the pledge algorithm and random walk to solve simulated and physical mazes with 90 degree turns, interactive doorwars, and open spaces. We participated in two challenges during the course, and ranked second, thus winning a crate of (well-deserved) beer!
 
 ### [Autonomous Navigation of a Lunar Robot](https://oaji.net/articles/2014/489-1409643664.pdf)
 #### 2013/2014 | MIT Manipal
