@@ -13,7 +13,7 @@ Some of my favourite robotics projects - a representation of the kind of project
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/akros_circle.png" />
 </figure>
 
-Through 2021, I built and programmed an autonomous mecanum-wheel based robot using ROS1 on a Raspberry Pi 4. I used a 2D LiDAR, a visual-inertial odometry camera (Intel T265), and wheel odometry to build a robot that can autonomously map and navigate in my studio apartment. I also implemented additional features such as teleop assist/mixing, closed loop (holonomic) motion control, life-long SLAM and behavior trees.
+Through 2021, I built and programmed an autonomous mecanum-wheel based robot using ROS1 on a Raspberry Pi 4. I used a 2D LiDAR, a visual-inertial odometry camera (Intel T265), and wheel odometry to build a robot that can autonomously map and navigate in my studio apartment. I also implemented additional features such as teleop assist/mixing, closed loop (holonomic) motion control, wireless charging and behavior trees.
 
 ### [Jetson Robot Platforms - JetRacer, JetBot](https://github.com/adityakamath/jetbot2_ws)
 #### 2020 |
