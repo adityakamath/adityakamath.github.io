@@ -10,7 +10,7 @@ Some of my favourite robotics projects - a representation of the kind of project
 #### 2021 |
 
 <figure class="aligncenter">
-	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/akros_holo_circle.png" />
+	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/akros_circle.png" />
 </figure>
 
 Through 2021, I built and programmed an autonomous mecanum-wheel based robot using ROS1 on a Raspberry Pi 4. I used a 2D LiDAR, a visual-inertial odometry camera (Intel T265), and wheel odometry to build a robot that can autonomously map and navigate in my studio apartment. I also implemented additional features such as teleop assist/mixing, closed loop (holonomic) motion control, life-long SLAM and behavior trees.
