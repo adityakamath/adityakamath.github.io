@@ -24,7 +24,7 @@ Through 2021, I built and programmed an autonomous mecanum-wheel based robot usi
 
 During the Covid-19 lockdown, I decided to upgrade my Donkey Car into an NVidia JetRacer (based on the NVidia Jetson Nano), with custom add-ons like an IMU and teleop control. Due to the lack of driving space, I moved everything to a JetBot platform (differential drive). To demonstrate the Jetson Nano's AI capabilities, I trained an edge detection model to drive the robot on a desk without falling off.
 
-### [Remote Computing for Soccer Robots using 5G mm-Waves](https://research.tue.nl/nl/publications/enabling-remote-computation-for-soccer-robots-using-5g-mm-waves-d)
+### [Remote Computing for Robots using 5G mm-Waves](https://research.tue.nl/nl/publications/enabling-remote-computation-for-soccer-robots-using-5g-mm-waves-d)
 #### 2018/2019 | BlueSPACE, Tech United, TU Eindhoven
 
 <figure class="aligncenter">
@@ -58,7 +58,7 @@ In a team of 7, we designed and implemented an autonomous drone concept to refer
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/master_thesis.png" />
 </figure>
 
-For my Master Thesis, I worked with Prodrive Technologies to study and improve their current AGV localization strategy for their next generation of autonomous 2D LiDAR based robots. Multiple strategies were proposed, implemented, and validated in a simulated environment using ROS and Gazebo. The leading strategy involved the inclusion of an IMU to correct for any localization failures, and predictive re-mapping of the environment to correct for changes in the environment. This project is not open-access.
+For my Master Thesis, I worked with Prodrive Technologies to study and improve their current AGV localization strategy for their next generation of autonomous 2D LiDAR based robots. Multiple strategies were proposed, implemented, and validated in a simulated environment using ROS and Gazebo. The leading strategy involved the inclusion of an IMU to correct for any localization failures, and predictive re-mapping of the workspace to correct for changes in the environment. This project is not open-access.
 
 ### [Maze Solving Robot](http://cstwiki.wtb.tue.nl/index.php?title=Embedded_Motion_Control_2016)
 #### 2016 | TU Eindhoven
