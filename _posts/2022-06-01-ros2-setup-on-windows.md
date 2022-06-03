@@ -73,6 +73,8 @@ On VSCode, I used the following official extensions (at least for the basic inst
 	<img src="https://adityakamath.github.io/assets/img/vscode_ros_extension_palette.png"/>
 	<figcaption>ROS tasks shown on the command pallette using the official ROS extension on VSCode</figcaption>
 </figure>
+
+More information on the ROS extension can be found on this [YouTube playlist by Polyhobbyist here](https://www.youtube.com/watch?v=PBbEhRf8QjE&list=PL2dJBq8ig-vihvDVw-D5zAYOArTMIX0FA)
   
 **INSTALLING ROS2: WINDOWS SUBSYSTEM FOR LINUX (WSL2)**  
 
