@@ -26,7 +26,7 @@ This part went really quickly as I had done the exact same thing once before, so
 The Teensy board is in the same form factor as an Arduino Mega, so it was a direct replacement. However, unlike the original motor driver, the Cytron motor drivers couldn't fit directly on top of the Arduino with just spacers as the holes didn't align. So, I had to design and 3D print an adapter piece. Now, using spacers the adapter piece is assembled on top of the Teensy board and then the Cytron motor drivers are mounted on top of the adapter piece. Since the new motor drivers don't have massive heat sinks like the old one, the entire assembly fits in the base module of the robot. All the header pins of the Teensy board are accessible with angled connectors, but with straight Dupont connectors, you need to bend the pin a little bit when the adapter piece is present. I could make some changes to the design to make space for the connectors, but for now it works.
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/akros_teensy_cytron_adapter.png"/>
+	<img src="https://adityakamath.github.io/assets/img/akros_teensy_cytron_adapter.PNG"/>
 	<figcaption>The entire assembly but with an Arduino Mega instead of the Teensy 4.1 only for illustration. The adapter is shown (in off-white), between the Arduino Mega and the two Cytron MDD3A motor drivers.
 	</figcaption>
 </figure>
@@ -62,6 +62,7 @@ void spin_motor(int motor, double velocity){
 }
 ```
 
+
 ```
 //New Code:
 //Writes PWM values to motor pins for the specified motor
@@ -89,7 +90,7 @@ However, I did have some concerns. In the past, when I have uploaded rosserial c
 
 Once everything was working, I also made a small video showing the new motor drivers in action. The motor and drivers make a different sound and its probably more silent than with the previous motor drivers. The motor drivers also come with one green LED each to indicate power, and four red LEDs to indicate direction (one for each motor and direction). Thanks to the translucent walls, it makes the base module light up even more as shown in the video below. While some people seem to like it, I'm already considering new parts with black acrylic.
 
-[![Cytron Motor Driver Test](https://adityakamath.github.io/assets/img/akros_cytron_test_ss.png)](https://www.youtube.com/watch?v=pjsmB1NON2o "AKROS Cytron Motor Driver Test")
+[![Cytron Motor Driver Test](https://adityakamath.github.io/assets/img/akros_cytron_test_ss.PNG)](https://www.youtube.com/watch?v=pjsmB1NON2o "AKROS Cytron Motor Driver Test")
 
 ### Step 6: Transition to ROS2
 
@@ -102,7 +103,7 @@ For my next build, I definitely wanted to make a bigger robot and work with some
 The Teensy 4.1 board is for the AKROS2 project I explained earlier, so I will ignore this for now. The Portenta is definitely overkill for this project, so although I've tested that it works, it is going back in its box. I'm now left with the ESP32 and the RPi Pico, and I've been struggling to choose between the two - mainly because of Wifi and Bluetooth which the ESP32 provides but the RPi Pico does not. On the other hand, there's the [Arduino Nano RP2040 Connect](https://docs.arduino.cc/hardware/nano-rp2040-connect), which is a RPi Pico with a Wifi/Bluetooth module and a few extra features put together by Arduino. It costs twice as much as some ESP32 boards (even more for some boards), but it comes with an onboard microphone, a six axis IMU, 16MB Flash, and is also possibly more reliable than ESP32 in terms of documentation, support and community. The Nano RP2040 also costs as much as a [RPi Zero 2 W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) + a RPi Pico + IMU (including tax and shipping), which is a combination I can try, but the RPi Zero 2 W and the popular IMU chips are [out of stock literally everywhere](https://www.youtube.com/watch?v=u1vuz8EtC9s). I still have to make some decisions here, maybe I can start by drawing up a pros and cons list. Meanwhile, I have been busy trying to design the PCB for this project, I've got the schematic for the four channel motor driver, the battery/charging system as well as the sensors which will be added to the robot. Only thing remaining is the microcontroller which I still need to decide. 
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/akros2_microcontroller_test.png"/>
+	<img src="https://adityakamath.github.io/assets/img/makros_microcontroller_test.png"/>
 	<figcaption>The microcontroller boards that I've been using to test VSCode, PlatformIO and microROS. On the top left is the Adafruit Macropad RP2040 which has a RPi Pico RP2040 onboard alongside a screen, 4x3 key matrix, a rotary encoder and Neopixel LEDs. On the top right is the M5Stack Core Gray, which has an ESP32, a screen with buttons, an IMU, a speaker and exposed GPIO pins. This is stacked on top of a quad motor and encoder driver module by M5Stack. On the bottom is the Arduino Portenta Breakout Board with an Arduino Portenta H7 Lite Connected attached on top.
 	 </figcaption>
 </figure>
@@ -110,13 +111,13 @@ The Teensy 4.1 board is for the AKROS2 project I explained earlier, so I will ig
 This week, I also received two new microcontroller devices - the Arduino Nano RP2040 Connect, and the Raspberry Pi Pico. I still haven't had the time to play with them yet, although I did click some pictures and also used up the stickers the Arduino came with.
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/akros_arduino_rpi_rp2040.jpg"/>
+	<img src="https://adityakamath.github.io/assets/img/makros_arduino_rpi_rp2040.jpg"/>
 	<figcaption> Arduino Nano RP2040 Connect (top) and a pack of 5 RPi Pico (bottom). The Arduino came with stickers that I hadn't seen for a very long time.
 	</figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/akros_rp2040_comparison.jpg"/>
+	<img src="https://adityakamath.github.io/assets/img/makros_comparison_rp2040.jpg"/>
 	<figcaption> Size and pinout comparison between the Arduino Nano RP2040 and the RPi Pico. Both have the same chip but the Arduino Nano RP2040 uses some of the pins for Wifi, IMU and the inbuilt microphone, so fewer pins are exposed and the board is more compact.
 	</figcaption>
 </figure>
@@ -124,7 +125,7 @@ This week, I also received two new microcontroller devices - the Arduino Nano RP
 I have also been testing various [N20 micro metal gear motors](https://www.adafruit.com/product/4640) with different gear ratios and speeds, and I've ended up selecting some 100RPM motors + encoders with some decent torque. I also looked for some mecanum wheels, and found some [really nice ones on Pimoroni](https://shop.pimoroni.com/products/mecanum-wheels-pack-of-4?variant=31590631997523). They're made for the N20 motors, come in a pack of four (which is convenient) and are of really good quality. However, they are quite pricy (at around 24 Pounds for the set of 4 + shipping), and its a shame they dont sell them individually or in Left/Right pairs. I broke one of them due to my own fault and had to buy the entire set of 4 again.
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/akros_micro_motors_wheels_battery.png"/>
+	<img src="https://adityakamath.github.io/assets/img/makros_motors_wheels_battery.png"/>
 	<figcaption> 100 RPM motors with Pimoroni mecanum wheels attached, and a 6V 2300mAh NiMH battery to power the entire system. 
 	</figcaption>
 </figure>
