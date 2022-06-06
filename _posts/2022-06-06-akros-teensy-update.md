@@ -3,8 +3,8 @@ layout: post
 title: AKROS(2) Teensy Update
 subtitle: and planning the next build
 gh-repo: adityakamath/arduino_sketchbook_ros
-thumbnail-img: /assets/img/vscode_ros_wsl.png
-share-img: /assets/img/vscode_ros_wsl.png
+thumbnail-img: /assets/img/akros_teensy_update_thumb.jpg
+share-img: /assets/img/akros_teensy_update_thumb.jpg
 gh-badge: [follow]
 comments: true
 ---
