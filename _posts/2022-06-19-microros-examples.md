@@ -74,7 +74,7 @@ Despite having already chosen the Nano RP2040, I also decided to try out the RPi
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/microros_macropad_rp2040.jpg"/>
-	<figcaption>Adafruit Macropad with a RP2040 chip. It has a handy display, a rotary encoder and enough keys to be able to drive a mecanum wheeled robot. Each key also has an addressable RGB LED.
+	<figcaption>Adafruit Macropad with a RP2040 chip. It has a handy display, a rotary encoder and enough keys to be able to drive a mecanum wheeled robot. Each key also has an addressable RGB LED. Here I also have a 3D printed stand for the Macropad provided by Adafruit, it is a really cool one-piece print, without any supports needed.
 	</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ In my [previous post](https://adityakamath.github.io/2022-06-06-akros-teensy-upd
 
 ### Next Steps
 
-For my next steps with microROS, I first want to spend some time fixing the Service example with the Portenta board, and the Decibel example from the Nano RP2040. Next, I want to explore different transport methods - UDP over Ethernet using the Portenta (with the [Portenta Breakout Board](https://store-usa.arduino.cc/products/arduino-portenta-breakout)), and UDP over Wifi for both the Portenta and the Nano RP2040. Once these are done, I want to try the same things with Teensy 4.1 - with the Serial and UDP over Ethernet transports. I am using the Teensy 4.1 with ROSSerial and I intend to use microROS when I port the rest of the software stack to ROS2. Finally, when all this is done, or if I get bored, I will try and set up a simple microROS example with the Adafruit Macropad RP2040. 
+For my next steps with microROS, I first want to spend some time fixing the Service example with the Portenta board, and the Decibel example from the Nano RP2040. Next, I want to explore different transport methods - UDP over Ethernet using the Portenta (with the [Portenta Breakout Board](https://store-usa.arduino.cc/products/arduino-portenta-breakout)), and UDP over Wifi for both the Portenta and the Nano RP2040. Once these are done, I want to try the same things with Teensy 4.1 - with the Serial and UDP over Ethernet transports. I am using the Teensy 4.1 with ROSSerial and I intend to use microROS when I port the rest of the software stack to ROS2. Finally, when all this is done, or if I get bored, I will try and set up a simple microROS example with the Adafruit Macropad RP2040.
 
 Meanwhile with my robots, I have also made some progress which I plan on continuing: For the AKROS robot, I have updated the [udev rules with symbolic links](https://opensource.com/article/18/11/udev) for each specific microcontroller that I plan on experimenting with or implementing. So, now I do not need to search /dev/tty* and see which port corresponds to which device. The udev rules look like this:
 
