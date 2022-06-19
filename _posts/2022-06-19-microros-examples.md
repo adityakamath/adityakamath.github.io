@@ -107,10 +107,4 @@ In terms of the chassis, I have ordered a few new parts - opaque and matte black
 	</figcaption>
 </figure>
 
-<figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/makros_proto_design2.png"/>
-	<figcaption>Updated prototype design. In this update ther are fewer threaded inserts as they were not needed, the square holes for the cliff sensors are wider since they did not fit the first time. Finally, the space for the battery pack is wider so that it can fit easily. The battery can also be zip-tied to the chassis using the provided holes.
-	</figcaption>
-</figure>
-
 For next week, I want to explore the UDP transport with the Portenta and the Nano RP2040. Meanwhile, I expect to receive the acrylic parts and hopefully I also get the chance to visit the office and 3D print the new design for the micro AKROS robot.
