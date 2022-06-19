@@ -107,4 +107,4 @@ In terms of the chassis, I have ordered a few new parts - opaque and matte black
 	</figcaption>
 </figure>
 
-For next week, I want to explore the UDP transport with the Portenta and the Nano RP2040. Meanwhile, I expect to receive the acrylic parts and hopefully I also get the chance to visit the office and 3D print the new design for the micro AKROS robot.
+For next week, I want to explore the UDP transport with the Portenta and the Nano RP2040. Meanwhile, I expect to receive the acrylic parts and hopefully I also get the chance to visit the office use the 3D printer.
