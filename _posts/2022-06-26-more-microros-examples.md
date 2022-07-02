@@ -1,7 +1,7 @@
 ---
 layout: post
-title: More micro-ROS Examples
-subtitle: using udp4 and multiserial transports
+title: First steps with micro-ROS (part 2)
+subtitle: using UDP (WiFi) and multiserial transports
 gh-repo: adityakamath/arduino_sketchbook_ros
 thumbnail-img: /assets/img/akros2_acrylic_update_thumb.jpg
 share-img: /assets/img/akros2_acrylic_update_thumb.jpg
@@ -76,4 +76,4 @@ Meanwhile, I also received the matte black acrylic plates that I had ordered mor
 </figure>
 ### Next steps
 
-For the next week, firstly, I want to visit the office for some 3D printed parts (I expected go last week but was ill). I also want to play around with different Multiserial configurations on micro-ROS - such as two publishers, one publisher + one subscriber, service server and client. I also want to investigate the limitations of the Nano RP2040, and try to answer why the IMU ML example works with Serial transport and not over WiFi. Finally, I want to try the same examples with the Teensy 4.1, especially with UDP over Ethernet (also with the Portenta). More updates next weekend...
+For the next week, firstly, I want to visit the office for some 3D printed parts (I expected go last week but was ill). Next, I will to investigate the limitations of the Nano RP2040, and try to answer why the IMU ML example worked with Serial transport and not over WiFi. Finally, I want to try UDP over Ethernet with the Portenta and its breakout board, and the Teensy 4.1 (with the Ethernet kit). If I get the time, I also want to play around with different Multiserial configurations on micro-ROS - such as two publishers, one publisher + one subscriber, service server and client. More updates next weekend...

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: First steps with micro-ROS
-subtitle: using micro_ros_arduino and serial transport
+title: First steps with micro-ROS (part 1)
+subtitle: micro_ros_arduino examples with serial transport
 gh-repo: adityakamath/arduino_sketchbook_ros
 thumbnail-img: /assets/img/microros_nanorp2040_thumb.jpg
 share-img: /assets/img/microros_nanorp2040_thumb.jpg
