@@ -93,7 +93,7 @@ When the agent is connected (AGENT_CONNECTED), the code executes a check every 2
 
 To summarize, the UDP over Ethernet transport works to an extent on the Arduino Portenta using the micro_ros_arduino pre-compiled libraries. I am able to do basic ROS stuff like publishing/subscribing to different types of messages and implementing service servers and clients. Here's an example of the Time Sync example working over Ethernet:
 
-[![Arduino Portenta micro-ROS Time Sync with Agent](https://adityakamath.github.io/assets/img/microros_portenta_time_sync_ss.PNG)](https://www.youtube.com/watch?v=uYkhDo4wOqk "Arduino Portenta micro-ROS Time Sync with Agent")
+[![Arduino Portenta micro-ROS Time Sync with Agent](https://adityakamath.github.io/assets/img/microros_portenta_time_sync_ss.png)](https://www.youtube.com/watch?v=uYkhDo4wOqk "Arduino Portenta micro-ROS Time Sync with Agent")
 
 In the above video, the ```rmw_uros_sync_session(timeout_ms)``` function from the [micro-ROS RMW API](https://micro.ros.org/docs/api/rmw/) is used to sync the time between the micro-ROS agent and the micro-ROS client. As the video shows, the sync is quite accurate and functions without any timeouts. This also did not happen over WiFi with the Nano RP2040, but there were some dropped connections when working with the Portenta as explained earlier. Also in the video, the time on my laptop is two hours ahead of the synced time because my laptop shows the time in CEST, while the synced time is based on UTC.
 
@@ -122,7 +122,7 @@ Like the Portenta H7, the Teensy 4.1 needs an external breakout board for its Et
 I followed the same procedure as with the Portenta. I assigned a MAC and IP address to the device and successfully uploaded the code from the Arduino IDE. Next, I connected the Ethernet kit to the Teensy and the Raspberry Pi. The LEDs on the Ethernet connector on the Rasperry Pi turned on and I was able to validate that a static IP has been assigned to eth0. Despite this, the Teensy does seem to connect to the Raspberry Pi. On the Ethernet kit, only the green light LED turns on but the orange one doesn't. Eventually the micro-ROS code times out and enters the error loop. At first I thought this was an issue with the Ethernet kit, so I double checked the soldering and the wiring and found nothing wrong. I also checked the same code on the expansion board and observed the same issue. I need to investigate this further as I'm not sure if its something I'm doing wrong, or if it is something in the pre-compiled librares. Either way, the example Ethernet Publisher code on the micro_ros_arduino repo is meant for both the Arduino Portenta and the Teensy 4.1, but for me, it only works on the Arduino Portenta. Its a bummer that so far there doesn't seem to be any online documentation, tutorial or working example about working with Ethernet and micro-ROS, especially with the Teensy 4.1.
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/microros_teensy41_ethernet_issue.jpg"/>
+	<img src="https://adityakamath.github.io/assets/img/microros_teensy41_ethernet_error.jpg"/>
 	<figcaption>Ethernet connector with only 1 LED lit up. The other LED does not turn on at all.
 	</figcaption>
 </figure>
