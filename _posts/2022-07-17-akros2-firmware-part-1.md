@@ -110,9 +110,9 @@ rcl_init_options_t init_options; // global
 
 	// in the createEntities() function
 	init_options = rcl_get_zero_initialized_init_options();
-    RCCHECK(rcl_init_options_init(&init_options, allocator));
-    RCCHECK(rcl_init_options_set_domain_id(&init_options, (size_t)ROS_DOMAIN_ID));
-    RCCHECK(rclc_support_init_with_options(&support, 0, NULL, &init_options, &allocator));
+	RCCHECK(rcl_init_options_init(&init_options, allocator));
+	RCCHECK(rcl_init_options_set_domain_id(&init_options, (size_t)ROS_DOMAIN_ID));
+	RCCHECK(rclc_support_init_with_options(&support, 0, NULL, &init_options, &allocator));
 ```
 &nbsp;
 #### WS2812 (Neopixel) support
