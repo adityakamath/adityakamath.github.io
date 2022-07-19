@@ -100,7 +100,7 @@ For now, I added options in the configuration file (```#define TRANSPORT_SERIAL`
         set_microros_native_ethernet_udp_transports(mac, teensy_ip, agent_ip, 9999);
     #endif
 ```
-
+&nbsp;
 #### ROS_DOMAIN_ID
 
 I eventually will be building another ROS2/micro-ROS robot, and I want them to have separate [ROS_DOMAIN_ID](https://docs.ros.org/en/galactic/Concepts/About-Domain-ID.html)s, so I included this in the configuration and the firmware as well. I talked about this in [a previous post](https://adityakamath.github.io/2022-07-02-even-more-microros-examples/).
@@ -114,7 +114,7 @@ rcl_init_options_t init_options; // global
     RCCHECK(rcl_init_options_set_domain_id(&init_options, (size_t)ROS_DOMAIN_ID));
     RCCHECK(rclc_support_init_with_options(&support, 0, NULL, &init_options, &allocator));
 ```
-
+&nbsp;
 #### WS2812 (Neopixel) support
 
 Next, I included the [FastLED](https://github.com/FastLED/FastLED) library (already installed using the library manager) and my functions to set the [WS2812/Neopixel](https://learn.adafruit.com/adafruit-neopixel-uberguide) LED colors. These LEDs are not only fun looking eyes for the robot, but also important for indicating the robot's status, especially to show which mode the robot is operating in (auto, teleop or e-stop), and whether it is connected to ROS or not. The latter should work with micro-ROS (unlike ROSSerial), thanks to the ability to ping the ROS2 host, as shown in the Reconnection example and [here](https://micro.ros.org/docs/tutorials/core/first_application_linux/).
