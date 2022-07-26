@@ -57,7 +57,7 @@ At first, I struggled to get these steps working, mainly because I was focusing 
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/microros_portenta_ethernet.jpg"/>
-	<figcaption>The Portenta attached to the Portenta Breakout Board which is connected to the Raspberry Pi 4 on the AKROS robot using Ethernet. The Portenta is connected via USB to my the Pi for power.
+	<figcaption>Portenta attached to the Portenta Breakout Board which is connected to the Raspberry Pi 4 on the AKROS robot using Ethernet. The Portenta is connected via USB to the Pi for power.
 	</figcaption>
 </figure>
 
