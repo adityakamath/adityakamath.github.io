@@ -9,7 +9,7 @@ gh-badge: [follow]
 comments: true
 ---
 
-More progress this week. I planned on taking a few days off since I felt a bit burnt out at work. Surprisingly, it took only a few hours of binging [Taskmaster](https://www.youtube.com/c/Taskmaster) for me to start feeling better. On day two, I started working on the AKROS2 robot, with a focus on updating the firmware. Essentially picking up [where I left off last time](https://adityakamath.github.io/2022-07-17-akros2-firmware-part-1/). There were a few more updates along the way, I'll elaborate in the next few sections.
+This week, I planned on taking a few days off since I felt a bit burnt out at work. Surprisingly, it took only a few hours of binging [Taskmaster](https://www.youtube.com/c/Taskmaster) for me to start feeling better. On day two, I started working on the AKROS2 robot, with a focus on updating the firmware. Essentially picking up [where I left off last time](https://adityakamath.github.io/2022-07-17-akros2-firmware-part-1/). There were a few more updates along the way, I'll elaborate in the next few sections.
 
 ### Firmware updates
 
@@ -85,7 +85,7 @@ With the compilation finished, I could include ```#include <akros2_msgs/msg/Mode
 
 #### IMU
 
-My goal was only to add an IMU and make it work with the firmware. I left the calibration for later. First, I had to dig into my electronics box to find IMUs, especially the ones that are already compatible with Linorobot. I ended up finding an [MPU9250](https://invensense.tdk.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf) and an [MPU6050](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/). I first tested them to see if they worked, which they did. Next, it was time to choose which one to use. I did not care for how accurate they are since I am only going to use it to detect if the robot is in motion, and I would rather use the Realsense T265 IMU for sensor fusion. So, either IMU would do.
+My goal was only to add an IMU and make it work with the firmware. I left the calibration for later. First, I had to dig into my electronics box to find any spare IMUs, especially the ones that are already compatible with Linorobot. I ended up finding an [MPU9250](https://invensense.tdk.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf) and an [MPU6050](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/). I first tested them to see if they worked, which they did. Next, it was time to choose which one to use. I did not care for how accurate they are since I am only going to use it to detect if the robot is in motion, and I would rather use the Realsense T265 IMU for sensor fusion. So, either IMU would do.
 
 The next concern was how to mount the IMUs. I did not want to mount the IMUs to the Navigation module since I dont want wires running all the way to the Teensy in the Base module. So, I had to find place in the Base module itself. I finally decided on mounting it on top of the motor drivers using brass spacers. This made the choice easy - the MPU6050 fit very well, but its headers (pointing upwards) prevented the Navigation module from fitting. On the other hand the MPU9250 has headers pointing downwards, which after bending do not touch the motor drivers (there is a gap of at least 5mm). I also added some insulation to make sure there is no contact between the IMU and motor drivers.
 
@@ -95,11 +95,11 @@ The next concern was how to mount the IMUs. I did not want to mount the IMUs to 
 	</figcaption>
 </figure>
 
-With MPU9250 attached securely to I2C0 on the Teensy 4.1 board, I first wrote a simple sketch to read the IMU data and publish it to the serial monitor. I was able to read data from the IMU, so the next step was to run the Linorobot calibration sketch.
+With MPU9250 attached securely to I2C0 on the Teensy 4.1 board, I first wrote a simple sketch to read the IMU data and publish it to the serial monitor. Once I was able to read data from the IMU, the next step was to run the Linorobot calibration sketch.
 
 #### Calibration
 
-I decided to dig deeper into the [calibration sketch from linorobot2_hardware](https://github.com/linorobot/linorobot2_hardware/tree/galactic/calibration). The calibration sketch has two sequences that cycle through the available motors as defined in the configuration and spins each motor for a specified period of time, in this case 10 seconds. Before the loop, it sets the encoders to zero and the encoder readings are updated as the motor spins, using interrupts. The same sequence is run both times, the only exception being that one of them generates a report with extra calculations such as total encoder counts, counts per revolution (CPR) and maximum velocities. It uses the serial monitor on the Arduino IDE to select these sequences and display the reports. Unfortunately, the calibration sketch does not currently calibrate the IMU but I intend to add that in the future.
+I decided to dig deeper into the [calibration sketch from linorobot2_hardware](https://github.com/linorobot/linorobot2_hardware/tree/galactic/calibration). The calibration sketch has two sequences that cycle through the available motors as defined in the configuration, and spins each motor for 10 seconds. Before the loop, it sets the encoders to zero and the encoder readings are updated as the motor spins, using interrupts. The same sequence is run both times, the only exception being that one of them generates a report with extra calculations such as total encoder counts, counts per revolution (CPR) and maximum velocities. It uses the serial monitor on the Arduino IDE to select these sequences and display the reports. Unfortunately, the calibration sketch does not currently calibrate the IMU but I intend to add that in the future.
 
 The [Linorobot2](https://linorobot.org/) calibration sequence assumes that the maximum RPM of the motor is known, and calculates the CPR based on it. From my experience, the max RPM of hobby DC motors are never exactly what the manufacturer says. In my case, the motors were part of a kit and this info was not even mentioned in any documentation. In previous projects, including AKROS, I have had more success in relying on the CPR of the motor encoders to then calculate the maximum RPM. So I decided to change the calibration sequence a little bit.
 
@@ -109,52 +109,43 @@ The [Linorobot2](https://linorobot.org/) calibration sequence assumes that the m
 	</figcaption>
 </figure>
 
-I kept the original structure the same, the serial monitor is used to select from multiple options, that spins each motor for a specified period of time (20 seconds in this case), measures the encoders, does some calculations and reports the results. The following values are calculated and reported:
+I kept the original structure the same, the serial monitor is used to select from two options: ```spin``` or ```sample```. In each option, the motor is spun for a specified period of time, encoders are measured, and a report is generated based on some calculations. The following values are calculated and reported:
 
 * The max RPM of the motors (at its max rated voltage)
 * Deviation in the CPR values (calculated vs defined)
 * Maximum velocities of the robot (at its operating voltage)
 
-1. ```spin```: Spins each motor forward for 20 seconds
-	* This sequence is used to check motor direction.
-	* If needed, update the configuration file and build/run the calibration sketch again.
-2. ```sample```: Spins each motor forward for 20 seconds, generates report with configuration values
-	* Assumes that CPR values are correctly defined in the configuration
-	* Once 20 seconds for all 4 motors are up, a report is generated which includes max RPM, maximum velocity of the motor (assuming the max RPM is correctly set in the config), and the deviation between the defined CPR and measured CPR.
-
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/akros2_calib_info_text.JPG"/>
-	<figcaption>The updated info text shown on the Arduino Serial Monitor when the calibration sketch is run for the first time.
+	<figcaption>The info text (updated from the original Linorobot2 sketch) shown on the Arduino Serial Monitor when the calibration sketch is run for the first time.
 	</figcaption>
 </figure>
 
 ##### Max RPM
 
-First the encoder CPRs must be known. These are usually mentioned by the manufacturers, but these came with the motors in the same kit. So, I had to measure the CPR myself. This can be done by spinning the wheels (attached to the motors) by hand for exactly one revolution and measuring the encoder counts. One revolution is measured by simply sticking a piece of tape to the motor and one to a reference surface. Then, align the wheel to the reference, and rotate till the tapes are aligned again. This should be done for all wheels and normally should be done a few times and then averaged. But you can also assume the CPR value after one accurate reading (without wheel slip or backlash) and round it to the nearest multiple of 4 (as it is a [quadrature encoder](https://www.dynapar.com/technology/encoder_basics/quadrature_encoder/)). In my case, I repeated the experiment multiple times and averaged it to get an average **CPR of 296 per motor**.
+To get the max RPMs, first the encoder CPRs must be known. These are usually mentioned by the manufacturers, but these came with the motors in the same kit. So, I had to measure the CPRs myself. This was done by spinning the wheels (attached to the motors) by hand for exactly one revolution and measuring the encoder counts. One revolution can be measured by simply sticking a piece of tape to the motor and one to a reference surface. Then, align the wheel to the reference, and rotate till the tapes are aligned again. This should be done for all wheels and normally should be done a few times and then averaged. But you can also assume the CPR value after one accurate reading (without wheel slip or backlash) and round it to the nearest multiple of 4 (as it is a [quadrature encoder](https://www.dynapar.com/technology/encoder_basics/quadrature_encoder/)). In my case, I repeated the experiment multiple times and averaged it to get an average **CPR of 296 per motor**. This value can be filled in the configuration file.
 
-Generally, unlike motors and their RPMs, encoders from the same manufacturers should have the same CPRs unless they are physically damaged. So, this calibration need not be done for all motors, but its better to be sure. Once the CPR values are known, they can be filled in the configuration file.
-
-Next, using the defined encoder readings and the sample time (10 seconds), I first calculate the encoder counts per second, which I can then extrapolate to counts per minute. Then using the defined CPR values, I can calculate the revolutions per minute (RPM). Since the motors are programmed to rotate at max PWM during the ```spin``` sequence, the calculated RPMs are the max RPMs of each motor. However, these are not the max RPMs the motors can achieve. The motors are rated at 12V and are operating at 9V, so the motors are rated at a max RPM of the calculated values multipled by the (12/9). This max voltage and operating voltage should be defined in the config and the calibration sketch uses this to calculate the max rated RPMs of each motor. Now, since only one max RPM constant is used for all the motors, the calculated RPMs are averaged. According to the generated report, the motor is rated at around **176 RPMs at 12V**, which results in around **132 RPMs at 9V**.
+Next, using the defined encoder readings and the sample time of 10 seconds, I first calculated the encoder counts per second, which I could then extrapolate to counts per minute. Then using the defined CPR values, I got to the revolutions per minute (RPM). Since the motors are programmed to rotate at max PWM during the ```spin``` sequence, the calculated RPMs are the max RPMs of each motor. However, these are not the max RPMs the motors can achieve at its max rated voltage. The motors are rated at 12V and are operating at 9V, so the calculated max RPM is actually scaled down. The calibration sketch uses these values (defined in the configuration) to calculate the max rated RPMs of each motor. Now, since only one max RPM constant is used for all the motors, the calculated RPMs are averaged. According to the generated report, the motor is rated at around **176 RPMs at 12V**, which results in around **132 RPMs at 9V**.
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/akros2_calib_sample_max_rpm.jpg"/>
-	<figcaption>Generated report of the max RPMs of the motors as shown on the Arduino Serial Monitor. It uses the CPRs values, and the operating/max voltages defined in the configuration, to calculate the max rated RPM of the motor. Since a single value is defined in the firmware for the max RPMs, an average is calculated. It can be noticed that the motors do not run at the exact RPM, so its recommended to use a max RPM that the slowest motor can reach, even if it is not the same as the average.
+	<figcaption>Generated report of the max RPMs of the motors as shown on the Arduino Serial Monitor. It can be noticed that the motors do not run at the exact RPM, so its recommended to use a max RPM that the slowest motor can reach, even if it is not the same as the average.
 	</figcaption>
 </figure>
 
 ##### CPR (measured vs defined)
 
-Once the max RPM rating of the motor is known, it needs to be defined in the configuration and the ```sample``` sequence must be run again after recompiling. This time, the CPR can be correctly calculated like in [linorobot2_hardware](https://github.com/linorobot/linorobot2_hardware/blob/galactic/calibration/src/firmware.ino) and now we can compare it with the CPRs measured earlier, and defined in the configuration. In the report I also added print commands to display the deviation of the measured CPR from the defined value. I gave myself an acceptable deviation of 5%, and was quite happy to repeatedly get **deviations of less than 2%**. **296 CPR** seems to be the average here as well, which validates my first experiment done by hand.
+Once the max RPM rating of the motor is known, it needs to be defined in the configuration and the ```sample``` sequence must be run again after re-compiling. This time, the CPRs can be correctly calculated like in [linorobot2_hardware](https://github.com/linorobot/linorobot2_hardware/blob/galactic/calibration/src/firmware.ino) and now we can compare it with the CPRs defined in the configuration. In the report I also added print commands to display the deviation of the measured CPR from the defined value. I gave myself an acceptable deviation of 5%, and was quite happy to repeatedly get **deviations of less than 2%**. **296 CPR** seems to be the (approximate) average here as well, which validates my first experiment done by hand.
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/akros2_calib_sample_cpr.jpg"/>
-	<figcaption>Generated report of the calculated and defined CPRs of the encoders as shown on the Arduino Serial Monitor. It uses the average of the max RPM calculated in the earlier step to calculate the CPR, and also shows the deviation from the CPRs defined in the configuration.
+	<figcaption>Generated report of the calculated and defined CPRs of the encoders as shown on the Arduino Serial Monitor.
 	</figcaption>
 </figure>
 
 ##### Max Velocities
 
-Finally, I copied this part directly from [linorobot2_hardware](https://github.com/linorobot/linorobot2_hardware/blob/galactic/calibration/src/firmware.ino). It uses the configured values, the encoder readings and the kinematics library to get the maximum linear and angular velocities of the robot. It uses the ```MAX_RPM_RATIO``` value from the configuration file which defines the ratio of the ```MAX_RPM``` that the motors should run at, which I defined as 1. So the reported values are the absolute maximum velocities of the robot at 9V. It currently does not calculate the velocity in the Y direction as shown in the results below, but I intend to add that in later (to the [kinematics library](https://github.com/linorobot/linorobot2_hardware/tree/galactic/firmware/lib/kinematics)) when working on the odometry.
+Finally, I copied this part directly from [linorobot2_hardware](https://github.com/linorobot/linorobot2_hardware/blob/galactic/calibration/src/firmware.ino). It uses the configured values, the encoder readings and the kinematics library to get the maximum linear and angular velocities of the robot. It uses the ```MAX_RPM_RATIO``` value from the configuration file which defines the ratio of the ```MAX_RPM``` that the motors should run at, which I defined as 1. So the reported values are the absolute maximum velocities of the robot at 9V.
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/akros2_calib_sample_max_vel.jpg"/>
@@ -164,15 +155,14 @@ Finally, I copied this part directly from [linorobot2_hardware](https://github.c
 
 #### Testing
 
-Finally, it was time to test. Not only the updates to the [calibration sketch](https://github.com/adityakamath/akros2_firmware/tree/akros2_galactic/akros2_calibration), but also to the [main firmware](https://github.com/adityakamath/akros2_firmware). But first, the calibration. I completely ignored the ```spin``` sequence since I do not need it. I am using [Cytron MDD3A](https://www.cytron.io/p-3amp-4v-16v-dc-motor-driver-2-channels) motor drivers that have handy buttons to test the motor directions. As I have already done the wiring, this has been defined. I also used the encoder CPRs calculated for AKROS since the motors and encoders are the same.
+Finally, it was time to test, both the [calibration sketch](https://github.com/adityakamath/akros2_firmware/tree/akros2_galactic/akros2_calibration), and the [main firmware](https://github.com/adityakamath/akros2_firmware). First, the calibration. I completely ignored the ```spin``` sequence since I do not need it. I am using [Cytron MDD3A](https://www.cytron.io/p-3amp-4v-16v-dc-motor-driver-2-channels) motor drivers that have handy buttons to test the motor directions. As I have already done the wiring, this has been defined and tested. I also used the encoder CPRs calculated for AKROS since the motors and encoders are the same.
 
 I also have a voltage meter with a display, so I was able to measure the operating voltage at 9V. After updating them in the calibration configuration file, I simply ran the ```sample``` command twice - first to get the max RPM values, which was then updated to the configuration. The sequence was executed again, this time to verify maximum velocities of the robot.
 
-TODO: Insert calibration sample sequence video
 [![AKROS2 (linorobot2) Calibration sequence](https://adityakamath.github.io/assets/img/akros2_calib_sample_sequence_ss.jpg)](https://www.youtube.com/watch?v=no7D9zE8Kwk "AKROS2 (linorobot2) Calibration sequence")
 
 
-Next, it was time to test the firmware. First, I updated the [firmware configuration](https://github.com/adityakamath/akros2_firmware/blob/akros2_galactic/akros2_base_config.h) using the [calibration config](https://github.com/adityakamath/akros2_firmware/blob/akros2_galactic/akros2_calibration/akros2_calib_config.h) file (I need to have two as explained in the [last post](https://adityakamath.github.io/2022-07-17-akros2-firmware-part-1/). To simplify things, I also merged the calibration sketch and the firmware in to the [same branch](https://github.com/adityakamath/akros2_firmware/tree/akros2_galactic). I had thought it would be easier to have the calibration sketch and the firmware in separate branches, but I was wrong. Having them in the same branch involves a lot of copied code, but it is much easier this way, and it works.
+Next, it was time to test the firmware. First, I updated the [firmware configuration](https://github.com/adityakamath/akros2_firmware/blob/akros2_galactic/akros2_base_config.h) using the [calibration config](https://github.com/adityakamath/akros2_firmware/blob/akros2_galactic/akros2_calibration/akros2_calib_config.h) file (I need to have two as explained in the [last post](https://adityakamath.github.io/2022-07-17-akros2-firmware-part-1/)). To simplify things, I also merged the calibration sketch and the firmware in to the [same branch](https://github.com/adityakamath/akros2_firmware/tree/akros2_galactic). I had thought it would be easier to have the calibration sketch and the firmware in separate branches, but I was wrong. Having them in the same branch involves a lot of copied code, but it is much easier this way, and it works.
 
 I also made a few changes to the [firmware](https://github.com/adityakamath/akros2_firmware/blob/akros2_galactic/akros2_firmware.ino): first, I removed the namespace for simplicity, so the topics are now named ```/topic``` instead of ```akros2_base/topic```.
 
@@ -192,7 +182,7 @@ In the next one, I ran [teleop_twist_keyboard](https://index.ros.org/r/teleop_tw
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 
-I used the last two terminals to publish arbitrary modes from the command line, and to echo the cmd_vel for inspection. Finally, using ```teleop_twist_keyboard```, I could start sending twist messages to the robot. I also experimented by sending [Mode](https://github.com/adityakamath/akros2_msgs) messages using one of the terminals. The results were as expected, excellent for my first attempt, but the PID controller performance was slightly underwhelming as I will explain later.
+I used the last two terminals to publish arbitrary modes from the command line, and to echo the published Twist messages for inspection. Finally, using ```teleop_twist_keyboard```, I could start sending Twist messages to the robot. I also experimented by sending [Mode](https://github.com/adityakamath/akros2_msgs) messages using one of the terminals. The results were as expected, excellent for my first attempt, but the PID controller performance was slightly underwhelming as I will explain later.
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/akros2_firmware_test_terminals.jpg"/>
@@ -208,7 +198,7 @@ First, running ```ros2 topic list``` shows the list of topics. The micro-ROS cli
 	</figcaption>
 </figure>
 
-Next, using the ROS2 command line tools, I can then publish the ```/mode``` topic of ```akros2_msgs/Mode``` type to check the subscriber running on the Teensy. The colors should change according to the high level behavior defined in the firmware. The mode subscriber and the Neopixel indicator worked perfectly in my first attempt, much to my surprise. After setup, without the agent connected, the LEDs turned Cyan as expected. When the agent was connected, the LEDs turned to the color defined by the mode. When no mode was set, it turned to Green (teleop mode) by default. Blue is used for the autonomous mode, and Red is used to indicate when the emergency stop button is pressed. When the ```estop``` mode was set to true (i.e. to simulate that the button being pressed), the motors were forced to brake as programmed. The twist publisher isn't able to do anything till the ```estop``` mode is set back to false.
+Next, using the ROS2 command line tools, I could then publish the ```/mode``` topic of ```akros2_msgs/Mode``` type to check the subscriber running on the Teensy. The colors should change according to the high level behavior defined in the firmware. The mode subscriber and the Neopixel indicator worked perfectly in my first attempt, much to my surprise. After setup, without the agent connected, the LEDs turned Cyan as expected. When the agent was connected, the LEDs turned to the color defined by the mode. When no mode was set, it turned to Green (teleop mode) by default. Blue was used for the autonomous mode, and Red was used to indicate when the emergency stop button is pressed.
 
 [![AKROS2 mode indicator with Linorobot2 firmware](https://adityakamath.github.io/assets/img/akros2_firmware_mode_test_ss.jpg)](https://www.youtube.com/watch?v=8OaFAiKtNno "AKROS2 mode indicator with Linorobot2 firmware")
 
@@ -258,11 +248,11 @@ I've spent some time thinking about how I want to tune the PID controllers. With
 
 For AKROS2, I want to make my life a bit easier. I want to be able to tune the PID controllers from the Raspberry Pi. First, I will also add another publisher, to publish the measured and required RPM of each motor. This way I would be able to plot and analyze the PID controller performance. In order to set the PID gains, there are two ways this can be done - First, by adding a subscriber to the micro-ROS firmware, and a publisher of the PID gains from the ROS2 host.
 
-The second method is to set the PID gains as [parameters](https://docs.ros.org/en/galactic/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Parameters/Understanding-ROS2-Parameters.html#:~:text=A%20parameter%20is%20a%20configuration,node%20maintains%20its%20own%20parameters.) from the ROS2 host. On the micro-ROS side, a [parameter server](https://micro.ros.org/docs/tutorials/programming_rcl_rclc/parameters/) will handle these parameters and when something changes, the PID gains could be updated. I wonder if this will work on the Teensy, considering I already have three publishers and two subscribers. The parameter server needs an additional five services and one optional publisher. I asked around on the micro-ROS Slack, and turns out it should be possible to do this, especially on the Teensy 4.1.
+The second method is to set the PID gains as [parameters](https://docs.ros.org/en/galactic/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Parameters/Understanding-ROS2-Parameters.html#:~:text=A%20parameter%20is%20a%20configuration,node%20maintains%20its%20own%20parameters.) from the ROS2 host. On the micro-ROS side, a [parameter server](https://micro.ros.org/docs/tutorials/programming_rcl_rclc/parameters/) will handle these parameters and when something changes, the PID gains would be updated. I wonder if this will work on the Teensy, considering I already have three publishers and two subscribers. The parameter server needs an additional five services and one optional publisher. I asked around on the micro-ROS Slack, and turns out it should be possible to do this, especially on the Teensy 4.1, so I intend to try it out.
 
-I personally prefer the parameter server to the pub/sub option. This way I don't need to constantly keep publishing PID gain values, and only set/unset them when needed. I should also be able to dump these parameters as a .yaml file and then load it in a launch file. Like I mentioned in [my last post](https://adityakamath.github.io/2022-07-17-akros2-firmware-part-1/), I have also wanted to implement the parameter server in some project, so this seems like the perfect opportunity.
+I personally prefer the parameter server to the pub/sub option. This way I don't need to constantly keep publishing PID gain values, and only set/unset them when needed. I should also be able to dump these parameters as a .yaml file and then load it in a launch file. These parameters in ROS2 along with the feedback publisher mentioned earlier, could be plotted and visualized for tuning the PID controllers. Like I mentioned in [my last post](https://adityakamath.github.io/2022-07-17-akros2-firmware-part-1/), I have also wanted to implement the parameter server in some project, so this seems like the perfect opportunity.
 
-Once I have the PID tuned, then I can start with some additional features:
+Once I have the PID tuned, I can start with some additional features:
 
 #### IMU Calibration and Odometry Fusion
 
