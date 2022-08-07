@@ -129,29 +129,59 @@ Next, using the defined encoder readings and the sample time of 10 seconds, I fi
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/akros2_calib_sample_max_rpm.jpg"/>
-	<figcaption>Generated report of the max RPMs of the motors as shown on the Arduino Serial Monitor. It can be noticed that the motors do not run at the exact RPM, so its recommended to use a max RPM that the slowest motor can reach, even if it is not the same as the average.
+	<figcaption>Generated report of the first run, showing the max RPM values using the CPR values that were measured by hand. It can be noticed that the motors do not run at the exact RPM.
+	</figcaption>
+</figure>
+
+This number can however be made more accurate by increasing the ```MAX_RPM``` value in the configuration and running the ```sample``` sequence again. This will result in a change in the reported values. This is because the maximum RPM is calculated using the CPR values, which are not entirely accurate in the first place. This is a chicken and egg problem, since the CPR values are in turn dependent on the max RPM of the motors. Howwever by repeating this experiment of increasing the ```MAX_RPM``` value in steps, the reported RPM of the motor will eventually converge to one value. This is the actual max RPM rating of the motors, and if increased in configuration, will not cause the reported value to change. The final value for the max RPM can be seen in the image below, averaged and rounded to **180 RPMs at 12V**, which results in **135 RPMs at 9V**.
+
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.io/assets/img/akros2_calib_max_rpm_converged.jpg"/>
+	<figcaption>Generated report of the final run, showing the converged max RPM values. As it can be seen, the CPR values deviate, this causes the max RPMs to also deviate. Since the average converges, it is used to re-calculate the CPR in order to get a more accurate value.
 	</figcaption>
 </figure>
 
 ##### CPR (measured vs defined)
 
-Once the max RPM rating of the motor is known, it needs to be defined in the configuration and the ```sample``` sequence must be run again after re-compiling. This time, the CPRs can be correctly calculated like in [linorobot2_hardware](https://github.com/linorobot/linorobot2_hardware/blob/galactic/calibration/src/firmware.ino) and now we can compare it with the CPRs defined in the configuration. In the report I also added print commands to display the deviation of the measured CPR from the defined value. I gave myself an acceptable deviation of 5%, and was quite happy to repeatedly get **deviations of less than 2%**. **296 CPR** seems to be the (approximate) average here as well, which validates my first experiment done by hand.
+Once the max RPM rating of the motor is known, it needs to be defined in the configuration and the ```sample``` sequence must be run again after re-compiling. This time, the CPRs can be correctly calculated like in [linorobot2_hardware](https://github.com/linorobot/linorobot2_hardware/blob/galactic/calibration/src/firmware.ino) and now we can compare it with the CPRs defined in the configuration. In the report I also added print commands to display the deviation of the measured CPR from the defined value. As can be seen in the image below, there is certainly some difference between the measured and defined CPRs.
+
+As explained earlier, the CPR values are not defined by the manufacturer and need to be calculated by hand, but these are not entirely accurate. This is because of two reasons - human error (and some guesstimation during the measurement), and the fact that the max RPM is averaged. Since the motors do not rotate at the same speed, some precision is lost. So, the CPRs definitely need to be re-defined in the configuration, but since the max RPM is averaged, some deviation is still expected. The results below are from my first experiment, where the ```MAX_RPM``` was defined as 176.
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/akros2_calib_sample_cpr.jpg"/>
-	<figcaption>Generated report of the calculated and defined CPRs of the encoders as shown on the Arduino Serial Monitor.
+	<figcaption>Generated report of the first run showing calculated and defined CPRs of the encoders. The deviation is acceptable, but can still be improved.
+	</figcaption>
+</figure>
+
+To get more accurate readings, I first needed the correct (average) max RPM value, which converged to 180 in the previous step. Using this value in the configuration file, I get the following results:
+
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.io/assets/img/akros2_calib_cpr_converged.jpg"/>
+	<figcaption>Generated report of the final run, showing the CPR values values using the converged max RPM.
+	</figcaption>
+</figure>
+
+The calculated CPRs in the above image are the correct CPR values for each motor. This experiment was repeated multiple times and the CPR values for each motor was noted. These values were averaged, rounded and then updated in the configuration.
+
+To confirm everything, I repeated the experiment one more time with the converged max RPM and CPR values, and updated the sample time to 20 seconds. On repeating the experiment, the values seem to change, but the deviation was minimal. In all the experiments, the deviation of the CPRs was reported to be less than 1% and the now that the correct CPR values were set, the max RPM values (of each motor) was always reported somewhere between 180 and 181. The following image shows the results. I consider them to be sufficient.
+
+<figure class="aligncenter">
+	<img src="https://adityakamath.github.io/assets/img/akros2_calib_all_values_converged.jpg"/>
+	<figcaption>Generated report of the final run, with a sample time of 20 seconds per motor. The max RPMs of each motor are quite close to each other, unlike when the CPRs were not correctly defined. The measured and defined CPRs also have a very small deviation unlike earlier.
 	</figcaption>
 </figure>
 
 ##### Max Velocities
 
-Finally, I copied this part directly from [linorobot2_hardware](https://github.com/linorobot/linorobot2_hardware/blob/galactic/calibration/src/firmware.ino). It uses the configured values, the encoder readings and the kinematics library to get the maximum linear and angular velocities of the robot. It uses the ```MAX_RPM_RATIO``` value from the configuration file which defines the ratio of the ```MAX_RPM``` that the motors should run at, which I defined as 1. So the reported values are the absolute maximum velocities of the robot at 9V.
+Finally, I copied this part directly from [linorobot2_hardware](https://github.com/linorobot/linorobot2_hardware/blob/galactic/calibration/src/firmware.ino). It uses the (converged) max RPM and CPR values from the configuration, the encoder readings and the kinematics library to get the maximum linear and angular velocities of the robot. It uses the ```MAX_RPM_RATIO``` value from the configuration file which defines the ratio of the ```MAX_RPM``` that the motors should run at, which I defined as 1. So the reported values are the absolute maximum velocities of the robot at 9V.
 
 <figure class="aligncenter">
 	<img src="https://adityakamath.github.io/assets/img/akros2_calib_sample_max_vel.jpg"/>
 	<figcaption>Generated report of the max velocities of the robot as shown on the Arduino Serial Monitor. Currently, it does not calculate the velocity in the y direction. I intend to update it later while working on the odometry.
 	</figcaption>
 </figure>
+
+THe above image shows a maximum linear velocity between **0.5 m/s and 0.6 m/s** over multiple experiments. This is a little too fast for my robot, as I expect it to have a maximum velocity of **0.3 m/s**. This means in my firmware, I can configure the ```MAX_RPM_RATIO``` to be 0.5 as my starting point and then tune it further from there.
 
 #### Testing
 
