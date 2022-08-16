@@ -269,4 +269,4 @@ Finally, I want to port my PS4 controller node from ROS (```akros_teleop```) to 
 
 [![Testing mode switching and software stop](https://adityakamath.github.io/assets/img/akros_sw_estop_test_ss.png)](https://www.youtube.com/watch?v=abgy8BhUo28 "[Testing mode switching and software stop")
 
-Once the PS4 controller interface are done, I will be able to uncomment all the commented parts in the firmware and test the entire firmware (without the odometry fusion) for the first time. Hopefully, should not take more than 2 weekends. \**fingers crossed*\*
+Once the PS4 controller interface is done, I will be able to uncomment all the commented parts in the firmware and test the entire firmware (without the odometry fusion) for the first time. Hopefully, should not take more than 2 weekends. \**fingers crossed*\*
