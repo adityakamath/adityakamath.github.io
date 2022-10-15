@@ -6,6 +6,15 @@ subtitle: Things I've been working on (2011 - Present)
 
 Some of my favourite robotics projects (that I can talk about). I have also worked on other non-robotics projects, but they are not very relevant to this website. You can have a look at these experiences on my LinkedIn (link at the bottom of the page).
 
+### [Autonomous ROS2 Robot - AKROS2](https://github.com/adityakamath/akros2_firmware)
+#### 2022 | Personal Project
+
+<figure class="aligncenter">
+	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/akros2_circle.png" />
+</figure>
+
+In 2022, I upgraded the AKROS robot, with a Teensy 4.1 instead of an Arduino Mega, faster and more powerful motor controllers, an IMU and a more compact navigation module. The motor control and odometry firmware is now implemented with micro-ROS instead of ROSSerial. The goal of this project is to use ros2_control, with the micro-ROS controller as a hardware interface, implement Nav2 functionality, and improve the Behavior Tree implementation from AKROS (ROS1).
+
 ### [Autonomous ROS1 Robot - AKROS](https://github.com/adityakamath/akros)
 #### 2021 | Personal Project
 
