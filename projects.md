@@ -4,10 +4,10 @@ title: Projects
 subtitle: Things I've been working on (2011 - Present)
 ---
 
-Some of my favourite robotics projects - a representation of the kind of projects I would like to work on and write about on this blog. I have also worked on other projects, but they are not very relevant to this website. You can have a look at these experiences on my LinkedIn (link at the bottom of the page).
+Some of my favourite robotics projects (that I can talk about). I have also worked on other projects as a Mechatronics or Embedded Software engineer, but they are not very relevant to this website. You can have a look at these experiences on my LinkedIn (link at the bottom of the page).
 
 ### [Autonomous ROS1 Robot - AKROS](https://github.com/adityakamath/akros)
-#### 2021 |
+#### 2021 | Personal Project
 
 <figure class="aligncenter">
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/akros_circle.png" />
@@ -16,7 +16,7 @@ Some of my favourite robotics projects - a representation of the kind of project
 Through 2021, I built and programmed an autonomous mecanum-wheel based robot using ROS1 on a Raspberry Pi 4. I used a 2D LiDAR, a visual-inertial odometry camera (Intel T265), and wheel odometry to build a robot that can autonomously map and navigate in my studio apartment. I also implemented additional features such as teleop assist/mixing, closed loop (holonomic) motion control, wireless charging and behavior trees.
 
 ### [Jetson Robot Platforms - JetRacer, JetBot](https://github.com/adityakamath/jetbot2_ws)
-#### 2020 |
+#### 2020 | Personal Project
 
 <figure class="aligncenter">
 	<img align="right" width="200" height="200" src="https://adityakamath.github.io/assets/img/jetbot_2.png" />
