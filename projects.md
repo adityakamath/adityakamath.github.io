@@ -4,7 +4,7 @@ title: Projects
 subtitle: Things I've been working on (2011 - Present)
 ---
 
-Some of my favourite robotics projects (that I can talk about). I have also worked on other projects as a Mechatronics or Embedded Software engineer, but they are not very relevant to this website. You can have a look at these experiences on my LinkedIn (link at the bottom of the page).
+Some of my favourite robotics projects (that I can talk about). I have also worked on other non-robotics projects, but they are not very relevant to this website. You can have a look at these experiences on my LinkedIn (link at the bottom of the page).
 
 ### [Autonomous ROS1 Robot - AKROS](https://github.com/adityakamath/akros)
 #### 2021 | Personal Project
