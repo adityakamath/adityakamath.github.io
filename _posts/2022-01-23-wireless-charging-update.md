@@ -4,7 +4,7 @@ title: Wireless charging module update
 subtitle: Design and assembly
 gh-repo: adityakamath/akros
 thumbnail-img: /assets/img/akros_render_thumb2.png
-share-img: /assets/img/akros_render_thumb.png
+share-img: /assets/img/akros_render_thumb2.png
 gh-badge: [follow]
 comments: true
 ---
