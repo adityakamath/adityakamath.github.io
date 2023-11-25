@@ -62,7 +62,7 @@ I also decided to play around with the AKROS robot [with its new Teensy 4.1 brea
 My first solution was to try and ramp the velocity above a particular threshold (a percentage of the max PWM). In my first attempt at this, I tried ramping up the velocity slowly over a small time period (100 ms). This reduced the frequency of brownouts but they still happened. Additionally, this 100ms delay affected the PID controllers and it resulted in oscillations and weird jerky behavior in some instances. In my second attempt, I reduce this delay to 20 ms, and also reduce the maximum speeds and accelerations of the robot. This solved the brownout issue entirely. These reduced speed limits along with the ramp function also made the robot motion much smoother. The maximum velocity was only reduced by 0.05 m/s, which although visibly slower is not very significant, especially for my studio apartment. And I'm okay with it if it means that my robot won't die during operation. I however did not test how the navigation stack functioned after changing these motion control parameters. I might need to fine-tune the maximum acceleration values when I eventually test it.
 
 <figure class="aligncenter">
-	<img src="https://adityakamath.github.io/assets/img/akros_translycent_acrylic.jpg"/>
+	<img src="https://adityakamath.github.io/assets/img/akros_translucent_acrylic.jpg"/>
 	<figcaption>AKROS robot with the translucent white acrylic before the new update.
 	</figcaption>
 </figure>
